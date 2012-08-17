@@ -44,13 +44,12 @@
 					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
 					
 					<!-- if you'd like to use the site description you can un-comment it below -->
-					<?php // bloginfo('description'); ?>
+					<p id="description"><?php  bloginfo('description'); ?></p>
 					
-					
-					<nav role="navigation">
-						<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
-					</nav>
-				
 				</div> <!-- end #inner-header -->
+                                
+                                <nav role="navigation" class="wrap">
+                                        <?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+                                </nav>
 			
 			</header> <!-- end header -->
