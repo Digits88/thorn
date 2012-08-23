@@ -1,0 +1,121 @@
+/* 
+    Document   : style
+    Created on : Aug 22, 2012, 4:25:06 PM
+    Author     : mike_newell
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end rest */
+
+* {
+    margin: 0;
+}
+
+root { 
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    background-color: white;
+}
+
+body {
+    
+/*  
+    Radial gradient
+
+    background-color:#474747;
+    background-image: -moz-radial-gradient(3% 6%, circle cover, #474747, #000000 100%);
+    background-image: -webkit-radial-gradient(3% 6%, circle cover, #474747, #000000 100%);
+    background-image: -o-radial-gradient(3% 6%, circle cover, #474747, #000000 100%);
+    background-image: -ms-radial-gradient(3% 6%, circle cover, #474747, #000000 100%);
+    background-image: radial-gradient(3% 6%, circle cover, #474747, #000000 100%);*/
+
+    background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(white), to(#bdbfc1));
+    overflow: show;
+}
+
+#introBG {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    
+    background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#464646), to(black));
+}
+
+#linesBG {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .1;
+    
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    
+    background: url(../images/bg/lines.png) -640px -125px scroll no-repeat;
+}
+
+#wrap {
+    min-height: 100%;
+    height:     auto !important;
+    height:     100%;
+}

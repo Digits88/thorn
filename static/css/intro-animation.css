@@ -1,0 +1,237 @@
+/* 
+    Document   : intro-animation
+    Created on : Aug 22, 2012, 5:06:02 PM
+    Author     : mike_newell
+    Description:
+        Quick introduction animation - because it's fun for everyone
+*/
+
+root { 
+    display: block;
+}
+
+#wrap {
+    width: 1024px;
+    position: relative;
+}
+
+.anim {
+    position: absolute;
+    -webkit-transform: translateZ(0);
+}
+
+.bg {
+    -webkit-backface-visibility: hidden;
+    opacity: 0;
+}
+
+#logo {
+    top: 122px;
+    left: 376px;
+}
+
+#logo .bg {
+    background: url(../images/logo/logo.png) scroll no-repeat;
+    
+    width: 500px;
+    height: 362px;
+    
+    opacity: 1;
+}
+
+#t {
+    top: 201px;
+    left: 116px;
+}
+
+#t .bg {
+    background: url(../images/logo/t.png) scroll no-repeat;
+    
+    width: 100px;
+    height: 132px;
+}
+
+#h {
+    top: 201px;
+    left: 228px;
+}
+
+#h .bg {
+    background: url(../images/logo/h.png) scroll no-repeat;
+    
+    width: 100px;
+    height: 132px;
+}
+
+#o {
+    top: 201px;
+    left: 346px;
+}
+
+#o .bg {
+    background: url(../images/logo/o.png) scroll no-repeat;
+    
+    width: 100px;
+    height: 132px;
+}
+
+#r {
+    top: 201px;
+    left: 447px;
+}
+
+#r .bg {
+    background: url(../images/logo/r.png) scroll no-repeat;
+    
+    width: 100px;
+    height: 132px;
+}
+
+#n {
+    top: 201px;
+    left: 560px;
+}
+
+#n .bg {
+    background: url(../images/logo/n.png) scroll no-repeat;
+    
+    width: 100px;
+    height: 132px;
+}
+
+#defenders {
+    
+    top: 201px;
+    left: 697px;
+    
+}
+
+#defenders .bg {
+    background: url(../images/logo/defenders.png) scroll no-repeat;
+    width: 180px;
+    height: 132px;
+}
+
+/*******************************************************************************
+
+                                Animations 
+
+*******************************************************************************/
+
+/* fade in */
+
+#wrap .logoShrink {
+    -webkit-animation: logoShrink 7s linear 0s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes logoShrink {
+    0%          {background-size: 100% 100%; opacity: 1;}
+    10%         {background-size: 15% 15%; opacity: 1;}
+    73%         {background-size: 15% 15%; opacity: 1;}
+    80%         {background-size: 15% 15%; opacity: 0;}
+    100%        {background-size: 15% 15%; opacity: 0;}
+}
+
+#t .tShrink {
+    -webkit-animation: tShrink 7s ease-in-out 0s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes tShrink {
+    0%          {opacity: 0;}
+    11%         {opacity: 0;}
+    12%         {opacity: 1;}
+    71%         {opacity: 1;}
+    72%         {opacity: 0;}
+}
+
+#h .hShrink {
+    -webkit-animation: hShrink 7s ease-in-out 0s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes hShrink {
+    0%          {opacity: 0;}
+    13%         {opacity: 0;}
+    14%         {opacity: 1;}
+    69%         {opacity: 1;}
+    70%         {opacity: 0;}
+}
+
+#o .oShrink {
+    -webkit-animation: oShrink 7s ease-in-out 0s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes oShrink {
+    0%          {opacity: 0;}
+    15%         {opacity: 0;}
+    16%         {opacity: 1;}
+    67%         {opacity: 1;}
+    68%         {opacity: 0;}
+}
+
+#r .rShrink {
+    -webkit-animation: rShrink 7s ease-in-out 0s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rShrink {
+    0%          {opacity: 0;}
+    17%         {opacity: 0;}
+    18%         {opacity: 1;}
+    65%         {opacity: 1;}
+    66%         {opacity: 0;}
+}
+
+#n .nShrink {
+    -webkit-animation: nShrink 7s ease-in-out 0s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes nShrink {
+    0%          {opacity: 0;}
+    19%         {opacity: 0;}
+    20%         {opacity: 1;}
+    63%         {opacity: 1;}
+    64%         {opacity: 0;}
+}
+
+#defenders .defendersShrink {
+    -webkit-animation: defendersShrink 7s ease-in-out 0s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes defendersShrink {
+    0%          {opacity: 0;}
+    23%        {opacity: 0;}
+    33%        {opacity: 1;}
+    50%        {opacity: 1;}
+    70%        {opacity: 0;}
+}
+
+#introBG.site {
+    -webkit-animation: bodyTransitionToSite 7s linear 0s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bodyTransitionToSite {
+    0%          {opacity: 1;}
+    73%         {opacity: 1;}
+    90%         {opacity: 0;}
+    100%        {opacity: 0;}
+}
+
+#linesBG.site {
+    -webkit-animation: linesTransitionToSite 7s linear 0s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes linesTransitionToSite {
+    0%          {opacity: .1;}
+    73%         {opacity: .1;}
+    90%         {opacity: 1;}
+    100%        {opacity: 1;}
+}
+
