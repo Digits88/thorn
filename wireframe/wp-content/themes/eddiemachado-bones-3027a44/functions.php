@@ -205,7 +205,6 @@ function output_partner($atts, $content = null) {
             <img data-test="4w3s0m3!" src="$img->src" />            
         </div>
         
-   
 FORMATTED_CONTENT;
     
     return $formatted_content;

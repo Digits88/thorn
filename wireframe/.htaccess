@@ -1,1 +1,8 @@
-
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /GSP/clients/thorn/wireframe/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /GSP/clients/thorn/wireframe/index.php [L]
+</IfModule>

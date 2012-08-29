@@ -15,6 +15,34 @@
         <script type="text/javascript" src="js/app.js"></script>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" type="text/css" href="css/intro-animation.css" />
+        
+        <style>
+            #testContain {
+                width: 500px;
+                height: 250px;
+                margin: 100px auto;
+                position: relative;
+            }
+            
+            #test {
+                width: 500px;
+                height: 250px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: transparent url(images/test.png) scroll repeat;
+            }
+            
+            #testBG {
+                width: 500px;
+                height: 250px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#fbfbfb), to(black));
+                opacity: 0.6;
+            }
+        </style>
     </head>
     <body>
         <div id="introBG"></div>
@@ -41,6 +69,13 @@
             <div id="defenders" class="anim">
                 <div class="bg"></div>
             </div>
+            
+            <div id="testContain">
+                <div id="testBG"></div>
+                <div id="test"></div>
+            </div>
+            
+            
         </div>
     </body>
 </html>
