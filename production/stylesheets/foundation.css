@@ -647,7 +647,7 @@
 		padding: 20px 20px 2px 20px;
 		background: #333132;
 		background: -moz-linear-gradient(top, #333132 100%, #5e5f62 0%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333132), color-stop(100%,#5e5f62));
+		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#333132), color-stop(100%,#5e5f62));
 		background: -o-linear-gradient(top, #333132 100%, #5e5f62 0%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333132', endColorstr='#5e5f62',GradientType=0 );
 		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
@@ -663,7 +663,7 @@
 		padding: 20px 20px 2px 20px;
 		background: #a8aaad;
 		background: -moz-linear-gradient(top, #a8aaad 100%, #cacbcd 0%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a8aaad), color-stop(100%,#cacbcd));
+		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#a8aaad), color-stop(100%,#cacbcd));
 		background: -o-linear-gradient(top, #a8aaad 100%, #cacbcd 0%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8aaad', endColorstr='#cacbcd',GradientType=0 );
 		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
@@ -680,7 +680,7 @@
 		padding: 20px 20px 2px 20px;
 		background: #231f20;
 		background: -moz-linear-gradient(top, #231f20 100%, #3f3e40 0%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#231f20), color-stop(100%,#3f3e40));
+		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#231f20), color-stop(100%,#3f3e40));
 		background: -o-linear-gradient(top, #231f20 100%, #3f3e40 0%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#231f20', endColorstr='#3f3e40',GradientType=0 );
 		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
@@ -698,7 +698,7 @@
 		padding: 20px 20px 2px 20px;
 		background: #c3161e;
 		background: -moz-linear-gradient(top, #c3161e 100%, #9c1217 0%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9c1217), color-stop(100%,#c3161e));
+		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#9c1217), color-stop(100%,#c3161e));
 		background: -o-linear-gradient(top, #c3161e 100%, #9c1217 0%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3161e', endColorstr='#9c1217',GradientType=0 );
 		box-shadow: 0 2px 5px rgba(0,0,0,0.15);

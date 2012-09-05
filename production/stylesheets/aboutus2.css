@@ -1,0 +1,38 @@
+/* 
+    Document   : aboutus2
+    Created on : Sep 5, 2012, 1:52:51 PM
+    Author     : mike_newell
+    Description:
+        ADDITIONAL STYLES FOR THE ABOUTUS2 PAGE.
+*/
+
+.lightGrey {
+    color: #a7aaac;
+    background-color: #a7aaac;
+    border-color: #a7aaac;
+    border-width: 1.5px;
+}
+
+.darkGrey {
+    color: #000;
+    background-color: #000;
+    border-color: #000;
+    border-width: 1.5px;
+}
+
+.gold {
+    color: #9d8c61;
+    background-color: #9d8c61;
+    border-color: #9d8c61;
+    border-width: 1.5px;
+}
+
+.red {
+    color: #C3161E;
+    background-color: #C3161E;
+    border-color: #C3161E;
+}
+
+#directorsContainer .six:last-child {
+    float: right;
+}
