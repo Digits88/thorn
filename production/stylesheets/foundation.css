@@ -11,6 +11,7 @@
 :: Misc
 */
 
+@import url(http://fonts.googleapis.com/css?family=Varela);
 
 /*	--------------------------------------------------
 	:: Global Reset & Standards
@@ -85,8 +86,10 @@
 		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -ms-linear-gradient(-45deg, #fff, ##bdbfc1); /* IE10 */
 		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -o-linear-gradient(-45deg, #fff, #bdbfc1); /* Opera 11.10+ */
 		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), linear-gradient(-45deg, #fff, ##bdbfc1); /* W3C */
+                
+                /*font-family: 'Varela', sans-serif;*/
 
-		font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-family: 'Varela', "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 		font-size: 13px; font-size: 1.3rem; line-height: 18px; color: #555; position: relative; -webkit-font-smoothing: antialiased;
 		
 		}
@@ -166,7 +169,8 @@
 	h3 { font-size: 28px; font-size: 2.8rem; margin-bottom: 9px; }
 	h4 { font-size: 21px; font-size: 2.1rem; margin-bottom: 3px; }
 	h5 { font-size: 18px; font-size: 1.8rem; font-weight: normal; margin-bottom: 3px;  }
-	h6 { font-size: 15px; font-size: 1.5rem; font-weight: normal; }
+	/*h6 { font-size: 15px; font-size: 1.5rem; font-weight: normal; }*/
+        h6 { font-size: 8px; font-weight: normal; }
 	
 	.panelDarkgrey h2 {
 		color: #a7aaac;
@@ -187,6 +191,11 @@
 	.panelBlack p {
 		color: #f0d89e;
 	}
+        
+/*        .panelRed {
+            
+                
+        }*/
 
 	
 	.panelRed h2 {
@@ -204,7 +213,7 @@
 	p.lead { font-size: 18px; font-size: 1.8rem; line-height: 1.5;  }
 	
 	.tabs dl, dd {
-		font-size: 10px;
+		font-size: 8px;
 		font-weight: bold;
 	}
 	.tabs dd a.active {
@@ -266,7 +275,7 @@
 
 	.container { padding: 0 20px; }
 	
-	.row { width: 100%; max-width: 980px; min-width: 727px; margin: 0 auto; }
+	.row { width: 100%; max-width: 1024px; min-width: 727px; margin: 0 auto; }
 	/* To fix the grid into a certain size, set max-width to width */
 	.row .row { min-width: 0; }
 	
@@ -561,6 +570,7 @@
     dl.tabs dt:first-child { padding: 0 9px 0 0; }
     dl.tabs dd { display: block; width: auto; height: 30px; padding: 0; float: left; }
     dl.tabs dd a { display: block; width: auto; height: 29px; padding: 0 9px; line-height: 30px; border: solid 1px #333132; margin: 0 -1px 0 0; color: #6d6f71; background: #333132; }
+    dl.tabs dd a:hover { color: #F0D89E; }
     dl.tabs dd a.active { background: #333132; border-width: 1px 1px 0 1px; height: 30px; }
 
 		.nice.tabs { border-bottom: solid 1px #eee; margin: 0 0 30px 0; height:43px; }
@@ -646,9 +656,9 @@
 	div.panelDarkgrey {
 		padding: 20px 20px 2px 20px;
 		background: #333132;
-		background: -moz-linear-gradient(top, #333132 100%, #5e5f62 0%);
-		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#333132), color-stop(100%,#5e5f62));
-		background: -o-linear-gradient(top, #333132 100%, #5e5f62 0%);
+		background: url(../images/bg_tile5_dark_grey.png) scroll repeat, -moz-linear-gradient(top, #333132 100%, #5e5f62 0%);
+		background: url(../images/bg_tile5_dark_grey.png) scroll repeat, -webkit-gradient(linear, left top, right bottom, color-stop(0%,#333132), color-stop(100%,#5e5f62));
+		background: url(../images/bg_tile5_dark_grey.png) scroll repeat, -o-linear-gradient(top, #333132 100%, #5e5f62 0%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333132', endColorstr='#5e5f62',GradientType=0 );
 		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
@@ -662,9 +672,9 @@
 	div.panelLightgrey {
 		padding: 20px 20px 2px 20px;
 		background: #a8aaad;
-		background: -moz-linear-gradient(top, #a8aaad 100%, #cacbcd 0%);
-		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#a8aaad), color-stop(100%,#cacbcd));
-		background: -o-linear-gradient(top, #a8aaad 100%, #cacbcd 0%);
+		background: url(../images/bg_tile5_light_grey.png) scroll repeat, -moz-linear-gradient(top, #a8aaad 100%, #cacbcd 0%);
+		background: url(../images/bg_tile5_light_grey.png) scroll repeat, -webkit-gradient(linear, left top, right bottom, color-stop(0%,#a8aaad), color-stop(100%,#cacbcd));
+		background: url(../images/bg_tile5_light_grey.png) scroll repeat, -o-linear-gradient(top, #a8aaad 100%, #cacbcd 0%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8aaad', endColorstr='#cacbcd',GradientType=0 );
 		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
@@ -679,9 +689,9 @@
 	div.panelBlack {
 		padding: 20px 20px 2px 20px;
 		background: #231f20;
-		background: -moz-linear-gradient(top, #231f20 100%, #3f3e40 0%);
-		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#231f20), color-stop(100%,#3f3e40));
-		background: -o-linear-gradient(top, #231f20 100%, #3f3e40 0%);
+		background: url(../images/bg_tile5_dark_grey.png) scroll repeat, -moz-linear-gradient(top, #231f20 100%, #3f3e40 0%);
+		background: url(../images/bg_tile5_dark_grey.png) scroll repeat, -webkit-gradient(linear, left top, right bottom, color-stop(0%,#231f20), color-stop(100%,#3f3e40));
+		background: url(../images/bg_tile5_dark_grey.png) scroll repeat, -o-linear-gradient(top, #231f20 100%, #3f3e40 0%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#231f20', endColorstr='#3f3e40',GradientType=0 );
 		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
@@ -697,14 +707,14 @@
 	div.panelRed {
 		padding: 20px 20px 2px 20px;
 		background: #c3161e;
-		background: -moz-linear-gradient(top, #c3161e 100%, #9c1217 0%);
-		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#9c1217), color-stop(100%,#c3161e));
-		background: -o-linear-gradient(top, #c3161e 100%, #9c1217 0%);
+		background: url(../images/bg_tile5_red.png) scroll repeat, -moz-linear-gradient(top, #c3161e 100%, #9c1217 0%);
+		background: url(../images/bg_tile5_red.png) scroll repeat, -webkit-gradient(linear, left top, right bottom, color-stop(0%,#9c1217), color-stop(100%,#c3161e));
+		background: url(../images/bg_tile5_red.png) scroll repeat, -o-linear-gradient(top, #c3161e 100%, #9c1217 0%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3161e', endColorstr='#9c1217',GradientType=0 );
 		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-		margin: 0 0 2px 0;
+		margin: 0 0 2px 0; 
 		}
 	
 	
