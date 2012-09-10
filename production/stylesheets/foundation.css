@@ -192,6 +192,10 @@
 		color: #f0d89e;
 	}
         
+        .panelBlack p.light {
+            color: #6d6f71;
+        }
+        
 /*        .panelRed {
             
                 
@@ -711,6 +715,22 @@
 		background: url(../images/redLine.png) scroll repeat, -webkit-gradient(linear, left top, right bottom, color-stop(0%,#9c1217), color-stop(100%,#c3161e));
 		background: url(../images/redLine.png) scroll repeat, -o-linear-gradient(top, #c3161e 100%, #9c1217 0%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3161e', endColorstr='#9c1217',GradientType=0 );
+		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+		margin: 0 0 2px 0; 
+		}
+                
+/*	--------------------------------------------------
+	Panels GOLD
+	-------------------------------------------------- */
+	div.panelGold {
+		padding: 20px 20px 2px 20px;
+		background: #c3161e;
+		background: url(../images/goldLine.png) scroll repeat, -moz-linear-gradient(top, #a08b60 100%, #c8AF70 0%);
+		background: url(../images/goldLine.png) scroll repeat, -webkit-gradient(linear, left top, right bottom, color-stop(0%,#a08b60), color-stop(100%,#c8AF70));
+		background: url(../images/goldLine.png) scroll repeat, -o-linear-gradient(top, #a08b60 100%, #c8AF70 0%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a08b60', endColorstr='#c8AF70',GradientType=0 );
 		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);

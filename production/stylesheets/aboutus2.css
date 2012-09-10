@@ -35,6 +35,8 @@
     border-color: #C3161E;
 }
 
+
+
 #directorsContainer .six:last-child {
     float: right;
 }
@@ -86,4 +88,16 @@ dl.tabs dd a {
 
 dl.tabs dd a.current {
     color: #D7BC77;
+}
+
+/*	--------------------------------------------------
+	Newsletter Styles
+	-------------------------------------------------- */
+
+#newsletterContainer h6 {
+    color: #6d6f71;
+}
+
+#newsletterContainer input {
+    margin: 20px 0 20px 0;
 }
