@@ -8,51 +8,92 @@
 
 
 
-.lightGrey {
-    color: #a7aaac;
-    background-color: #a7aaac;
-    border-color: #a7aaac;
+#splash_logo {
+	margin-top: 55px; 
+}
+
+#header_logo {
+	margin-left: 13px;
+}
+
+
+.lightGreyhr {
+    color: #231F20;
+    background-color: #231F20;
+    border-color: #231F20;
     border-width: 1px;
+    margin: 12px 0px 17px 0px;
 }
 
-.darkGrey {
-    color: #000;
-    background-color: #000;
-    border-color: #000;
+.blackhr {
+    color: #AF9968;
+    background-color: #AF9968;
+    border-color: #AF9968;
     border-width: 1px;
+       margin: 12px 0px 17px 0px;
 }
 
-.gold {
-    color: #9d8c61;
-    background-color: #9d8c61;
-    border-color: #9d8c61;
+.darkGreyhr {
+	color: #CACBCD;
+	background-color: #CACBCD;
+    border-color: #CACBCD;
+	border-width: 1px;
+    margin: 12px 0px 17px 0px;
+}
+
+.goldhr {
+    color: #231F20;
+    background-color: #231F20;
+    border-color: #231F20;
     border-width: 1px;
+       margin: 12px 0px 17px 0px;
 }
 
-.red {
-    color: #C3161E;
-    background-color: #C3161E;
-    border-color: #C3161E;
+.redhr {
+    color: #E7E7E8;
+    background-color: #E7E7E8;
+    border-color: #E7E7E8;
+    border-width: 1px;
+    margin: 12px 0px 17px 0px;
+
 }
 
 
 
+
+
+/*
 #directorsContainer .six:last-child {
     float: right;
 }
+*/
 
 #navContainer {
     height: 118px;
 }
 
+#navContainer a:hover {
+    color: #D7BC77;
+}
+
 #directorsContainer h6 {
     margin-bottom: 4px;
+    font-size: 10px; 
+    font-weight: bold;
+      /* text-shadow:1px 0px black; */
 }
 
 #directorsContainer p {
     font-size: 8px;
     font-weight: normal;
     line-height: 15px;
+    letter-spacing: 1px;
+
+}
+
+#taskForceContainer h6 {
+    margin-bottom: 4px;
+    font-size: 10px; 
 }
 
 #taskForceContainer ul {
@@ -68,21 +109,54 @@
           transition: height 0.3s ease-out;  /* Firefox 16+, Opera 12.50+ */
 }
 
-#footerContainer p {
-    font-size: 8px;
-    color: #000;
+#footerContainer {
+	padding-top: 8px;
+	margin-left: 20px;
+
+	
 }
 
-#footerContainer img {
-    width: 25px;
+#footerContainer span {
+    font-size: 10px;
+    color: #000;
+    padding-top: 0px;
+    font-weight: bold; 
 }
+
+#footerContainer_whatwedo {
+	padding-top: 8px;
+	margin-left: 20px;
+	position: relative;
+	left: -43px;
+}
+
+#footerContainer_whatwedo span{
+    font-size: 10px;
+    color: #000;
+    padding-top: 0px;
+    font-weight: bold; 
+}
+
+#facebook_logo {
+	float: right;
+	margin: 1px 0px 0px 0px;  
+	width: 15px;
+}
+
+#twitter_logo {
+	float: right;
+	width: 15px;
+	margin: 1px 7px 0px 0px;  
+}
+
+/* #footerContainer #facebook_logo { height: 15px; width: 15px; } */
 
 /*	--------------------------------------------------
 	Navigation
 	-------------------------------------------------- */
 
 dl.tabs dd a {
-    padding: 0 16px;
+    padding: 0 13px;
     line-height: 29px;
 }
 
@@ -90,12 +164,51 @@ dl.tabs dd a.current {
     color: #D7BC77;
 }
 
+
+@media only screen and (max-width: 1024px) {
+
+/*
+dl.tabs dd {
+    float: left;
+    position: relative;
+    
+    }
+*/
+
+#footerContainer {
+	padding-top: 8px;
+	margin-left: 20px;
+	margin-right: 20px;
+	left: 0px;
+	
+}
+
+#footerContainer_whatwedo {
+	padding-top: 8px;
+	margin-left: 20px;
+	margin-right: 20px;
+	left: 0px;
+	position: none;
+	
+}
+
+#navContainer {
+    float: left;
+    left: 0px; 
+}
+
+}
+	
+
+
 /*	--------------------------------------------------
 	Newsletter Styles
 	-------------------------------------------------- */
 
 #newsletterContainer h6 {
-    color: #6d6f71;
+    color: #CACBCD;
+    font-size: 10px;
+    font-weight: bold; 
 }
 
 #newsletterContainer input {

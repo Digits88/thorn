@@ -1,0 +1,47 @@
+SINGLE BG IMAGE
+
+body {
+		height: 100%;
+		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_notile1.png); background-repeat: no-repeat; 
+		
+		background: #e5e5e6;
+
+		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_notile1.png), -webkit-gradient(linear, left top, right bottom, from(#e5e5e6), to(#bdbfc1)); background-repeat: no-repeat; /* Saf4+, Chrome */
+		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_notile1.png), -webkit-linear-gradient(-45deg, #e5e5e6, #bdbfc1); background-repeat: no-repeat; /* Chrome 10+, Saf5.1+ */
+		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_notile1.png), -moz-linear-gradient(-45deg, #e5e5e6, #bdbfc1); background-repeat: no-repeat; /* FF3.6+ */
+		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_notile1.png), -ms-linear-gradient(-45deg, #e5e5e6, ##bdbfc1); background-repeat: no-repeat; /* IE10 */
+		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_notile1.png), -o-linear-gradient(-45deg, #e5e5e6, #bdbfc1); background-repeat: no-repeat; /* Opera 11.10+ */
+		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_notile1.png), linear-gradient(-45deg, #e5e5e6, ##bdbfc1); background-repeat: no-repeat; /* W3C */
+
+		font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-size: 13px; font-size: 1.3rem; line-height: 18px; color: #555; position: relative; -webkit-font-smoothing: antialiased;
+		
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+TILES	
+		
+body {
+		height: 100%;
+		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile2.png); 
+		
+		background: #e5e5e6;
+
+		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile2.png), -webkit-gradient(linear, left top, right bottom, from(#fff), to(#bdbfc1)); /* Saf4+, Chrome */
+		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile2.png), -webkit-linear-gradient(-45deg, #fff, #bdbfc1); /* Chrome 10+, Saf5.1+ */
+		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile2.png), -moz-linear-gradient(-45deg, #fff, #bdbfc1); /* FF3.6+ */
+		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile2.png), -ms-linear-gradient(-45deg, #fff, ##bdbfc1); /* IE10 */
+		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile2.png), -o-linear-gradient(-45deg, #fff, #bdbfc1); /* Opera 11.10+ */
+		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile2.png), linear-gradient(-45deg, #fff, ##bdbfc1); /* W3C */
+
+		font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-size: 13px; font-size: 1.3rem; line-height: 18px; color: #555; position: relative; -webkit-font-smoothing: antialiased;
+		
+		}
