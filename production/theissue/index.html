@@ -25,6 +25,7 @@
 	<link rel="stylesheet" type="text/css" href="../stylesheets/foundation.css" />
 	<link rel="stylesheet" type="text/css" href="../stylesheets/app.css" />
         <link rel="stylesheet" type="text/css" href="../stylesheets/aboutus2.css" />
+        <link rel="stylesheet" type="text/css" href="../stylesheets/animations.css" />
 
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" href="stylesheets/ie.css">
@@ -81,54 +82,62 @@
                 
                 <div class="twelve columns">
                     
-                    <!-- divider for left half -->
-                    <div id="leftContainer" class="five columns">
+                    <!-- left -->
+                    <div id="leftContainer" class="ten columns">
                         
-                        <!-- defenders container -->
-                        <div class="row" id="comingSoonContainer">
+                        <div class="row">
+                            
                             <div class="twelve columns">
-                                <div class="panelGold">
-                                    <hr class="goldhr" />
-                                    <h2>COMING SOON</h2>
+                                
+                                <div class="row">
+                                    
+                                    <div id="no1Container" class="three columns">
+                                        <div>
+                                            <hr class="goldhr" />
+                                            <h2>No. 1</h2>
+                                            <img src="../images/no1-100x27.png" alt="No. 1" />
+                                        </div>
+                                    </div><!-- / #no1Container -->
+
+                                    <div id="graphSelectorContainer" class="nine columns">
+                                        <div>
+                                            <hr class="goldhr" />
+
+                                            <ul>
+                                                <li><a href="#">NUMBER OF FILES SUBMITTED TO ,MNDSF BY LAW ENFORCEMENT</a></li>
+                                                <li><a href="#">NUMBER OF PHOTOS UPLOADED EVERY MONTH TO FLICKR</a></li>
+                                                <li><a href="#">NUMBER OF HOURS OF VIDEO UPLOADED EVERY MINUTE</a></li>
+                                                <li><a href="#">GLOBAL INTERNET TRAFFIC</a></li>
+                                                <li><a href="#">NUMBER OF REGISTERED FACEBOOK USERS</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- / #graphSelectorContainer -->
+                                    
+                                </div><!-- / top row -->
+                                
+                                <div class="row">
+                                    
+                                    <div class="twelve columns">
+                                        
+                                        
+                                        
+                                    </div>
+                                    
                                 </div>
-                            </div>
-                        </div>
+                                
+                            </div><!-- / twelve column container-->
+                        </div><!-- / row -->
                         
-                    </div><!-- / #leftContainer -->
+                    </div><!-- / left -->
                     
-                    <!-- divider for the right half -->
-                    <div id="rightContainer" class="five columns">
-                        
-                        <!-- description container -->
-                        <div class="row" id="ctaContainer">
-                            <div class="twelve columns">
-                                <div class="panelBlack">
-                                    <hr class="blackhr" />
-                                    <p class="light">In the coming months, we will announce major technology initiatives and create opportunities for the public to get involved in the fight against child sexual exploitation.</p>
-                                    <p class="light">We'll post updates here, on Facebook and on Twitter. Please join the Digital Defenders of Children as we advance the use of technology innovation to combat child sexual exploitation.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- task force members container -->
-                        <div class="row" id="newsletterContainer">
-                            <div class="nine columns">
-                                <div class="panelDarkgrey">
-                                    <hr class="darkGreyhr" />
-                                    <h6 class="light">GET UPDATES VIA EMAIL</h6>
-                                    <input type="text" name="email" size="35" value="yourname@email.com" />
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div><!-- / #rightContainer -->
                     
+                    <!-- footer -->
                     <div id="footerContainer" class="two columns">
                         <div class="twelve colums">
 	                        <hr class="goldhr" />
                             <p><span>FOLLOW US</span> <a href=""><a href=""><img src="../images/btn_fb.png" alt="Facebook Logo" id="facebook_logo" /></a><img src="../images/btn_twitter.png" alt="Twitter Logo" id="twitter_logo" /></a></p>  
                         </div>        
-                    </div>
+                    </div><!-- / footer -->
                     
                 </div><!-- / twelve columns container -->
                 
@@ -144,21 +153,9 @@
 
 	<!-- Included JS Files -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="javascripts/jquery.min.js">\x3C/script>')</script>
-	<script src="javascripts/foundation.js"></script>
-	<script src="javascripts/app.js"></script>
-        <script>
-            (function($) {
-                $(window).load(function() {
-                    // set some events
-                    $('#taskForceContainer .panelBlack').hover(function(evt) {
-                        console.log('hovered')
-                        $('#taskForceContainer ul').css({'height': '105px'});
-                    }, function(evt) {
-                        $('#taskForceContainer ul').css({'height': '4px'});
-                    });
-                });
-            })(jQuery);
-        </script>
+        <script>window.jQuery || document.write('<script src="../javascripts/jquery.min.js">\x3C/script>')</script>
+	<script src="../javascripts/foundation.js"></script>
+	<script src="../javascripts/app.js"></script>
+        <script src="../javascripts/thorn.js"></script>
 </body>
 </html>

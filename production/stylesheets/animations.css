@@ -1,0 +1,437 @@
+@media only screen and (min-width: 768px) {
+    
+    /*	--------------------------------------------------
+            About Us Animation 
+            -------------------------------------------------- */
+    
+    #directorsContainer {
+        opacity: 0;
+
+        transform: translateZ( 0 );
+        -moz-transform: translateZ( 0 );
+        -webkit-transform: translateZ( 0 );
+        -o-transform: translateZ( 0 );
+
+        animation: directorAnimation 0.7s linear 0.2s forwards;
+        -moz-animation: directorAnimation 0.7s linear 0.2s forwards; /* Firefox */
+        -webkit-animation: directorAnimation 0.7s linear 0.2s forwards; /* Safari and Chrome */
+        -o-animation: directorAnimation 0.7s linear 0.2s forwards; /* Opera */
+    }
+
+        @keyframes directorAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-moz-keyframes directorAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-webkit-keyframes directorAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-o-keyframes directorAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+
+        }
+
+
+    #defendersContainer {
+        opacity: 0;
+
+        transform: translateZ( 0 );
+        -moz-transform: translateZ( 0 );
+        -webkit-transform: translateZ( 0 );
+        -o-transform: translateZ( 0 );
+
+        animation: defendersAnimation 0.5s linear 0.3s forwards;
+        -moz-animation: defendersAnimation 0.5s linear 0.3s forwards; /* Firefox */
+        -webkit-animation: defendersAnimation 0.5s linear 0.3s forwards; /* Safari and Chrome */
+        -o-animation: defendersAnimation 0.5s linear 0.3s forwards; /* Opera */
+    }
+
+        @keyframes defendersAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-moz-keyframes defendersAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-webkit-keyframes defendersAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-o-keyframes defendersAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+
+        }
+
+    #descriptionContainer {
+        opacity: 0;
+
+        transform: translateZ( 0 );
+        -moz-transform: translateZ( 0 );
+        -webkit-transform: translateZ( 0 );
+        -o-transform: translateZ( 0 );
+
+        animation: descriptionAnimation 0.8s linear 0.4s forwards;
+        -moz-animation: descriptionAnimation 0.8s linear 0.4s forwards; /* Firefox */
+        -webkit-animation: descriptionAnimation 0.8s linear 0.4s forwards; /* Safari and Chrome */
+        -o-animation: descriptionAnimation 0.8s linear 0.4s forwards; /* Opera */
+    }
+
+        @keyframes descriptionAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-moz-keyframes descriptionAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-webkit-keyframes descriptionAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-o-keyframes descriptionAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+
+        }
+
+    #taskForceContainer {
+        opacity: 0;
+
+        transform: translateZ( 0 );
+        -moz-transform: translateZ( 0 );
+        -webkit-transform: translateZ( 0 );
+        -o-transform: translateZ( 0 );
+
+        animation: taskForceAnimation 0.3s linear 0.7s forwards;
+        -moz-animation: taskForceAnimation 0.3s linear 0.7s forwards; /* Firefox */
+        -webkit-animation: taskForceAnimation 0.3s linear 0.7s forwards; /* Safari and Chrome */
+        -o-animation: taskForceAnimation 0.3s linear 0.7s forwards; /* Opera */
+    }
+
+        @keyframes taskForceAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-moz-keyframes taskForceAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-webkit-keyframes taskForceAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-o-keyframes taskForceAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+
+        }
+
+    /*	--------------------------------------------------
+            Navigation Animation 
+            -------------------------------------------------- */
+
+/*    #navContainer {
+        margin-top: -118px;
+
+        transform: translateZ( 0 );
+        -moz-transform: translateZ( 0 );
+        -webkit-transform: translateZ( 0 );
+        -o-transform: translateZ( 0 );
+
+        animation: navAnimation 0.6s ease-out 0.2s forwards;
+        -moz-animation: navAnimation 0.6s ease-out 0.2s forwards;  Firefox 
+        -webkit-animation: navAnimation 0.6s ease-out 0.2s forwards;  Safari and Chrome 
+        -o-animation: navAnimation 0.6s ease-out 0.2s forwards;  Opera 
+    }
+
+        @keyframes navAnimation {
+            0%   {position: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-moz-keyframes navAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-webkit-keyframes navAnimation {
+            0%   {margin-top: -118px;}
+            100% {margin-top: 0;}
+        }
+
+        @-o-keyframes navAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+
+        }*/
+        
+    /*	--------------------------------------------------
+            What We Do Animation 
+            -------------------------------------------------- */
+    
+    #researchContainer .eight {
+        opacity: 0;
+
+        transform: translateZ( 0 );
+        -moz-transform: translateZ( 0 );
+        -webkit-transform: translateZ( 0 );
+        -o-transform: translateZ( 0 );
+
+        animation: researchAnimation 0.3s linear 0.7s forwards;
+        -moz-animation: researchAnimation 0.3s linear 0.7s forwards; /* Firefox */
+        -webkit-animation: researchAnimation 0.3s linear 0.7s forwards; /* Safari and Chrome */
+        -o-animation: researchAnimation 0.3s linear 0.7s forwards; /* Opera */
+    }
+    
+        @keyframes researchAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-moz-keyframes researchAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-webkit-keyframes researchAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-o-keyframes researchAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+
+        }
+        
+        
+    #deterranceContainer .eight {
+        opacity: 0;
+
+        transform: translateZ( 0 );
+        -moz-transform: translateZ( 0 );
+        -webkit-transform: translateZ( 0 );
+        -o-transform: translateZ( 0 );
+
+        animation: deterranceAnimation 0.5s linear 0.3s forwards;
+        -moz-animation: deterranceAnimation 0.5s linear 0.3s forwards; /* Firefox */
+        -webkit-animation: deterranceAnimation 0.5s linear 0.3s forwards; /* Safari and Chrome */
+        -o-animation: deterranceAnimation 0.5s linear 0.3s forwards; /* Opera */
+    }
+    
+        @keyframes deterranceAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-moz-keyframes deterranceAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-webkit-keyframes deterranceAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-o-keyframes deterranceAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+
+        }
+        
+     #technologicalContainer .eight {
+        opacity: 0;
+
+        transform: translateZ( 0 );
+        -moz-transform: translateZ( 0 );
+        -webkit-transform: translateZ( 0 );
+        -o-transform: translateZ( 0 );
+
+        animation: technologicalAnimation 0.4s linear 0.5s forwards;
+        -moz-animation: technologicalAnimation 0.4s linear 0.5s forwards; /* Firefox */
+        -webkit-animation: technologicalAnimation 0.4s linear 0.5s forwards; /* Safari and Chrome */
+        -o-animation: technologicalAnimation 0.4s linear 0.5s forwards; /* Opera */
+    }
+    
+        @keyframes technologicalAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-moz-keyframes technologicalAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-webkit-keyframes technologicalAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-o-keyframes technologicalAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+
+        }
+        
+     #industryContainer .eight {
+        opacity: 0;
+
+        transform: translateZ( 0 );
+        -moz-transform: translateZ( 0 );
+        -webkit-transform: translateZ( 0 );
+        -o-transform: translateZ( 0 );
+
+        animation: industryAnimation 0.7s linear 0.2s forwards;
+        -moz-animation: industryAnimation 0.7s linear 0.2s forwards; /* Firefox */
+        -webkit-animation: industryAnimation 0.7s linear 0.2s forwards; /* Safari and Chrome */
+        -o-animation: industryAnimation 0.7s linear 0.2s forwards; /* Opera */
+    }
+    
+        @keyframes industryAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-moz-keyframes industryAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-webkit-keyframes industryAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-o-keyframes industryAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+
+        }
+        
+    /*	--------------------------------------------------
+            Get Involved Animations
+            -------------------------------------------------- */
+    
+    #comingSoonContainer {
+        opacity: 0;
+
+        transform: translateZ( 0 );
+        -moz-transform: translateZ( 0 );
+        -webkit-transform: translateZ( 0 );
+        -o-transform: translateZ( 0 );
+
+        animation: comingSoonAnimation 0.7s linear 0.2s forwards;
+        -moz-animation: comingSoonAnimation 0.7s linear 0.2s forwards; /* Firefox */
+        -webkit-animation: comingSoonAnimation 0.7s linear 0.2s forwards; /* Safari and Chrome */
+        -o-animation: comingSoonAnimation 0.7s linear 0.2s forwards; /* Opera */
+    }
+    
+        @keyframes comingSoonAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-moz-keyframes comingSoonAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-webkit-keyframes comingSoonAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-o-keyframes comingSoonAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        
+    #ctaContainer {
+        opacity: 0;
+
+        transform: translateZ( 0 );
+        -moz-transform: translateZ( 0 );
+        -webkit-transform: translateZ( 0 );
+        -o-transform: translateZ( 0 );
+
+        animation: ctaAnimation 0.4s linear 0.7s forwards;
+        -moz-animation: ctaAnimation 0.4s linear 0.7s forwards; /* Firefox */
+        -webkit-animation: ctaAnimation 0.4s linear 0.7s forwards; /* Safari and Chrome */
+        -o-animation: ctaAnimation 0.4s linear 0.7s forwards; /* Opera */
+    }
+    
+        @keyframes ctaAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-moz-keyframes ctaAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-webkit-keyframes ctaAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-o-keyframes ctaAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        
+    #newsletterContainer {
+        opacity: 0;
+
+        transform: translateZ( 0 );
+        -moz-transform: translateZ( 0 );
+        -webkit-transform: translateZ( 0 );
+        -o-transform: translateZ( 0 );
+
+        animation: newsletterAnimation 0.3s linear 0.4s forwards;
+        -moz-animation: newsletterAnimation 0.3s linear 0.4s forwards; /* Firefox */
+        -webkit-animation: newsletterAnimation 0.3s linear 0.4s forwards; /* Safari and Chrome */
+        -o-animation: newsletterAnimation 0.3s linear 0.4s forwards; /* Opera */
+    }
+    
+        @keyframes newsletterAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-moz-keyframes newsletterAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-webkit-keyframes newsletterAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-o-keyframes newsletterAnimation {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+}

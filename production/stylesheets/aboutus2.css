@@ -6,7 +6,8 @@
         ADDITIONAL STYLES FOR THE ABOUTUS2 PAGE.
 */
 
-
+/* stop overflow scrollbar jump */
+html { overflow-y: scroll; }
 
 #splash_logo {
 	margin-top: 55px; 
@@ -72,6 +73,10 @@
     height: 118px;
 }
 
+#navContainer.stacked {
+    margin-bottom: 5px;
+}
+
 #navContainer a:hover {
     color: #D7BC77;
 }
@@ -96,18 +101,18 @@
     font-size: 10px; 
 }
 
-#taskForceContainer ul {
+/*#taskForceContainer ul {
     color: #9d8c61;
     margin-top: 14px;
     font-size: 10px;
     height: 4px;
     overflow: hidden;
     
-    -webkit-transition: height 0.3s ease-out;  /* Safari 3.2+, Chrome */
-     -moz-transition: height 0.3s ease-out;  /* Firefox 4-15 */
-       -o-transition: height 0.3s ease-out;  /* Opera 10.5–12.00 */
-          transition: height 0.3s ease-out;  /* Firefox 16+, Opera 12.50+ */
-}
+    -webkit-transition: height 0.3s ease-out;   Safari 3.2+, Chrome 
+     -moz-transition: height 0.3s ease-out;   Firefox 4-15 
+       -o-transition: height 0.3s ease-out;   Opera 10.5–12.00 
+          transition: height 0.3s ease-out;   Firefox 16+, Opera 12.50+ 
+}*/
 
 #footerContainer {
 	padding-top: 8px;
@@ -198,8 +203,6 @@ dl.tabs dd {
 }
 
 }
-	
-
 
 /*	--------------------------------------------------
 	Newsletter Styles
@@ -213,4 +216,128 @@ dl.tabs dd {
 
 #newsletterContainer input {
     margin: 20px 0 20px 0;
+}
+
+/*	--------------------------------------------------
+	Task Force Styles
+	-------------------------------------------------- */
+
+/*#taskForceContainer ul.expanded {
+    height: 105px;
+}
+
+#taskForceContainer ul.minimized {
+    height: 3px;
+}*/
+
+#taskForceContainer {
+    overflow: hidden;
+}
+
+#taskForceContainer .panelBlack {
+    -webkit-transition: height 0.3s ease-out;  /* Safari 3.2+, Chrome */
+     -moz-transition: height 0.3s ease-out;  /* Firefox 4-15 */
+       -o-transition: height 0.3s ease-out;  /* Opera 10.5–12.00 */
+          transition: height 0.3s ease-out;  /* Firefox 16+, Opera 12.50+ */
+}
+
+#taskForceContainer .expanded {
+    height: 493px;
+    overflow: hidden;
+}
+
+#taskForceContainer .minimized {
+    height: 70px;
+    overlflow: hidden;
+}
+
+#taskForceContainer img {
+    margin-top: 28px;
+}
+
+
+/*	--------------------------------------------------
+	Defenders Container Styles
+	-------------------------------------------------- */
+
+#defendersContainer h2 {
+    display: block;
+    position: absolute;
+    left: -9999px;
+}
+
+#defendersContainer img {
+    margin-bottom: 18px;
+    margin-top: 4px;
+}
+
+/*	--------------------------------------------------
+	Coming Soon Container Styles
+	-------------------------------------------------- */
+
+#comingSoonContainer h2 {
+    display: block;
+    position: absolute;
+    left: -9999px;
+}
+
+#comingSoonContainer img {
+    margin-bottom: 18px;
+    margin-top: 4px;
+}
+
+/*	--------------------------------------------------
+	About Us Page Styles
+	-------------------------------------------------- */
+
+#nitPickyT {
+    display: inline-block;
+    margin-left: -3px;
+}
+
+/*	--------------------------------------------------
+	No. 1 Styles
+	-------------------------------------------------- */
+#no1Container {
+    padding-top: 8px;
+}
+
+#no1Container h2 {
+    display: block;
+    position: absolute;
+    left: -9999px;
+}
+
+#no1Container img {
+    margin-bottom: 18px;
+    margin-top: 4px;
+}
+
+/*	--------------------------------------------------
+	Graph Selector Styles
+	-------------------------------------------------- */
+
+#graphSelectorContainer {
+    float: right;
+    padding-top: 8px;
+}
+
+#graphSelectorContainer ul li {
+    margin: 6px 0 5px 0;;
+}
+
+#graphSelectorContainer a {
+    color: black;
+    font-size: 8px;
+    line-height: 14px;
+    
+    -webkit-transition: font-size 0.1s linear;  /* Safari 3.2+, Chrome */
+     -moz-transition: font-size 0.1s linear;  /* Firefox 4-15 */
+       -o-transition: font-size 0.1s linear;  /* Opera 10.5–12.00 */
+          transition: font-size 0.1s linear;  /* Firefox 16+, Opera 12.50+ */
+}
+
+#graphSelectorContainer a:hover, #graphSelectorContainer a:active, #graphSelectorContainer a:enabled {
+    color: #c3151e;
+    font-size: 13px;
 }

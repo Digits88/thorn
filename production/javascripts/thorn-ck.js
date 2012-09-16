@@ -1,0 +1,4 @@
+/* 
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */(function(e){e(window).load(function(){var t=0,n=!1;e("#taskForceContainer .panelBlack").on("mouseover touchstart",function(){n&&s(!0)});e("#taskForceContainer .panelBlack").on("mouseout touchend",function(){n&&s()});e(window).on("resize",function(){i()});var r=function(){i()},i=function(){o();if(parseInt(t)<=450){e("#navContainer dd").each(function(){e(this).addClass("twelve")});e("#navContainer").addClass("stacked");s(!0);n=!1}else{e("#navContainer dd").each(function(){e(this).removeClass("twelve")});e("#navContainer").removeClass("stacked");s();n=!0}},s=function(t){t||!1;t?e("#taskForceContainer .panelBlack").removeClass("minimized").addClass("expanded"):e("#taskForceContainer .panelBlack").removeClass("expanded").addClass("minimized")},o=function(){t=e(window).width()};r()})})(jQuery);

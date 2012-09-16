@@ -816,7 +816,11 @@
 		}
 	
 	#research hr, #deterrance hr, #technological hr, #industry hr {
-		margin: 0px 4px 0px 15px;
+		/*
+                    altered 9.15.12 from:
+                    margin: 0px 4px 0px 15px;
+                */
+                margin: 19px 4px 19px 15px;
 		width: auto;
 		}
 		
