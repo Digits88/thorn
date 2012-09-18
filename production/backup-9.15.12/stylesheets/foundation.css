@@ -74,24 +74,9 @@
 	sub {vertical-align: sub;}
 	sup {vertical-align: super;}
 	
-	html {
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png); 
-		
-		background: #e5e5e6;
-
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -webkit-gradient(linear, left top, right bottom, from(#fff), to(#bdbfc1)); /* Saf4+, Chrome */
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -webkit-linear-gradient(-45deg, #fff, #bdbfc1); /* Chrome 10+, Saf5.1+ */
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -moz-linear-gradient(-45deg, #fff, #bdbfc1); /* FF3.6+ */
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -ms-linear-gradient(-45deg, #fff, ##bdbfc1); /* IE10 */
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -o-linear-gradient(-45deg, #fff, #bdbfc1); /* Opera 11.10+ */
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), linear-gradient(-45deg, #fff, ##bdbfc1); /* W3C */
-		min-height: 100%;
-	}
-	
 	body {
-		min-height: 100%;
-
-	`	background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png); 
+		height: 100%;
+		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png); 
 		
 		background: #e5e5e6;
 
@@ -831,11 +816,7 @@
 		}
 	
 	#research hr, #deterrance hr, #technological hr, #industry hr {
-		/*
-                    altered 9.15.12 from:
-                    margin: 0px 4px 0px 15px;
-                */
-                margin: 19px 4px 19px 15px;
+		margin: 0px 4px 0px 15px;
 		width: auto;
 		}
 		

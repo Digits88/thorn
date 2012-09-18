@@ -11,7 +11,6 @@
 :: Misc
 */
 
-@import url(http://fonts.googleapis.com/css?family=Varela);
 
 /*	--------------------------------------------------
 	:: Global Reset & Standards
@@ -74,42 +73,7 @@
 	sub {vertical-align: sub;}
 	sup {vertical-align: super;}
 	
-	html {
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png); 
-		
-		background: #e5e5e6;
-
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -webkit-gradient(linear, left top, right bottom, from(#fff), to(#bdbfc1)); /* Saf4+, Chrome */
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -webkit-linear-gradient(-45deg, #fff, #bdbfc1); /* Chrome 10+, Saf5.1+ */
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -moz-linear-gradient(-45deg, #fff, #bdbfc1); /* FF3.6+ */
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -ms-linear-gradient(-45deg, #fff, ##bdbfc1); /* IE10 */
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -o-linear-gradient(-45deg, #fff, #bdbfc1); /* Opera 11.10+ */
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), linear-gradient(-45deg, #fff, ##bdbfc1); /* W3C */
-		min-height: 100%;
-	}
-	
 	body {
-		min-height: 100%;
-
-	`	background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png); 
-		
-		background: #e5e5e6;
-
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -webkit-gradient(linear, left top, right bottom, from(#fff), to(#bdbfc1)); /* Saf4+, Chrome */
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -webkit-linear-gradient(-45deg, #fff, #bdbfc1); /* Chrome 10+, Saf5.1+ */
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -moz-linear-gradient(-45deg, #fff, #bdbfc1); /* FF3.6+ */
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -ms-linear-gradient(-45deg, #fff, ##bdbfc1); /* IE10 */
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -o-linear-gradient(-45deg, #fff, #bdbfc1); /* Opera 11.10+ */
-		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), linear-gradient(-45deg, #fff, ##bdbfc1); /* W3C */
-                
-                /*font-family: 'Varela', sans-serif;*/
-
-		font-family: 'Varela', "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-		font-size: 13px; font-size: 1.3rem; line-height: 18px; color: #555; position: relative; -webkit-font-smoothing: antialiased;
-		
-		}
-		
-	#indexPage{
 		height: 100%;
 		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile_index1.png); 
 		
@@ -122,12 +86,12 @@
 		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile_index1.png), -o-linear-gradient(-45deg, #464648, #0a0707); /* Opera 11.10+ */
 		background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile_index1.png), linear-gradient(-45deg, #464648, #0a0707); /* W3C */
 
-		font-family: 'Varela', "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 		font-size: 13px; font-size: 1.3rem; line-height: 18px; color: #555; position: relative; -webkit-font-smoothing: antialiased;
 		
 		}
 	
-#internalDirectorsContainer { float: right; }
+
 
 /*	--------------------------------------------------
 	:: Links
@@ -136,8 +100,6 @@
 	a:hover { color: #11639d; }
 	a:focus { color: #cc4714; outline: none; }
 	p a, p a:visited { line-height: inherit; }
-	
-	#footerContainer #facebook_logo { height: 15px; width: 15px; }
 	
 
 /*	--------------------------------------------------
@@ -204,67 +166,35 @@
 	h3 { font-size: 28px; font-size: 2.8rem; margin-bottom: 9px; }
 	h4 { font-size: 21px; font-size: 2.1rem; margin-bottom: 3px; }
 	h5 { font-size: 18px; font-size: 1.8rem; font-weight: normal; margin-bottom: 3px;  }
-	/*h6 { font-size: 15px; font-size: 1.5rem; font-weight: normal; }*/
-        h6 { font-size: 8px; font-weight: normal; }
+	h6 { font-size: 15px; font-size: 1.5rem; font-weight: normal; }
 	
 	.panelDarkgrey h2 {
-		color: #CACBCD;
-	}
-	
-	.panelDarkgrey h6 {
-		color: #CACBCD;
-	}
-	
-	.panelDarkgrey p {
-		color: #CACBCD;
+		color: #a7aaac;
 	}
 	
 	.panelLightgrey h6 {
-		color: #231F20;
+		color: #000;
 	}
 	
 	.panelLightgrey p {
-		color: #231F20;
-	}
-	
-	.panelGold h6 {
-		color: #231F20;
-	}
-	
-	.panelGold p {
-		color: #231F20;
+		color: #6d6f71;
 	}
 	
 	.panelBlack h6 {
 		color: #d7bc77;
 	}
 	
-	.panelBlack span {
-		float: right;
-	} 
-	
-	
-	                               	
 	.panelBlack p {
-		color: #AF9968;
+		color: #f0d89e;
 	}
-        
-    .panelBlack p.light {
-        color: #AF9968;
-    }
-        
-/*        .panelRed {
-            
-                
-        }*/
 
 	
 	.panelRed h2 {
-		color: #E7E7E8;
+		color: #050000;
 	}
 	
 	.panelRed p {
-		color: #E7E7E8;
+		color: #050000;
 	}
 
 	.subheader { color: #777; font-weight: 300; margin-bottom: 24px; }
@@ -274,7 +204,7 @@
 	p.lead { font-size: 18px; font-size: 1.8rem; line-height: 1.5;  }
 	
 	.tabs dl, dd {
-		font-size: 9.5px;
+		font-size: 10px;
 		font-weight: bold;
 	}
 	.tabs dd a.active {
@@ -336,7 +266,7 @@
 
 	.container { padding: 0 20px; }
 	
-	.row { width: 100%; max-width: 1024px; min-width: 727px; margin: 0 auto; }
+	.row { width: 100%; max-width: 980px; min-width: 727px; margin: 0 auto; }
 	/* To fix the grid into a certain size, set max-width to width */
 	.row .row { min-width: 0; }
 	
@@ -355,7 +285,7 @@
 	.row .eight 	{ width: 65.2%; }
 	.row .nine 		{ width: 73.9%; }
 	.row .ten 		{ width: 82.6%; }
-	.row .eleven 	{ width: 91.3%; }
+	.row .eleven 	{ width: 91.3%; top:21%; }
 	.row .twelve 	{ width: 100%; }
 	
 	.row .offset-by-one 	{ margin-left: 13.1%;  }
@@ -626,12 +556,11 @@
 /*    --------------------------------------------------
     Tabs
     -------------------------------------------------- */
-	dl.tabs { display: block; margin: 0 0 20px 0; padding: 0; height: 30px; border-bottom: solid 0px #333132; float: right; }
+	dl.tabs { display: block; margin: 0 0 20px 0; padding: 0; height: 30px; border-bottom: solid 1px #333132; float: right; }
     dl.tabs dt { display: block; width: auto; height: 30px; padding: 0 9px 0 20px; line-height: 30px; float: left; color: #6d6f71; font-size: 10px; text-transform: uppercase; cursor: default; }
     dl.tabs dt:first-child { padding: 0 9px 0 0; }
     dl.tabs dd { display: block; width: auto; height: 30px; padding: 0; float: left; }
     dl.tabs dd a { display: block; width: auto; height: 29px; padding: 0 9px; line-height: 30px; border: solid 1px #333132; margin: 0 -1px 0 0; color: #6d6f71; background: #333132; }
-    dl.tabs dd a:hover { color: #F0D89E; }
     dl.tabs dd a.active { background: #333132; border-width: 1px 1px 0 1px; height: 30px; }
 
 		.nice.tabs { border-bottom: solid 1px #eee; margin: 0 0 30px 0; height:43px; }
@@ -699,7 +628,7 @@
 	Panels
 	-------------------------------------------------- */
 	div.panel {
-		padding: 8px 20px 2px 20px;
+		padding: 20px 20px 2px 20px;
 		background: #efefef;
 		background: -moz-linear-gradient(top, #FFFFFF 0%, #F4F4F4 100%);
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F4F4F4));
@@ -715,12 +644,12 @@
 	Panels DARK GREY
 	-------------------------------------------------- */
 	div.panelDarkgrey {
-		padding: 8px 20px 2px 20px;
-		background: #5e5f62;
-		background: url(../images/bg_tiles2_444444.png) scroll repeat, -moz-linear-gradient(top, #5e5f62 100%, #444444 0%);
-		background: url(../images/bg_tiles2_444444.png) scroll repeat, -webkit-gradient(linear, left top, right bottom, color-stop(0%,#5e5f62), color-stop(100%,#444444));
-		background: url(../images/bg_tiles2_444444.png) scroll repeat, -o-linear-gradient(top, 5e5f62 100%, #5e5f62 0%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e5f62', endColorstr='#444444',GradientType=0 );
+		padding: 20px 20px 2px 20px;
+		background: #333132;
+		background: -moz-linear-gradient(top, #333132 100%, #5e5f62 0%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333132), color-stop(100%,#5e5f62));
+		background: -o-linear-gradient(top, #333132 100%, #5e5f62 0%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333132', endColorstr='#5e5f62',GradientType=0 );
 		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
@@ -731,12 +660,12 @@
 	Panels LIGHT GREY
 	-------------------------------------------------- */
 	div.panelLightgrey {
-		padding: 8px 20px 2px 20px;
+		padding: 20px 20px 2px 20px;
 		background: #a8aaad;
-		background: url(../images/bg_tiles3_848484.png) scroll repeat, -moz-linear-gradient(top, #a8aaad 100%, #848484 0%);
-		background: url(../images/bg_tiles3_848484.png) scroll repeat, -webkit-gradient(linear, left top, right bottom, color-stop(0%,#a8aaad), color-stop(100%,#848484));
-		background: url(../images/bg_tiles3_848484.png) scroll repeat, -o-linear-gradient(top, #a8aaad 100%, #848484 0%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8aaad', endColorstr='#848484',GradientType=0 );
+		background: -moz-linear-gradient(top, #a8aaad 100%, #cacbcd 0%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a8aaad), color-stop(100%,#cacbcd));
+		background: -o-linear-gradient(top, #a8aaad 100%, #cacbcd 0%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8aaad', endColorstr='#cacbcd',GradientType=0 );
 		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
@@ -748,12 +677,12 @@
 	Panels Black
 	-------------------------------------------------- */
 	div.panelBlack {
-		padding: 8px 20px 2px 20px;
-		background: #3f3e40;
-		background: url(../images/bg_tiles1_231f30.png) scroll repeat, -moz-linear-gradient(top, #3f3e40 100%, #231f20 0%);
-		background: url(../images/bg_tiles1_231f30.png) scroll repeat, -webkit-gradient(linear, left top, right bottom, color-stop(0%,#3f3e40), color-stop(100%,#231f20));
-		background: url(../images/bg_tiles1_231f30.png) scroll repeat, -o-linear-gradient(top, #3f3e40 100%, #231f20 0%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3e40', endColorstr='#231f20',GradientType=0 );
+		padding: 20px 20px 2px 20px;
+		background: #231f20;
+		background: -moz-linear-gradient(top, #231f20 100%, #3f3e40 0%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#231f20), color-stop(100%,#3f3e40));
+		background: -o-linear-gradient(top, #231f20 100%, #3f3e40 0%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#231f20', endColorstr='#3f3e40',GradientType=0 );
 		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
@@ -766,90 +695,20 @@
 	Panels RED
 	-------------------------------------------------- */
 	div.panelRed {
-		padding: 8px 20px 2px 20px;
-		background: #9c1217;
-		background: url(../images/bg_tiles4_9C1217.png) scroll repeat, -moz-linear-gradient(top, #9c1217 100%, #c3161e 0%);
-		background: url(../images/bg_tiles4_9C1217.png) scroll repeat, -webkit-gradient(linear, left top, right bottom, color-stop(0%,#c3161e), color-stop(100%,#9c1217));
-		background: url(../images/bg_tiles4_9C1217.png) scroll repeat, -o-linear-gradient(top, #9c1217 100%, #c3161e 0%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c1217', endColorstr='#c3161e',GradientType=0 );
-		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-		margin: 0 0 2px 0; 
-		}
-                
-/*	--------------------------------------------------
-	Panels GOLD
-	-------------------------------------------------- */
-	div.panelGold {
-		padding: 8px 20px 2px 15px;
+		padding: 20px 20px 2px 20px;
 		background: #c3161e;
-		background: url(../images/bg_tiles5_937D57.png) scroll repeat, -moz-linear-gradient(top, #a08b60 100%, #c8AF70 0%);
-		background: url(../images/bg_tiles5_937D57.png) scroll repeat, -webkit-gradient(linear, left top, right bottom, color-stop(0%,#a08b60), color-stop(100%,#c8AF70));
-		background: url(../images/bg_tiles5_937D57.png) scroll repeat, -o-linear-gradient(top, #a08b60 100%, #c8AF70 0%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a08b60', endColorstr='#c8AF70',GradientType=0 );
+		background: -moz-linear-gradient(top, #c3161e 100%, #9c1217 0%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9c1217), color-stop(100%,#c3161e));
+		background: -o-linear-gradient(top, #c3161e 100%, #9c1217 0%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3161e', endColorstr='#9c1217',GradientType=0 );
 		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-		margin: 0 0 2px 0; 
-		}
-		
-		
-/*	--------------------------------------------------
-	TITLE DIVS
-	-------------------------------------------------- */
-	#research_development {
-		width: 100px;
-	}
-	
-	
-	
-	#research, #deterrance, #technological, #industry {
-		padding: 8px 59px 2px 0px;
-		margin: 0px 0px 0px 8px; 
-		}
-		
-	#research hr, #deterrance hr, #technological hr, #industry hr {
-		width: 181px;
-		margin-left: 13px; 
-		}	
-		
-	#research h5, #deterrance h5, #technological h5, #industry h5 {
-		font-weight: bold;
-		margin-left: 13px; 
-		/* text-shadow: 0px 0px -1px black; */
-		}			
-	
-	
-	
-	
-	@media only screen and (max-width: 1024px) {	
-	
-	#research, #deterrance, #technological, #industry {
-		padding: 0px 15px 10px 0px;
-		width: 200px; 
+		margin: 0 0 2px 0;
 		}
 	
-	#research hr, #deterrance hr, #technological hr, #industry hr {
-		/*
-                    altered 9.15.12 from:
-                    margin: 0px 4px 0px 15px;
-                */
-                margin: 19px 4px 19px 15px;
-		width: auto;
-		}
-		
 	
-	#research h5, #deterrance h5, #technological h5, #industry h5 {
-		margin-left: 15px;
-		}
-	}
 	
-/*
-	#whatwedobody {
-		position: relative;
-	}
-*/
 	
 /*	--------------------------------------------------
    	Nav Bar with Dropdowns
@@ -1442,7 +1301,7 @@ ul.orbit-bullets li.active.has-thumb {
 			.reveal-modal.xlarge { width: 60%; top: 60px; left: 15%; margin-left: 0; padding: 20px; height: auto; }
 		}
 		
-		@media handheld, only screen and (max-width: 1024px) {
+		@media handheld, only screen and (max-width: 767px) {
 			.reveal-modal-bg { position: absolute; }
 			
 			.reveal-modal,
@@ -1473,12 +1332,12 @@ ul.orbit-bullets li.active.has-thumb {
 	:: Typography
 	-------------------------------------------------- */
 	
-	@media handheld, only screen and (max-width: 1024px) {
+	@media handheld, only screen and (max-width: 767px) {
 		h1 { font-size: 32px; font-size: 3.2rem; line-height: 1.3; }
 		h2 { font-size: 28px; font-size: 2.8rem; line-height: 1.3; }
 		h3 { font-size: 21px; font-size: 2.1rem; line-height: 1.3; }
 		h4 { font-size: 18px; font-size: 1.8rem; line-height: 1.2; }
-		h5 { font-size: 17px; font-size: 1.7rem; line-height: 1.2; }
+		h5 { font-size: 16px; font-size: 1.6rem; line-height: 1.2; }
 		h6 { font-size: 15px; font-size: 1.5rem; line-height: 1.2; }
 		body, p {  font-size: 15px; font-size: 1.5rem; line-height: 1.4; }
 	}
@@ -1489,7 +1348,7 @@ ul.orbit-bullets li.active.has-thumb {
 	-------------------------------------------------- */
 	
 	/* Mobile */
-	@media only screen and (max-width: 1024px) {		
+	@media only screen and (max-width: 767px) {		
 		body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
 		.container { min-width: 0; margin-left: 0; margin-right: 0; }
 		.row { width: 100%; min-width: 0; margin-left: 0; margin-right: 0; }
@@ -1524,8 +1383,6 @@ ul.orbit-bullets li.active.has-thumb {
 		.row .pull-two-phone { right: 52.2% }
 		.row .pull-three-phone { right: 78.3%; }
 		
-		#internalDirectorsContainer { float: none; }
-		
 		
 	}
 	
@@ -1534,12 +1391,10 @@ ul.orbit-bullets li.active.has-thumb {
 	:: Block Grids
 	-------------------------------------------------- */	
 	
-	@media only screen and (max-width: 1024px) {
+	@media only screen and (max-width: 767px) {
 		.block-grid.mobile { margin-left: 0; }
 		.block-grid.mobile > li { float: none; width: 100%; margin-left: 0; }
-
 	}
-	
 	
 	
 
@@ -1569,7 +1424,7 @@ ul.orbit-bullets li.active.has-thumb {
 	}
 	
 		
-	@media only screen and (max-width: 1024px) {
+	@media only screen and (max-width: 767px) {
 		.hide-on-phones { display: none !important; }
 		.hide-on-tablets { display: block !important; }
 		.hide-on-desktops { display: block !important; }
@@ -1592,7 +1447,7 @@ ul.orbit-bullets li.active.has-thumb {
 		.touch table.show-on-tablets { display: table !important; }
 	}
 	
-	@media only screen and (max-width: 1024px) {
+	@media only screen and (max-width: 767px) {
 		table.hide-on-tablets { display: table !important; }
 		table.hide-on-desktops { display: table !important; }
 		table.show-on-phones { display: table !important; }
@@ -1604,7 +1459,7 @@ ul.orbit-bullets li.active.has-thumb {
 ---------------------------------------------------*/	
 
 
-	@media only screen and (max-width: 1024px) {
+	@media only screen and (max-width: 767px) {
 		div.form-field input, div.form-field input.small, div.form-field input.medium, div.form-field input.large, div.form-field input.oversize, input.input-text, input.input-text.oversize, textarea,
 		form.nice div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea { display: block; width: 100%; padding: 6px 2% 4px; font-size: 18px; }
 		form.nice div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea { -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
@@ -1621,14 +1476,14 @@ ul.orbit-bullets li.active.has-thumb {
 ---------------------------------------------------*/	
 	
 	/* Buttons */
-	@media only screen and (max-width: 1024px) {
+	@media only screen and (max-width: 767px) {
 		.button { display: block; }
 		button.button, input[type="submit"].button { width: 100%; padding-left: 0; padding-right: 0; margin-bottom: 5px; }
 	}
 	
 	/* Tabs */
 	
-	@media only screen and (max-width: 1024px) {
+	@media only screen and (max-width: 767px) {
 		dl.tabs.mobile, dl.nice.tabs.mobile { width: auto; margin: 20px -20px 40px; height: auto; }
 		dl.tabs.mobile dt, dl.tabs.mobile dd, dl.nice.tabs.mobile dt, dl.nice.tabs.mobile dd { float: none; height: auto; }
 
@@ -1655,7 +1510,7 @@ ul.orbit-bullets li.active.has-thumb {
 		.touch .nav-bar li.has-flyout>a.flyout-toggle { padding: 20px; }
 	}
 
-	@media only screen and (max-width: 1024px) {
+	@media only screen and (max-width: 767px) {
 		.nav-bar { height: auto; }
 		.nav-bar>li { float: none; display: block; border-right: none; }
 		.nav-bar>li>a.main { text-align: left; border-top: 1px solid #ddd; border-right: none; }
@@ -1672,7 +1527,7 @@ ul.orbit-bullets li.active.has-thumb {
 
 
 	/* Tooltips */
-	@media only screen and (max-width: 1024px) {
+	@media only screen and (max-width: 767px) {
 	  .tooltip {
 	    font-size: 14px;
 	    font-size: 1.4rem;
@@ -1690,6 +1545,6 @@ ul.orbit-bullets li.active.has-thumb {
 	
 	/* Video */
 	
-	@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 1024px) {
+	@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
 		.flex-video { padding-top: 0; }
 	}

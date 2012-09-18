@@ -7,7 +7,8 @@
 */
 
 /* stop overflow scrollbar jump */
-html { overflow-y: scroll; }
+html { overflow-y: scroll;
+min-height: 100%; }
 
 #splash_logo {
 	margin-top: 55px; 
@@ -74,7 +75,7 @@ html { overflow-y: scroll; }
 }
 
 #navContainer.stacked {
-    margin-bottom: 5px;
+    margin-bottom: 25px;
 }
 
 #navContainer a:hover {
@@ -163,7 +164,14 @@ html { overflow-y: scroll; }
 dl.tabs dd a {
     padding: 0 13px;
     line-height: 29px;
+
 }
+
+
+dl.tabs dd {
+    margin-bottom: 3px; 
+    
+    }
 
 dl.tabs dd a.current {
     color: #D7BC77;
@@ -172,13 +180,6 @@ dl.tabs dd a.current {
 
 @media only screen and (max-width: 1024px) {
 
-/*
-dl.tabs dd {
-    float: left;
-    position: relative;
-    
-    }
-*/
 
 #footerContainer {
 	padding-top: 8px;
@@ -199,7 +200,8 @@ dl.tabs dd {
 
 #navContainer {
     float: left;
-    left: 0px; 
+    left: 0px;
+    margin-bottom: 15px;  
 }
 
 }
