@@ -247,7 +247,7 @@ dl.tabs dd a.current {
 }
 
 #taskForceContainer .minimized {
-    height: 70px;
+    height: 68px;
     overlflow: hidden;
 }
 
