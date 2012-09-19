@@ -62,6 +62,9 @@
 
             var twitterButton = new socialButton();
             twitterButton.init('.twitter', '#twitter');
+            
+            var emailButton = new socialButton();
+            emailButton.init('.email', '#email');
         };
 
         var checkWidthForMobileNavbar = function() {

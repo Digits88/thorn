@@ -60,10 +60,6 @@ min-height: 100%; }
 
 }
 
-
-
-
-
 /*
 #directorsContainer .six:last-child {
     float: right;
@@ -342,7 +338,7 @@ dl.tabs dd a.current {
 }
 
 #no1Container img {
-    margin-bottom: 18px;
+    margin-bottom: 8px;
     margin-top: 4px;
 }
 
@@ -441,4 +437,8 @@ dl.tabs dd a.current {
     color: black;
     font-size: 9px;
     
+}
+
+#email {
+    width: 400px;
 }

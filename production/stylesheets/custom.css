@@ -1,0 +1,27 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+
+ Title : Thorn Wufoo Form CSS   
+ Author : Michael Newell
+ URL : http://goodbysilverstein.com
+
+ Last Updated :
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+body {
+    background-color: black;
+}
+
+.thornEmail {
+    
+    width:400px;
+    
+}
+
+input {
+    border: 1px solid red;
+}
+
+html {
+    color: red;
+}
