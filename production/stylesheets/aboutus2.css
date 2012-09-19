@@ -419,3 +419,26 @@ dl.tabs dd a.current {
 #graphVideos {
     
 }
+
+/*	--------------------------------------------------
+	Social Styles
+	-------------------------------------------------- */
+
+#socialPopUpContainer {
+    clear: both;
+    margin: 44px 0;
+    position: relative;
+}
+
+.socialPopUp {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.socialPopUp a {
+    color: black;
+    font-size: 9px;
+    
+}

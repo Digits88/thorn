@@ -7,6 +7,7 @@
         var windowWidth = 0;
         var taskForceHoverEnabled = false;
         var graphActive, graphActiveSelector;
+        var facebookSocialOn;
 
 /* -----------------------------------------------------------------------------
  *                              Events
@@ -47,6 +48,7 @@
             graphActive.addClass('graphActive');
             
         });
+        
 
 /* -----------------------------------------------------------------------------
  *                              Helpers
@@ -54,6 +56,12 @@
 
         var init = function() {
             checkWidthForMobileNavbar();
+            
+            var facebookButton = new socialButton();
+            facebookButton.init('.facebook', '#facebook');
+
+            var twitterButton = new socialButton();
+            twitterButton.init('.twitter', '#twitter');
         };
 
         var checkWidthForMobileNavbar = function() {
@@ -93,11 +101,63 @@
             windowWidth = $(window).width();
         };
         
+        var socialButton = function() {
+            
+            var _button, _popup, _socialOn;
+            
+            this.init = function(button, popup) {
+                _button = $(button);
+                _popup = $(popup);
+                
+                _button.on('mouseover touchstart touchend', function(evt) {
+                    evt.preventDefault();
+
+                    _socialOn = true;
+
+                    _popup.show();
+                });
+                
+                _button.on('mouseout', function(evt) {
+                    evt.preventDefault();
+
+                    socialHide();
+
+                });
+                
+                _popup.on('mouseover touchstart touchend', function(evt) {
+                    evt.preventDefault();
+
+                    _socialOn = true;
+                });
+                
+                _popup.on('mouseout', function(evt) {
+                    evt.preventDefault();
+
+                    socialHide();
+                });
+            };
+            
+            var socialHide = function() {
+                _socialOn = false;
+
+                setTimeout(function() {
+                    if(_socialOn) {
+                        // do nothing
+                    } else {
+                        _popup.hide();
+                    }
+                }, 500);
+            };
+            
+        }; // end socialButton
+        
 /* -----------------------------------------------------------------------------
  *                              Initialize
  * ---------------------------------------------------------------------------*/
 
         init();
+        
+        
 
     });
 })(jQuery);
