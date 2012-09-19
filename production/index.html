@@ -1,0 +1,91 @@
+<!-- 
+
+    TODO:   Build in some sort of animation sequence between pages - using css3 animations.
+            I could use jquery to get other pages with animation sequences ready, run them
+            then remove the animation classes...could be cool.
+
+-->
+
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+	
+	<title>THORN</title>
+  
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/foundation.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/app.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheets/aboutus2.css" />
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="stylesheets/ie.css">
+	<![endif]-->
+	
+	<script src="../javascripts/modernizr.foundation.js"></script>
+        
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body id="indexPage">
+
+	<!-- container -->
+	<div class="container">
+            
+            <div class="row">
+                
+                <div class="twelve columns">
+                
+                    <div class="four columns">
+                    </div>
+                    
+                    <div class="six columns">
+                        <!-- nav menu container -->
+                        <div class="row" id="navContainer">
+                            <div class="twelve columns">
+                                <dl class="tabs">
+                                    <dd><a href="aboutus">ABOUT US</a></dd>
+                                    <dd><a href="whatwedo">WHAT WE DO</a></dd>
+                                    <dd><a href="theissue">THE ISSUE</a></dd>
+                                    <dd><a href="getinvolved">GET INVOLVED</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+	        <div class="row">
+				<div class="twelve columns" id="splash_logo" align="center">
+					<h2><img src="images/thorn_logo_main.png"></img></h2>
+				</div>
+			</div>
+
+	</div><!-- / container -->
+	
+
+
+
+
+	<!-- Included JS Files -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="javascripts/jquery.min.js">\x3C/script>')</script>
+	<script src="javascripts/foundation.js"></script>
+	<script src="javascripts/app.js"></script>
+	<script src="javascripts/thorn.js"></script>
+
+</body>
+</html>

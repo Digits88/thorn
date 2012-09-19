@@ -82,17 +82,24 @@ min-height: 100%; }
     color: #D7BC77;
 }
 
-#directorsContainer h6 {
+#directorsContainer h5 {
     margin-bottom: 4px;
     font-size: 10px; 
     font-weight: bold;
       /* text-shadow:1px 0px black; */
 }
 
+#directorsContainer h6 {
+    margin-bottom: 4px;
+    font-size: 9px; 
+    font-weight: bold;
+      /* text-shadow:1px 0px black; */
+}
+
 #directorsContainer p {
-    font-size: 8px;
+    font-size: 9px;
     font-weight: normal;
-    line-height: 15px;
+    line-height: 13px;
     letter-spacing: 1px;
 
 }
@@ -144,14 +151,40 @@ min-height: 100%; }
 #facebook_logo {
 	float: right;
 	margin: 1px 0px 0px 0px;  
-	width: 15px;
+	width: 16px;
 }
 
 #twitter_logo {
 	float: right;
-	width: 15px;
+	width: 16px;
 	margin: 1px 7px 0px 0px;  
 }
+
+
+#facebook_share {
+	float: left;
+	width: 16px;
+	margin: 1px 10px 0px 0px;
+}
+
+#twitter_share {
+	float: left;
+	width: 16px;
+	margin: 1px 10px 0px 0px;  
+}
+
+#google_share {
+	float: left;
+	width: 16px;
+	margin: 1px 10px 0px 0px;
+}
+
+#email_share {
+	float: left;
+	width: 16px;
+	margin: 1px 10px 0px 0px;  
+}
+
 
 /* #footerContainer #facebook_logo { height: 15px; width: 15px; } */
 
@@ -242,7 +275,7 @@ dl.tabs dd a.current {
 }
 
 #taskForceContainer .expanded {
-    height: 493px;
+    height: 598px;
     overflow: hidden;
 }
 

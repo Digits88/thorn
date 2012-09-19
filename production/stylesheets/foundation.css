@@ -137,7 +137,7 @@
 	a:focus { color: #cc4714; outline: none; }
 	p a, p a:visited { line-height: inherit; }
 	
-	#footerContainer #facebook_logo { height: 15px; width: 15px; }
+	#footerContainer #facebook_logo { height: 16px; width: 16px; }
 	
 
 /*	--------------------------------------------------
@@ -205,7 +205,7 @@
 	h4 { font-size: 21px; font-size: 2.1rem; margin-bottom: 3px; }
 	h5 { font-size: 18px; font-size: 1.8rem; font-weight: normal; margin-bottom: 3px;  }
 	/*h6 { font-size: 15px; font-size: 1.5rem; font-weight: normal; }*/
-        h6 { font-size: 8px; font-weight: normal; }
+        h6 { font-size: 8px; font-weight: bold; }
 	
 	.panelDarkgrey h2 {
 		color: #CACBCD;
