@@ -8,6 +8,7 @@
         var taskForceHoverEnabled = false;
         var graphActive, graphActiveSelector;
         var facebookSocialOn;
+        var newsletterInteraction;
 
 /* -----------------------------------------------------------------------------
  *                              Events
@@ -65,6 +66,7 @@
             
             var emailButton = new socialButton();
             emailButton.init('.email', '#email');
+            
         };
 
         var checkWidthForMobileNavbar = function() {
@@ -103,6 +105,10 @@
         var updateWindowWidth = function() {
             windowWidth = $(window).width();
         };
+        
+/* -----------------------------------------------------------------------------
+ *                              Classes
+ * ---------------------------------------------------------------------------*/
         
         var socialButton = function() {
             
@@ -153,6 +159,9 @@
             };
             
         }; // end socialButton
+        
+        
+        
         
 /* -----------------------------------------------------------------------------
  *                              Initialize

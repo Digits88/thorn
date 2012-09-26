@@ -122,7 +122,27 @@
                                 <div class="panelDarkgrey">
                                     <hr class="darkGreyhr" />
                                     <h6 class="light">GET UPDATES VIA EMAIL</h6>
-                                    <input type="text" name="email" size="35" value="yourname@email.com" />
+<!--                                    <input type="text" name="email" size="35" value="yourname@email.com" />-->
+<!--                                    <iframe id="newsletterForm" height="260" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://goodbysilverstein.wufoo.com/embed/m7x3q1/"><a href="https://goodbysilverstein.wufoo.com/forms/m7x3q1/">Fill out my Wufoo form!</a></iframe>-->
+                                    <iframe id="newsletterForm" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="http://localhost.com/GSP/clients/thorn/production/wufoo"><a href="https://goodbysilverstein.wufoo.com/forms/m7x3q1/">Fill out my Wufoo form!</a></iframe>
+<!--                                    <div id="wufoo-m7x3q1">
+                                    Fill out my <a href="http://goodbysilverstein.wufoo.com/forms/m7x3q1">online form</a>.
+                                    </div>
+                                    <script type="text/javascript">var m7x3q1;(function(d, t) {
+                                    var s = d.createElement(t), options = {
+                                    'userName':'goodbysilverstein', 
+                                    'formHash':'m7x3q1', 
+                                    'autoResize':true,
+                                    'height':'242',
+                                    'async':true,
+                                    'header':'show', 
+                                    'ssl':true};
+                                    s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+                                    s.onload = s.onreadystatechange = function() {
+                                    var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                                    try { m7x3q1 = new WufooForm();m7x3q1.initialize(options);m7x3q1.display(); } catch (e) {}};
+                                    var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                                    })(document, 'script');</script>-->
                                 </div>
                             </div>
                         </div>
@@ -151,10 +171,10 @@
                             </p>
                             <div id="socialPopUpContainer">
                                 <div id="facebook" class="socialPopUp">
-                                    <a href="">Share</a> | <a href="">Follow</a>
+                                    <a id="share" href="#">Share</a> | <a href="https://www.facebook.com/dnafoundation">Follow</a>
                                 </div>
                                 <div id="twitter"  class="socialPopUp">
-                                    <a href="">Share</a> | <a href="">Follow</a>
+                                   <a class="twitter popup" href="http://twitter.com/share?text=This%20be%20good%20site!">Share</a> | <a href="https://twitter.com/dnafoundation">Follow</a>
                                 </div>
                                 <div id="email" class="socialPopUp">
                                     <iframe height="260" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://goodbysilverstein.wufoo.com/embed/m7x3q1/"><a href="https://goodbysilverstein.wufoo.com/forms/m7x3q1/">Fill out my Wufoo form!</a></iframe>
@@ -168,7 +188,6 @@
             </div> <!-- / row -->
             <!-- / main content -->
             
-
 	</div><!-- / container -->
 	
 
@@ -182,5 +201,6 @@
 	<script src="../javascripts/app.js"></script>
         <script src="../javascripts/jquery.hoverintent.min.js"></script>
         <script src="../javascripts/thorn.js"></script>
+        <script src="../javascripts/social.js"></script>
 </body>
 </html>
