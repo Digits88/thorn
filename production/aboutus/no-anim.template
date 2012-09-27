@@ -26,6 +26,7 @@
 	<link rel="stylesheet" type="text/css" href="../stylesheets/app.css" />
         <link rel="stylesheet" type="text/css" href="../stylesheets/aboutus2.css" />
         <link rel="stylesheet" type="text/css" href="../stylesheets/animations.css" />
+        <link rel="stylesheet" type="text/css" href="../stylesheets/jquery-ui.custom.css" />
 
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" href="stylesheets/ie.css">
@@ -44,6 +45,7 @@
 	<!-- container -->
 	<div class="container">
             
+            <!-- header -->
             <div class="row">
                 
                 <div class="twelve columns">
@@ -52,7 +54,7 @@
                         <!-- logo container -->
                         <div class="row" id="logoContainer">
                             <div class="twelve columns">
-                                <h2 id="header_logo"><img src="../images/thorn_logo.png"></img></h2>
+                                <h2 id="header_logo"><a href="../aboutus/"><img src="../images/thorn_logo.png" /></a></h2>
                             </div>
                         </div>
                     </div>
@@ -62,7 +64,7 @@
                         <div class="row" id="navContainer">
                             <div class="twelve columns">
                                 <dl class="tabs">
-                                    <dd><a class="current" href="../aboutus">ABOUT US</a></dd>
+                                    <dd><a class="current" href="../aboutus/?sans-animation">ABOUT US</a></dd>
                                     <dd><a href="../whatwedo">WHAT WE DO</a></dd>
                                     <dd><a href="../theissue">THE ISSUE</a></dd>
                                     <dd><a href="../getinvolved">GET INVOLVED</a></dd>
@@ -73,7 +75,7 @@
                     
                 </div>
                 
-            </div>
+            </div><!-- / header -->
             
             <div class="row">
                 
@@ -99,12 +101,42 @@
                             <div id ="internalDirectorsContainer" class="six columns">
                                 <div class="panelLightgrey">
                                     <hr class="lightGreyhr" />
-                                    <h6>BOARD OF DIRECTORS</h6>
-                                    <p>
-                                        ASHTON KUTCHER<br>
-                                        DEMI MOORE<br>
-                                        RAY CHAMBERS
-                                    </p>
+                                    <h3>BOARD OF DIRECTORS</h3>
+                                    
+                                    <div id="accordion">
+                                        <h4>ASHTON KUTCHER</h4>
+                                        <div>
+                                            <p>Cofounder of Thorn. Kutcher is an actor, producer, tech and social media investor, and philanthropist focused on using technology to effect positive changes in the world. In 2010 Time Magazine named him among their Top 100 Most Influential People; the following year, Vanity Fair honored him in their 2011 New Establishment List, which identifies the top 50 of an innovative new breed of buccaneering visionaries, engineering prodigies and entrepreneurs.</p>
+                                        </div>
+
+                                        <h4>DEMI MOORE</h4>
+                                        <div>
+                                            <p>Cofounder of Thorn. Moore is an actress and a long-standing advocate for women’s issues. She received a Golden Globe nomination for her role in If These Walls Could Talk and a Director’s Guild nomination for Five, an anthology of short films that explore the impact of breast cancer. She partnered with CNN Freedom Project for the documentary Nepal’s Stolen Children to highlight the work of antitrafficking advocate Anuradha Koirala. In 2011 she became executive producer of “The Conversation,” an interview series hosted by Amanda de Cadenet that features intimate and frank interviews with prominent women.</p>
+                                        </div>
+
+                                        <h4>RAY CHAMBERS</h4>
+                                        <div>
+                                            <p>United Nations Secretary-General’s Millennium Development Goals (MDG) Advocate and Special Envoy for Malaria. Chambers is a philanthropist and humanitarian who directs most of his efforts toward helping children. He is the founding chairman of the Points of Light Foundation and cofounder, with Colin Powell, of America’s Promise—The Alliance for Youth. He also cofounded the National Mentoring Partnership, the Millennium Promise Alliance and Malaria No More.</p>
+                                        </div>
+                                    </div>
+                                        
+                                    
+<!--                                    <section class="ashton director">
+                                        <h4>ASHTON KUTCHER</h4>
+                                        <p>Cofounder of Thorn. Kutcher is an actor, producer, tech and social media investor, and philanthropist focused on using technology to effect positive changes in the world. In 2010 Time Magazine named him among their Top 100 Most Influential People; the following year, Vanity Fair honored him in their 2011 New Establishment List, which identifies the top 50 of an innovative new breed of buccaneering visionaries, engineering prodigies and entrepreneurs.</p>
+                                    </section>
+                                    
+                                    <section class="demi director">
+                                        <h4>DEMI MOORE</h4>
+                                        <p>Cofounder of Thorn. Moore is an actress and a long-standing advocate for women’s issues. She received a Golden Globe nomination for her role in If These Walls Could Talk and a Director’s Guild nomination for Five, an anthology of short films that explore the impact of breast cancer. She partnered with CNN Freedom Project for the documentary Nepal’s Stolen Children to highlight the work of antitrafficking advocate Anuradha Koirala. In 2011 she became executive producer of “The Conversation,” an interview series hosted by Amanda de Cadenet that features intimate and frank interviews with prominent women.</p>
+                                    </section>
+                                    
+                                    <section class="ray director">
+                                        <h4>RAY CHAMBERS</h4>
+                                        <p>United Nations Secretary-General’s Millennium Development Goals (MDG) Advocate and Special Envoy for Malaria. Chambers is a philanthropist and humanitarian who directs most of his efforts toward helping children. He is the founding chairman of the Points of Light Foundation and cofounder, with Colin Powell, of America’s Promise—The Alliance for Youth. He also cofounded the National Mentoring Partnership, the Millennium Promise Alliance and Malaria No More.</p>
+                                    </section>-->
+                                    
+                                    
                                 </div>
                             </div>
                         </div>
@@ -199,9 +231,12 @@
 	<!-- Included JS Files -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../javascripts/jquery.min.js">\x3C/script>')</script>
+        <script src="../javascripts/jquery-ui.custom.min.js"></script>
+        <script src="../javascripts/jquery.hoverintent.js"></script>
 	<script src="../javascripts/foundation.js"></script>
 	<script src="../javascripts/app.js"></script>
         <script src="../javascripts/thorn.js"></script>
         <script src="../javascripts/social.js"></script>
+        
 </body>
 </html>

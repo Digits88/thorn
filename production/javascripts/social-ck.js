@@ -1,0 +1,6 @@
+/* 
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ *//* -----------------------------------------------------------------------------
+ *                              Facebook
+ * ---------------------------------------------------------------------------*/window.fbAsyncInit=function(){console.log("starting popup");FB.init({appId:"528131467203710",status:!0,cookie:!0,xfbml:!0});FB.ui({method:"feed",message:"Facebook for Websites is super-cool"})};$("#share").on("click",function(e){e.preventDefault();$("#facebook-jssdk").length!=0?fbAsyncInit():function(e){console.log("starting facebook script");var t,n="facebook-jssdk",r=e.getElementsByTagName("script")[0];if(e.getElementById(n))return;t=e.createElement("script");t.id=n;t.async=!0;t.src="//connect.facebook.net/en_US/all.js";r.parentNode.insertBefore(t,r)}(document)});$(".popup").click(function(e){var t=575,n=400,r=($(window).width()-t)/2,i=($(window).height()-n)/2,s=this.href,o="status=1,width="+t+",height="+n+",top="+i+",left="+r;window.open(s,"twitter",o);return!1});
