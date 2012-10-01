@@ -99,6 +99,21 @@
                     
                     $('#main').ready(function() {
                         mainDoc = mainFrame.contentDocument || mainFrame.contentWindow.document;
+                        
+                        var navLinks = $(mainDoc).find('#navContainer a');
+                        
+                        console.dir(navLinks)
+                        
+                        navLinks.each(function(index) {
+                            $(this).on('click touchstart', function() {
+                                
+                                console.log('clicked')
+                                
+                                var href = $(this).attr('href');
+                                
+                                window.location = href;
+                            });
+                        })
                     });
                     
                     $('#anim').ready(function() {
