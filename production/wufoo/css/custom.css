@@ -36,7 +36,8 @@
 #Field1 { 
     background-color: #a7aaac;
     border: none; 
-    color: #87898b;
+/*    color: #87898b;*/
+    color: #444;
     height: 19px;
     width: 183px;
     font-size: 11px;

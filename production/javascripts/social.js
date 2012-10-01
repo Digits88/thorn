@@ -18,7 +18,14 @@ window.fbAsyncInit = function() {
         xfbml      : true  // parse XFBML
     });
     
-    FB.ui({ method: 'feed', message: 'Facebook for Websites is super-cool'});
+    FB.ui({
+        method: 'feed',
+        name: 'Thorn',
+        link: 'http://wearethorn.org',
+        picture: 'https://s3.amazonaws.com/GSP/thorn/images/thorn-thumb.png',
+        caption: 'Thorn: Digital Defenders of Children',
+        description: 'We invest in and deploy new technology to make the web a hostile environment for child predators.'
+    });
     
 };
 
@@ -62,3 +69,15 @@ $('.popup').click(function(event) {
 
     return false;
 });
+
+var twitterUI = {
+    picture: 'https://s3.amazonaws.com/GSP/thorn/images/thorn-thumb.png',
+    text: 'Support Thorn: Digital Defenders of Children, working to make the web a hostile environment for child predators.',
+    url: 'http://wearethorn.org'
+};
+
+$('#twitter a').attr({
+    'href' : 'https://twitter.com/share?url=' + encodeURIComponent(twitterUI.url) + '&text=' + encodeURIComponent(twitterUI.text)
+});
+
+// TODO: write some sort of script that replaces twitter url with formatted url to post photos

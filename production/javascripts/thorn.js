@@ -14,18 +14,18 @@
  *                              Events
  * ---------------------------------------------------------------------------*/
 
-        $('#taskForceContainer .panelBlack').on('mouseover touchstart', function() {
-            if(taskForceHoverEnabled) {
-                updateTaskForceHeight(true);
-            }
-        });
+//        $('#taskForceContainer, #taskForceContainer .panelBlack').on('mouseover touchstart', function() {
+//            if(taskForceHoverEnabled) {
+//                updateTaskForceHeight(true);
+//            }
+//        });
+//        
+//        $('#taskForceContainer, #taskForceContainer .panelBlack').on('mouseout touchend', function() {
+//            if(taskForceHoverEnabled) {
+//                updateTaskForceHeight();
+//            }
+//        });
         
-        $('#taskForceContainer .panelBlack').on('mouseout touchend', function() {
-            if(taskForceHoverEnabled) {
-                updateTaskForceHeight();
-            }
-        });
-
         $(window).on('resize', function() {
             checkWidthForMobileNavbar();
         });
@@ -133,11 +133,19 @@
             $('#logoContainer h2').css({
                 'text-align' : 'center'
             });
+            
+            $('#logoContainer h2 img').attr({
+                'src' : '../images/thorn_logo_small.png'
+            });
         };
         
         var leftAlignLogo = function() {
             $('#logoContainer h2').css({
                 'text-align' : 'left'
+            });
+            
+            $('#logoContainer h2 img').attr({
+                'src' : '../images/thorn_logo.png'
             });
         };
         
@@ -240,71 +248,72 @@
             
         }; // end socialButton
         
-        var directorInteraction = function(className, sectionHeight) {
-            var _section = $(className), 
-                _heading = $(className + ' h4'),
-                _details = $(className + ' p'),
-                _height = sectionHeight;
-                
-            var on = false;
-            
-            this.init = function() {
-                _section.on('touchstart', function(evt) {
-                    console.dir(evt);
-                    on = true;
-                    showDetails();
-                });
-
-                _section.hover(function(evt) {
-                    console.dir(evt);
-                    on = true;
-                    showDetails();
-                }, function(evt) {
-//                    on = false;
-                    hideDetails();
-                });
-               
-            };
-            
-            var showDetails = function() {
-                
-                // slightly delay this event so it doesnt get weird
-                setTimeout(function() {
-                    if(on) {
-                        _details.animate({
-                            'height' : _height - 14 + 'px',
-                            'opacity' : 1
-                        }, 500, function() {
-                            // end
-                            if(!on) {
-                                hideDetails();
-                            }
-                        });
-
-//                        setTimeout(function() {
+        // DEPRECATED IN FAVOR OF JQUERY UI
+//        var directorInteraction = function(className, sectionHeight) {
+//            var _section = $(className), 
+//                _heading = $(className + ' h4'),
+//                _details = $(className + ' p'),
+//                _height = sectionHeight;
+//                
+//            var on = false;
+//            
+//            this.init = function() {
+//                _section.on('touchstart', function(evt) {
+//                    console.dir(evt);
+//                    on = true;
+//                    showDetails();
+//                });
+//
+//                _section.hover(function(evt) {
+//                    console.dir(evt);
+//                    on = true;
+//                    showDetails();
+//                }, function(evt) {
+////                    on = false;
+//                    hideDetails();
+//                });
+//               
+//            };
+//            
+//            var showDetails = function() {
+//                
+//                // slightly delay this event so it doesnt get weird
+//                setTimeout(function() {
+//                    if(on) {
+//                        _details.animate({
+//                            'height' : _height - 14 + 'px',
+//                            'opacity' : 1
+//                        }, 500, function() {
+//                            // end
 //                            if(!on) {
 //                                hideDetails();
 //                            }
-//                        }, 800);
-                    }
-
-                }, 300);
-            };
-            
-            var hideDetails = function() {
-                // fade out
-                _details.animate({
-                    'opacity' : 0,
-                    'height' : 0 + 'px'
-                }, 500, function() {
-                    // end
-                    on = false;
-                });
-                    
-            };
-            
-            this.init();
-        }; // end directorInteraction
+//                        });
+//
+////                        setTimeout(function() {
+////                            if(!on) {
+////                                hideDetails();
+////                            }
+////                        }, 800);
+//                    }
+//
+//                }, 300);
+//            };
+//            
+//            var hideDetails = function() {
+//                // fade out
+//                _details.animate({
+//                    'opacity' : 0,
+//                    'height' : 0 + 'px'
+//                }, 500, function() {
+//                    // end
+//                    on = false;
+//                });
+//                    
+//            };
+//            
+//            this.init();
+//        }; // end directorInteraction
         
 /* -----------------------------------------------------------------------------
  *                              Initialize

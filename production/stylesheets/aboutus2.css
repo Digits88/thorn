@@ -92,9 +92,9 @@ min-height: 100%; }
 }
 */
 
-#navContainer {
+/*#navContainer {
     height: 118px;
-}
+}*/
 
 #navContainer.stacked {
     margin-bottom: 25px;
@@ -206,6 +206,10 @@ min-height: 100%; }
 	margin: 1px 10px 0px 0px;  
 }
 
+#hidden {
+    display: none;
+}
+
 
 /* #footerContainer #facebook_logo { height: 15px; width: 15px; } */
 
@@ -233,29 +237,37 @@ dl.tabs dd a.current {
 @media only screen and (max-width: 1024px) {
 
 
-#footerContainer {
-	padding-top: 8px;
-	margin-left: 20px;
-	margin-right: 20px;
-	left: 0px;
-	
+    #footerContainer {
+            padding-top: 8px;
+            margin-left: 20px;
+            margin-right: 20px;
+            left: 0px;
+
+    }
+
+    #footerContainer_whatwedo {
+            padding-top: 8px;
+            margin-left: 20px;
+            margin-right: 20px;
+            left: 0px;
+            position: none;
+
+    }
+
+    #navContainer {
+        float: left;
+        left: 0px;
+        margin-bottom: 15px;  
+    }
+
 }
 
-#footerContainer_whatwedo {
-	padding-top: 8px;
-	margin-left: 20px;
-	margin-right: 20px;
-	left: 0px;
-	position: none;
-	
-}
+/*	--------------------------------------------------
+	Header Styles
+	-------------------------------------------------- */
 
-#navContainer {
-    float: left;
-    left: 0px;
-    margin-bottom: 15px;  
-}
-
+#logoContainer h2 img {
+    width: 200px;
 }
 
 
@@ -270,9 +282,15 @@ dl.tabs dd a.current {
     font-weight: bold; 
 }
 
-#newsletterContainer input {
+/*#newsletterContainer input {
     margin: 20px 0 20px 0;
+}*/
+
+#newsletterForm {
+    margin-top: -19px;
 }
+
+
 
 /*	--------------------------------------------------
 	Board of Directors Styles
@@ -377,6 +395,16 @@ dl.tabs dd a.current {
     overflow: hidden;
 }
 
+#taskForceContainer .panelBlack:hover {
+    height: 598px;
+    overflow: hidden;
+}
+
+#taskForceContainer .panelBlack {
+    height: 68px;
+    overlflow: hidden;
+}
+
 #taskForceContainer .panelBlack {
     -webkit-transition: height 0.3s ease-out;  /* Safari 3.2+, Chrome */
      -moz-transition: height 0.3s ease-out;  /* Firefox 4-15 */
@@ -467,13 +495,16 @@ dl.tabs dd a.current {
 
 #graphSelectorContainer ul li {
     margin: 7px 0 6px 0;
-
+    padding-top:2px;
+    padding-bottom: 2px;
 }
 
 #graphSelectorContainer ul li:hover {
-    margin: 5px 0 4px 0;
+    margin: 7px 0 6px 0;
     border-top: #c3151e 2px solid;
     border-bottom: #c3151e 2px solid; 
+    padding-top: 0px;
+    padding-bottom: 2px;
 }
 
 #graphSelectorContainer ul li:hover a {
@@ -564,4 +595,96 @@ dl.tabs dd a.current {
 
 #email {
     width: 400px;
+}
+
+/*	--------------------------------------------------
+	Screen Specific Styles
+	-------------------------------------------------- */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    /* Styles */
+    #navContainer {
+        height: 118px;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+    /* Styles */
+/*    #navContainer {
+        height: 118px;
+    }*/
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+    /* Styles */
+    #navContainer {
+        height: 118px;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    /* Styles */
+    #navContainer {
+        height: 50px;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+    /* Styles */
+    #navContainer {
+        height: 50px;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    /* Styles */
+    #navContainer {
+        height: 50px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    /* Styles */
+    #navContainer {
+        height: 118px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+    /* Styles */
+    #navContainer {
+        height: 118px;
+    }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    /* Styles */
+    #navContainer {
+        height: 118px;
+    }
 }
