@@ -83,10 +83,10 @@
         var checkWidthForMobileNavbar = function() {
             updateWindowWidth();
             
-            if(parseInt(windowWidth) <= 1000 && parseInt(windowWidth) > 450) {
+            if(parseInt(windowWidth) <= 1024 && parseInt(windowWidth) > 480) {
                 centerLogo();
                 repositionNavTablet();
-            } else if(parseInt(windowWidth) <= 450) {
+            } else if(parseInt(windowWidth) <= 480) {
                 // for each item in the navbar - make it twelve colums wide
                 $('#navContainer dd').each(function() {
                     $(this).addClass('twelve');

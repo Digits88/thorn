@@ -10,12 +10,38 @@
 html { overflow-y: scroll;
 min-height: 100%; }
 
-#splash_logo {
-	margin-top: 55px; 
+/*
+#splash_logo h2 img{
+	background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/thorn_logo_main.png); 
+	margin-top: 55px;
+	text-indent: -9999px;
+	height: 177px;
+	width: 735px; 
+	
 }
+*/
 
 #header_logo {
 	margin-left: 13px;
+}
+
+
+@media only screen and (max-width: 480px) {
+#header_logo {
+	margin-left: 0px;
+	}
+
+/*
+#splash_logo h2 img{
+	background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/thorn_logo_small.png) top left no-repeat; 
+	margin-top: 55px; 
+	text-indent: -9999px;
+	height: 335px;
+	width: 575px;
+	
+}	
+*/
+	
 }
 
 
@@ -232,6 +258,8 @@ dl.tabs dd a.current {
 
 }
 
+
+
 /*	--------------------------------------------------
 	Newsletter Styles
 	-------------------------------------------------- */
@@ -249,6 +277,10 @@ dl.tabs dd a.current {
 /*	--------------------------------------------------
 	Board of Directors Styles
 	-------------------------------------------------- */
+#internalDirectorsContainer {
+	min-height: 200px; 
+}
+
 
 #directorsContainer, #internalDirectorsContainer, #internalDirectorsContainer .panelLightgrey {
   -webkit-transition: height 0.3s ease-out;  /* Safari 3.2+, Chrome */
@@ -316,7 +348,7 @@ dl.tabs dd a.current {
 }
 
 #directorsContainer p {
-    font-size: 8px;
+    font-size: 9px;
     font-weight: normal;
     line-height: 13px;
     margin-bottom: 14px;
@@ -434,7 +466,19 @@ dl.tabs dd a.current {
 }
 
 #graphSelectorContainer ul li {
-    margin: 6px 0 5px 0;;
+    margin: 7px 0 6px 0;
+
+}
+
+#graphSelectorContainer ul li:hover {
+    margin: 5px 0 4px 0;
+    border-top: #c3151e 2px solid;
+    border-bottom: #c3151e 2px solid; 
+}
+
+#graphSelectorContainer ul li:hover a {
+    color: #c3151e;
+
 }
 
 #graphSelectorContainer a {
@@ -442,10 +486,7 @@ dl.tabs dd a.current {
     font-size: 8px;
     line-height: 14px;
     
-    -webkit-transition: font-size 0.1s linear;  /* Safari 3.2+, Chrome */
-     -moz-transition: font-size 0.1s linear;  /* Firefox 4-15 */
-       -o-transition: font-size 0.1s linear;  /* Opera 10.5–12.00 */
-          transition: font-size 0.1s linear;  /* Firefox 16+, Opera 12.50+ */
+
 }
 
 #graphSelectorContainer a:hover, #graphSelectorContainer a:active, #graphSelectorContainer a:enabled, .graphActiveSelector  {
