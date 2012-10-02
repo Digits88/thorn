@@ -84,7 +84,7 @@
                                             'opacity' : 1
                                         }, 1000, function() {
                                             // complete
-    //                                        $.cookie('thorn_loaded', 'true', { expires: 7 });
+                                            $.cookie('thorn_loaded', 'true', { expires: 1 });
                                         });
                                     });
 
@@ -92,8 +92,6 @@
 
                             });
                         });
-                        
-                            
                         
                     };
                     
@@ -105,6 +103,7 @@
                         console.dir(navLinks)
                         
                         navLinks.each(function(index) {
+                            
                             $(this).on('click touchstart', function() {
                                 
                                 console.log('clicked')
@@ -112,7 +111,9 @@
                                 var href = $(this).attr('href');
                                 
                                 window.location = href;
+                                
                             });
+                            
                         })
                     });
                     
