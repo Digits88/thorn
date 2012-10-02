@@ -11,21 +11,22 @@
 @import url(https://fonts.googleapis.com/css?family=Varela);
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-                                    MAIN
+                                    SIDEBAR
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 
-#form2 {
+#form2Sidebar {
     padding: 0;
     margin: 0;
+    margin-top: -16px;
 }
 
-#form2 li {
+#form2Sidebar li {
     margin: 0;
     padding: 0;
 }
 
-#Field1Container p {
-    color: #CACBCD;
+#Field1ContainerSidebar p {
+    color: #333;
     font-size: 11px;
     font-family: 'Varela', "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     
@@ -37,13 +38,12 @@
           transition: opacity 0.5s linear;  /* Firefox 16+, Opera 12.50+ */
 }
  
-#Field1 { 
+#Field1Sidebar { 
     background-color: #a7aaac;
     border: none; 
-/*    color: #87898b;*/
     color: #444;
     height: 19px;
-    width: 183px;
+    width: 133px;
     font-size: 11px;
     font-family: 'Varela', "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     padding: 2px 5px;
@@ -54,7 +54,7 @@
     -o-box-shadow: inset 1px 1px 2px 2px #414243;
 }
 
-#saveForm {
+#saveFormSidebar {
     width: 95px;
     height: 22px;
     background-color: #797a7b;
@@ -76,6 +76,6 @@
     -o-box-shadow:  1px 1px 2px 1px #414243;
 }
 
-#saveForm:active {
+#saveFormSidebar:active {
     background-color: #999;
 }

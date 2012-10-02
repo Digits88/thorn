@@ -17,6 +17,7 @@ Thorn Email
 <link href="css/theme.css" rel="stylesheet">
 <!--<link href="https://s3.amazonaws.com/GSP/thorn/css/custom.css" rel="stylesheet">-->
 <link href="css/custom.css" rel="stylesheet">
+<link href="css/sidebar.css" rel="stylesheet">
 
 <!-- JavaScript -->
 <script src="scripts/wufoo.js"></script>
@@ -33,7 +34,7 @@ Thorn Email
             
             var defaultEmailFormValue = 'yourname@email.com';
             
-            $('#Field1').on('focus', function(evt) {
+            $('#Field1Sidebar').on('focus', function(evt) {
                 
                 if($(this).attr('value') == defaultEmailFormValue) {
                     $(this).attr({'value' : ''});
@@ -41,28 +42,28 @@ Thorn Email
                 
             });
             
-            $('#Field1').on('blur', function(evt) {
+            $('#Field1Sidebar').on('blur', function(evt) {
                 if($(this).attr('value') == '') {
                     $(this).attr({'value' : defaultEmailFormValue});
                 };
             });
             
-            $('#saveForm').on('click touchstart', function(evt) {
+            $('#saveFormSidebar').on('click touchstart', function(evt) {
                 evt.preventDefault();
                 
-                if($('#Field1').attr('value') == defaultEmailFormValue) {
+                if($('#Field1Sidebar').attr('value') == defaultEmailFormValue) {
                     showError();
                     return;
                 }
                 
                 // if the input is not empty
-                if($('#Field1').attr('value') != '') {
+                if($('#Field1Sidebar').attr('value') != '') {
                     // if the input is not a valid email address
-                    if(!isValidEmailAddress($('#Field1').attr('value'))) {
+                    if(!isValidEmailAddress($('#Field1Sidebar').attr('value'))) {
                         showError();
                     } else {
-                        $('#Field1Container p').css({'opacity' : 0});
-                        $('#form2').trigger('submit');
+                        $('#Field1ContainerSidebar p').css({'opacity' : 0});
+                        $('#form2Sidebar').trigger('submit');
                     }
                 }
                 
@@ -70,14 +71,14 @@ Thorn Email
             
             var showError = function(msg) {
                 var e = msg || 'Not a valid email. Please try again...';
-                $('#Field1Container p').text(e).css({'opacity' : 1});
+                $('#Field1ContainerSidebar p').text(e).css({'opacity' : 1});
                 setTimeout(function() {
                     hideError();
                 }, 1500);
             };
             
             var hideError = function() {
-                $('#Field1Container p').css({'opacity' : 0});
+                $('#Field1ContainerSidebar p').css({'opacity' : 0});
             };
             
             var isValidEmailAddress = function (emailAddress) {
@@ -97,52 +98,38 @@ Thorn Email
 </head>
 
 <body id="public">
-<div id="container" class="ltr">
+    <div id="container" class="ltr">
 
-<!--<h1 id="logo">
-<a>Wufoo</a>
-</h1>-->
+        <form id="form2Sidebar" name="form2" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+        action="https://goodbysilverstein.wufoo.com/forms/m7x3q1/#public">
 
-<form id="form2" name="form2" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
-action="https://goodbysilverstein.wufoo.com/forms/m7x3q1/#public">
 
-<!--<header id="header" class="info">
-<h2>Thorn Email</h2>
-<div>Default thorn email</div>
-</header>-->
+            <ul>
 
-<ul>
+                <li id="foli1" class="notranslate thornEmail ">
+                    <div id="Field1ContainerSidebar">
+                        <p>Not a valid email. Please try again...</p>
+                        <input id="Field1Sidebar" name="Field1" type="email" spellcheck="false" class="field text medium" value="yourname@email.com" maxlength="255" tabindex="1" /> 
+                    </div>
+                    <p class="instruct" id="instruct1"><small>Please Fill out the form below to receive updates when we have more to show!</small></p>
+                </li> 
+                
+                <li class="buttons ">
+                    <div>
+                        <input id="saveFormSidebar" name="saveForm" class="btTxt submit" type="submit" value="Submit" />
+                    </div>
+                </li>
 
-<li id="foli1" class="notranslate thornEmail     ">
-<!--<label class="desc" id="title1" for="Field1">
-</label>-->
-<div id="Field1Container">
-    <p>Not a valid email. Please try again...</p>
-<input id="Field1" name="Field1" type="email" spellcheck="false" class="field text medium" value="yourname@email.com" maxlength="255" tabindex="1" /> 
-</div>
-<p class="instruct" id="instruct1"><small>Please Fill out the form below to receive updates when we have more to show!</small></p>
-</li> <li class="buttons ">
-<div>
+                <li class="hide">
+                    <label for="comment">Do Not Fill This Out</label>
+                    <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                    <input type="hidden" id="idstamp" name="idstamp" value="KQ0l5k1s66301+7d31gkevfQp7utvhVTrY54RV4iUkM=" />
+                </li>
+            </ul>
+        </form> 
 
-                    <input id="saveForm" name="saveForm" class="btTxt submit" 
-    type="submit" value="Submit"
- /></div>
-</li>
+    </div><!--container-->
 
-<li class="hide">
-<label for="comment">Do Not Fill This Out</label>
-<textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-<input type="hidden" id="idstamp" name="idstamp" value="KQ0l5k1s66301+7d31gkevfQp7utvhVTrY54RV4iUkM=" />
-</li>
-</ul>
-</form> 
 
-</div><!--container-->
-
-<!--<a class="powertiny" href="http://wufoo.com/form-builder/" title="Powered by Wufoo"
-style="display:block !important;visibility:visible !important;text-indent:0 !important;position:relative !important;height:auto !important;width:95px !important;overflow:visible !important;text-decoration:none;cursor:pointer !important;margin:0 auto !important">
-<span style="background:url(./images/powerlogo.png) no-repeat center 7px; margin:0 auto;display:inline-block !important;visibility:visible !important;text-indent:-9000px !important;position:static !important;overflow: auto !important;width:62px !important;height:30px !important">Wufoo</span>
-<b style="display:block !important;visibility:visible !important;text-indent:0 !important;position:static !important;height:auto !important;width:auto !important;overflow: auto !important;font-weight:normal;font-size:9px;color:#777;padding:0 0 0 3px;">Designed</b>
-</a>-->
 </body>
 </html>
