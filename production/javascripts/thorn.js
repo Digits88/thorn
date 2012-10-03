@@ -5,10 +5,14 @@
  * ---------------------------------------------------------------------------*/
 
         var windowWidth = 0;
+        var pastWindowWidth;
         var taskForceHoverEnabled = false;
         var graphActive, graphActiveSelector;
         var facebookSocialOn;
         var newsletterInteraction;
+        var ashton, demi, ray;
+        var browserSupportsCSSTransitions = false;
+        
 
 /* -----------------------------------------------------------------------------
  *                              Events
@@ -50,20 +54,27 @@
             
         });
         
-        if(typeof $.ui != "undefined") {
-            $('#accordion').accordion({
-                event: 'click hoverintent',
-                header: 'h4',
-                active: false
-            });
-        }
+        $('#accordion h4').on('hoverintent touchstart', function(evt) {
+            evt.preventDefault();
+            var name = $(this).attr('class');
+            
+            var _p = $('p.' + name);
+            
+            if(_p.hasClass('expanded')) {
+                // remove the class
+            } else {
+                _p.addClass('expanded');
+            }
+            
+        });
         
 /* -----------------------------------------------------------------------------
  *                              Helpers
  * ---------------------------------------------------------------------------*/
 
         var init = function() {
-            checkWidthForMobileNavbar();
+            
+            browserSupportsCSSTransitions = checkBrowserSupportsCSSTransitions();
             
             var facebookButton = new socialButton();
             facebookButton.init('.facebook', '#facebook');
@@ -74,43 +85,87 @@
             var emailButton = new socialButton();
             emailButton.init('.email', '#email');
             
-//            var ashton = new directorInteraction('.ashton', 221);
-//            var demi = new directorInteraction('.demi', 275);
-//            var ray = new directorInteraction('.ray', 217);
+            ashton = new directorAccordion('#ashton');
+            ashton.init();
+            demi = new directorAccordion('#demi');
+            demi.init();
+            ray = new directorAccordion('#ray');
+            ray.init();
+            
+//            retractAllDirectors();
+            
+            checkWidthForMobileNavbar();
+            
+            
+        };
+        
+        var checkBrowserSupportsCSSTransitions = function() {
+            
+            var elm = document.getElementsByTagName('div')[0];
+            
+            var animation = false,
+                animationstring = 'transition',
+                keyframeprefix = '',
+                domPrefixes = 'Webkit Moz O ms Khtml'.split(' '),
+                pfx  = '';
+
+            if( elm.style.animationName ) { animation = true; }    
+
+            if( animation === false ) {
+              for( var i = 0; i < domPrefixes.length; i++ ) {
+                if( elm.style[ domPrefixes[i] + 'Transition' ] !== undefined ) {
+                  pfx = domPrefixes[ i ];
+                  animationstring = pfx + 'Transition';
+                  keyframeprefix = '-' + pfx.toLowerCase() + '-';
+                  animation = true;
+                  break;
+                }
+              }
+            }
+            
+            return animation;
             
         };
 
         var checkWidthForMobileNavbar = function() {
             updateWindowWidth();
             
-            if(parseInt(windowWidth) <= 1024 && parseInt(windowWidth) > 480) {
-                centerLogo();
-                repositionNavTablet();
-            } else if(parseInt(windowWidth) <= 480) {
-                // for each item in the navbar - make it twelve colums wide
-                $('#navContainer dd').each(function() {
-                    $(this).addClass('twelve');
-                });
+            if(pastWindowWidth !== windowWidth) {
+                if(parseInt(windowWidth) <= 1024 && parseInt(windowWidth) > 480) {
+                    centerLogo();
+                    repositionNavTablet();
+    //                expandAllDirectors();
 
-                $('#navContainer').addClass('stacked');
-                
-                updateTaskForceHeight(true);
-                taskForceHoverEnabled = false;
-                
-                centerLogo();
-                repositionNavPhone();
-                
-            } else {
-                $('#navContainer dd').each(function() {
-                    $(this).removeClass('twelve');
-                });
+                } else if(parseInt(windowWidth) <= 480) {
+                    // for each item in the navbar - make it twelve colums wide
+                    $('#navContainer dd').each(function() {
+                        $(this).addClass('twelve');
+                    });
 
-                $('#navContainer').removeClass('stacked');
-                updateTaskForceHeight();
-                taskForceHoverEnabled = true;
-                
-                leftAlignLogo();
-                repositionNavDesktop();
+                    $('#navContainer').addClass('stacked');
+
+                    updateTaskForceHeight(true);
+                    taskForceHoverEnabled = false;
+
+                    centerLogo();
+                    repositionNavPhone();
+
+    //                expandAllDirectors();
+
+                } else {
+                    $('#navContainer dd').each(function() {
+                        $(this).removeClass('twelve');
+                    });
+
+                    $('#navContainer').removeClass('stacked');
+                    updateTaskForceHeight();
+                    taskForceHoverEnabled = true;
+
+                    leftAlignLogo();
+                    repositionNavDesktop();
+
+    //                retractAllDirectors();
+                }
             }
             
         };
@@ -120,12 +175,15 @@
             
             if(shouldExpand) {
                 $('#taskForceContainer .panelBlack').removeClass('minimized').addClass('expanded');
+                expandAllDirectors();
             } else {
                 $('#taskForceContainer .panelBlack').removeClass('expanded').addClass('minimized');
+                retractAllDirectors();
             }
         };
 
         var updateWindowWidth = function() {
+            pastWindowWidth = windowWidth;
             windowWidth = $(window).width();
         };
         
@@ -180,6 +238,18 @@
             $('.container .row .twelve > .six').prepend(tempNav);
         };
         
+        var expandAllDirectors = function() {
+            ashton.expand();
+            demi.expand();
+            ray.expand();
+        }
+        
+        var retractAllDirectors = function() {
+            ashton.retract();
+            demi.retract();
+            ray.retract();
+        }
+        
         
         
 /* -----------------------------------------------------------------------------
@@ -194,7 +264,7 @@
                 _button = $(button);
                 _popup = $(popup);
                 
-                _button.on('mouseover touchstart touchend', function(evt) {
+                _button.on('mouseover touchstart touchend click', function(evt) {
                     evt.preventDefault();
 
                     _socialOn = true;
@@ -225,9 +295,9 @@
             
             var socialCheckOthersHidden = function() {
                 $('.socialPopUp').each(function(index) {
-                    console.log($(this).attr('id'));
+//                    console.log($(this).attr('id'));
                     var str = _popup.attr('id');
-                    console.log(str);
+//                    console.log(str);
                     if($(this).attr('id') != str) {
                         $(this).hide();
                     }
@@ -248,72 +318,239 @@
             
         }; // end socialButton
         
-        // DEPRECATED IN FAVOR OF JQUERY UI
-//        var directorInteraction = function(className, sectionHeight) {
-//            var _section = $(className), 
-//                _heading = $(className + ' h4'),
-//                _details = $(className + ' p'),
-//                _height = sectionHeight;
-//                
-//            var on = false;
-//            
-//            this.init = function() {
-//                _section.on('touchstart', function(evt) {
-//                    console.dir(evt);
-//                    on = true;
-//                    showDetails();
-//                });
-//
-//                _section.hover(function(evt) {
-//                    console.dir(evt);
-//                    on = true;
-//                    showDetails();
-//                }, function(evt) {
-////                    on = false;
-//                    hideDetails();
-//                });
-//               
-//            };
-//            
-//            var showDetails = function() {
-//                
-//                // slightly delay this event so it doesnt get weird
-//                setTimeout(function() {
-//                    if(on) {
-//                        _details.animate({
-//                            'height' : _height - 14 + 'px',
-//                            'opacity' : 1
-//                        }, 500, function() {
-//                            // end
-//                            if(!on) {
-//                                hideDetails();
-//                            }
-//                        });
-//
-////                        setTimeout(function() {
-////                            if(!on) {
-////                                hideDetails();
-////                            }
-////                        }, 800);
-//                    }
-//
-//                }, 300);
-//            };
-//            
-//            var hideDetails = function() {
-//                // fade out
-//                _details.animate({
-//                    'opacity' : 0,
-//                    'height' : 0 + 'px'
-//                }, 500, function() {
-//                    // end
-//                    on = false;
-//                });
+        
+        // directors
+        var directorAccordion = function(container) {
+            
+            var _p,
+                _h4,
+                p,
+                h4,
+                expanded = true,
+                height,
+                director;
+            
+            this.init = function() {
+                _p = $(container).find('p')[0];
+                _h4 = $(container).find('h4')[0];
+                p = $(_p);
+                h4 = $(_h4);
+                
+                height = p.height();
+                director = p.attr('class');
+                
+                initEvents();
+                
+                p.css({
+                    display: 'none'
+                });
+            };
+            
+            // listen for hover intent on h4
+            var initEvents = function() {
+                
+                h4.on('hoverintent touchstart', function(evt) {
+                    
+                    evt.preventDefault();
+                    if(expanded) {
+                        _retract();
+                    } else {
+                        _expand();
+                    }
+                });
+                
+                p.on('transitionend oTransitionEnd webkitTransitionEnd MSTransitionEnd', function(evt) {
+                    
+//                    console.dir(evt)
+                    
+                    // retracted
+                    if(evt.originalEvent.propertyName === 'height' && expanded === false) {
+                        
+                        console.log('retracted')
+                        
+                        // we've hidden so remove the display property
+                        p.css({
+                            display: 'none'
+                        });
+                    }
+                    
+                    // expanded
+                    if(evt.originalEvent.propertyName === 'opacity' && expanded === true) {
+                        
+                        console.log('expanded')
+                        
+                        
+                    }
+                    
+                });
+                
+//                p.on('transitionend oTransitionEnd webkitTransitionEnd MSTransitionEnd', function(evt) {
 //                    
+//                    // fade in
+//                    console.log('begin: ' + director + ' ' +expanded)
+//                    
+//                    if(expanded === true) {
+//                        switch (evt.originalEvent.propertyName) {
+//                            case 'opacity':
+//                                p.css({
+//                                    height: 0
+//                                });
+//                                console.log(director + ' setting height to zero but height is: ' + p.height());
+//                                break;
+//                            case 'height':
+//                                p.css({
+//                                    display: 'none'
+//                                });
+//                                expanded = false;
+//                                console.log(director + ' setting display: ' + p.css('display') + '; and expanded is: ' + expanded );
+//                                break;
+//                            default:
+//                                expanded = false;
+//                                break;
+//                        }
+//                    } else {
+//                        if(evt.originalEvent.propertyName === 'height') {
+//                            p.css({
+//                                opacity: 1
+//                            });
+//                            expanded = true;
+//                            console.log(director + ' setting opacity 1')
+//                        }
+//                    }
+//                    
+//                    console.log('end: ' + director + ' ' +expanded)
+//                });
+//                
+            };
+            
+            // expand
+            var _expand = function() {
+                
+                p.removeClass('retracted').addClass('expanded');
+                
+                p.css({
+                    display: 'block',
+                });
+                
+                setTimeout(function() {
+                    p.css({
+                        height: height,
+                        opacity: 1
+                    });
+                    
+                    expanded = true;
+                }, 100);
+                
+                
+                
+                
+//                if(browserSupportsCSSTransitions) {
+//                    expandCSS();
+//                } else {
+//                    expandJS();
+//                }
+
+            };
+            
+            // contract
+            var _retract = function() {
+                
+                
+                
+                p.removeClass('expanded').addClass('retracted');
+                
+                p.css({
+                    height: 0,
+                    opacity: 0
+                });
+                
+                expanded = false;
+                
+//                if(browserSupportsCSSTransitions) {
+//                    retractCSS();
+//                } else {
+//                    retractJS();
+//                }
+                
+            };
+            
+//            var expandJS = function() {
+//                
+//                p.css({
+//                    display: 'block'
+//                });
+//                
+//                p.animate({
+//                    height: height
+//                }, 300, function() {
+//                    p.animate({
+//                        opacity: 1
+//                    }, 300, function() {
+//                        // complete
+//                        expanded = true;
+//                    });
+//                });
+//                
+//                console.log(director + ' expandJS')
 //            };
 //            
-//            this.init();
-//        }; // end directorInteraction
+//            var retractJS = function() {
+//                
+//                p.css({
+//                    display: 'none'
+//                });
+//                
+//                p.animate({
+//                    opacity: 0
+//                }, 300, function() {
+//                    p.animate({
+//                        height: 0
+//                    }, 300, function() {
+//                        // complete
+//                        expanded = false;
+//                    });
+//                });
+//                
+//                console.log(director + ' retractJS') 
+//            };
+//            
+//            var expandCSS = function() {
+//                
+//                console.log('expanding: ' + height)
+//                
+//                p.css({
+//                    display: 'block',
+//                    height: height
+//                });
+//                
+//                console.log(director + ' expandCSS')
+//                
+//            };
+//            
+//            var retractCSS = function() {
+//                
+//                p.css({
+//                    opacity: 0
+//                });
+//                
+////                p.css({
+////                    opacity: 0,
+////                    height: 0
+////                });
+//                
+//                console.log(director + ' retractCSS')
+//            };
+            
+            this.expand = function() {
+                _expand();
+            }
+            
+            this.retract = function() {
+                _retract();
+            }
+            
+        };
+        
         
 /* -----------------------------------------------------------------------------
  *                              Initialize

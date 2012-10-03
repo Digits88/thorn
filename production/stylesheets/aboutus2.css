@@ -334,7 +334,62 @@ dl.tabs dd a.current {
     padding: 0;
 }*/
 
-#directorsContainer .ui-widget-content {
+#accordion h4 {
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    color: #181818;
+    font-family: 'Varela', "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 9px;
+    line-height: 13px;
+    letter-spacing: 1px;
+}
+
+#accordion p {
+    font-size: 9px;
+    font-weight: normal;
+    line-height: 13px;
+    margin-bottom: 14px;
+    margin: 0;
+    padding: 0;
+    
+/*    -webkit-transition: height 0.3s ease-out, opacity 0.3s linear;
+       -moz-transition: height 0.3s ease-out, opacity 0.3s linear;
+         -o-transition: height 0.3s ease-out, opacity 0.3s linear;
+            transition: height 0.3s ease-out, opacity 0.3s linear;*/
+}
+
+#directorsContainer p.expanded {
+    
+    -webkit-transition: height 0.2s ease-out, opacity 0.3s linear 0.3s;
+       -moz-transition: height 0.2s ease-out, opacity 0.3s linear 0.3s;
+         -o-transition: height 0.2s ease-out, opacity 0.3s linear 0.3s;
+            transition: height 0.2s ease-out, opacity 0.3s linear 0.3s;
+}
+
+#directorsContainer p.retracted {
+       
+    -webkit-transition: height 0.3s ease-out 0.2s, opacity 0.1s linear;
+       -moz-transition: height 0.3s ease-out 0.2s, opacity 0.1s linear;
+         -o-transition: height 0.3s ease-out 0.2s, opacity 0.1s linear;
+            transition: height 0.3s ease-out 0.2s, opacity 0.1s linear;
+}
+
+/*#ashton {
+    z-index: 1;
+}
+
+#demi {
+    z-index: 10;
+}
+
+#ray {
+    z-index: 20;
+}*/
+
+
+
+/*#directorsContainer .ui-widget-content {
     border: 0;
     background: transparent;
     color: #181818;
@@ -356,19 +411,13 @@ dl.tabs dd a.current {
     background-image: none;
 }
 
-#directorsContainer p {
-    font-size: 9px;
-    font-weight: normal;
-    line-height: 13px;
-    margin-bottom: 14px;
-    /*height: 0;*/
-    margin: 0;
-    padding: 0;
-}
+
 
 #directorsContainer .ui-accordion .ui-accordion-content {
     padding: 0;
-}
+}*/
+
+
 
 /*	--------------------------------------------------
 	Task Force Styles
