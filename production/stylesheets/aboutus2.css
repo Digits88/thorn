@@ -598,6 +598,11 @@ dl.tabs dd a.current {
     width: 774px;
 }
 
+#techAndExploitation p.citation {
+    color: #aaa;
+    font-size: 1.0rem;
+}
+
 /*	--------------------------------------------------
 	Chart Styles
 	-------------------------------------------------- */
