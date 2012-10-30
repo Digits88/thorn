@@ -549,6 +549,52 @@ dl.tabs dd a.current {
 }
 
 /*	--------------------------------------------------
+	The Issue Page
+	-------------------------------------------------- */
+
+#techAndExploitation {
+    padding-top: 8px
+}
+
+
+
+#techAndExploitation h2 {
+    text-indent: -9999px;
+    display: inline-block;
+    width: 100%;
+    min-height: 56px;
+    background: url(../images/theissue/techandexploit.png) scroll 34px 8px no-repeat;
+}
+
+#techAndExploitation h3 {
+    text-indent: -9999px;
+    display: inline-block;
+}
+
+#techAndExploitation .numberofchildren {
+    width: 100%;
+    min-height: 56px; 
+    background: url(../images/theissue/numberofchildren.png) scroll no-repeat;
+}
+
+#techAndExploitation .threeoutoffour {
+    width: 100%;
+    background: url(../images/theissue/3outof4.png) scroll no-repeat;
+}
+
+#techAndExploitation .panelBlack img {
+    margin-top: -100px;
+}
+
+#techAndExploitation .chart,
+#techAndExploitation .children {
+    position: relative;
+    left: 50%;
+    margin: 30px 0 30px -387px;
+    width: 774px;
+}
+
+/*	--------------------------------------------------
 	Chart Styles
 	-------------------------------------------------- */
 
