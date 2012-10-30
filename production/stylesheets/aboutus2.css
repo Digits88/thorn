@@ -287,7 +287,8 @@ dl.tabs dd a.current {
 	Board of Directors Styles
 	-------------------------------------------------- */
 #internalDirectorsContainer {
-	min-height: 200px; 
+    min-height: 200px; 
+    width: 63%;
 }
 
 
@@ -368,6 +369,11 @@ dl.tabs dd a.current {
 
 #directorsContainer .ui-accordion .ui-accordion-content {
     padding: 0;
+}
+
+/* sets the height of the accordion divs used in conjunction with jquery ui */
+#accordion div p {
+    min-height: 176px;
 }
 
 /*	--------------------------------------------------

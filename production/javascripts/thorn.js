@@ -54,7 +54,9 @@
             $('#accordion').accordion({
                 event: 'click hoverintent',
                 header: 'h4',
-                active: false
+                collapsible: true,
+                active: false,
+                heightStyle: "auto"
             });
         }
         
