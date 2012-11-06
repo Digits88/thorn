@@ -48,10 +48,10 @@
             <!-- header -->
             <div class="row">
                 
-                <div class="twelve columns">
+<!--                <div class="twelve columns">
                 
                     <div class="four columns">
-                        <!-- logo container -->
+                         logo container 
                         <div class="row" id="logoContainer">
                             <div class="twelve columns">
                                 <h2 id="header_logo"><a href="../aboutus/"><img src="../images/thorn_logo.png" /></a></h2>
@@ -60,7 +60,7 @@
                     </div>
                     
                     <div class="six columns">
-                        <!-- nav menu container -->
+                         nav menu container 
                         <div class="row" id="navContainer">
                             <div class="twelve columns">
                                 <dl class="tabs">
@@ -73,7 +73,8 @@
                         </div>
                     </div>
                     
-                </div>
+                </div>-->
+                <?php include_once '../includes/header.php'; ?>
                 
             </div><!-- / header -->
             
@@ -184,60 +185,27 @@
                             <p><span>FOLLOW US</span> <a href=""><a href=""><img src="../images/btn_fb.png" alt="Facebook Logo" id="facebook_logo" /></a><img src="../images/btn_twitter.png" alt="Twitter Logo" id="twitter_logo" /></a> </p>  
                         </div>        
                     </div>-->
-                    <div id="footerContainer" class="two columns">
-                        <div class="twelve colums">
-                            <hr class="goldhr" />
-                            <p>
-                                <span></span>
-                                <a href="#facebook" class="social facebook"><img src="../images/social_icons/facebook.png" id="facebook_share" /></a>
-
-                                <a href="#twitter" class="social twitter"><img src="../images/social_icons/twitter.png" id="twitter_share" /> </a>
-
-                                <a href="https://plus.google.com/share?url={http://www.wearethorn.org}" onclick="javascript:window.open(this.href,
-    '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-                                    <img src="../images/social_icons/google_plus.png" alt="Share on Google+" id="google_share" />
-                                </a> 
-
-                                <a class="social email" href="mailto:
-                ?subject=THORN – We are digital defenders of children 
-                &body=Thorn exists to continue the work started by the Demi and Ashton (DNA) Foundation in 2009.  We invest in and deploy the latest technology in order to make the web a hostile environment for child predators.  Our efforts aim to disrupt and deflate the predatory behaviors of those who use technology to abuse or traffic children, to solicit sex with children, or to create and share child pornography." target="_blank" alt="email">
-                                    <img src="../images/social_icons/social_email.png" id="email_share" />
-                                </a> 
-                            </p>
-                            <div id="socialPopUpContainer">
-                                <div id="facebook" class="socialPopUp">
-                                    <a id="share" href="#">Share</a> | <a href="https://www.facebook.com/dnafoundation">Follow</a>
-                                </div>
-                                <div id="twitter"  class="socialPopUp">
-                                   <a class="twitter popup" href="http://twitter.com/share?text=This%20be%20good%20site!">Share</a> | <a href="https://twitter.com/dnafoundation">Follow</a>
-                                </div>
-                                <div id="email" class="socialPopUp">
-                                    <iframe id="sidebarNewsletterForm" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%; border:none"  src="../wufoo/sidebar.html"><a href="https://goodbysilverstein.wufoo.com/forms/m7x3q1/">Fill out my Wufoo form!</a></iframe>
-                                </div>
-                            </div>
-                        </div><!-- / twelve column -->       
-                    </div>
+                    <?php include_once '../includes/footer.php'; ?>
                     
                 </div><!-- / twelve columns container -->
                 
             </div> <!-- / row -->
+            
+            <?php include_once '../includes/policy.php'; ?>
 
 	</div><!-- / container -->
 	
-	
-
-
-
-
 	<!-- Included JS Files -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<!--	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../javascripts/jquery.min.js">\x3C/script>')</script>
         <script src="../javascripts/jquery-ui.custom.min.js"></script>
         <script src="../javascripts/jquery.hoverintent.js"></script>
 	<script src="../javascripts/foundation.js"></script>
 	<script src="../javascripts/app.js"></script>
         <script src="../javascripts/thorn.js"></script>
-        <script src="../javascripts/social.js"></script>
+        <script src="../javascripts/social.js"></script>-->
+        
+        <?php include_once '../includes/scripts.php'; ?>
         
 </body>
 </html>

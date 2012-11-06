@@ -86,10 +86,10 @@
 
            <div class="row">
                 
-                <div class="twelve columns">
+<!--                <div class="twelve columns">
                 
                     <div class="four columns">
-                        <!-- logo container -->
+                         logo container 
                         <div class="row" id="logoContainer">
                             <div class="twelve columns">
                                 <h2 id="header_logo"><a href="../aboutus/"><img src="../images/thorn_logo.png" /></a></h2>
@@ -98,7 +98,7 @@
                     </div>
                     
                     <div class="six columns">
-                        <!-- nav menu container -->
+                         nav menu container 
                         <div class="row" id="navContainer">
                             <div class="twelve columns">
                                 <dl class="tabs">
@@ -111,7 +111,9 @@
                         </div>
                     </div>
                     
-                </div>
+                </div>-->
+
+                <?php include_once '../includes/header.php'; ?>
                 
             </div><!-- / header -->
             
@@ -208,7 +210,7 @@
 			        
 			        
 			    </div>-->
-                    <div id="footerContainer_whatwedo" class="two columns">
+<!--                    <div id="footerContainer_whatwedo" class="two columns">
                         <div class="twelve colums">
                             <hr class="goldhr" />
                             <p>
@@ -239,10 +241,14 @@
                                     <iframe id="sidebarNewsletterForm" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%; border:none"  src="../wufoo/sidebar.html"><a href="https://goodbysilverstein.wufoo.com/forms/m7x3q1/">Fill out my Wufoo form!</a></iframe>
                                 </div>
                             </div>
-                        </div><!-- / twelve column -->       
-                    </div>
+                        </div> / twelve column        
+                    </div>-->
 	
+                    <?php include_once '../includes/footer.php'; ?>
+
             </div>
+            
+            <?php include_once '../includes/policy.php'; ?>
     </div><!-- / container -->
 
 
@@ -250,11 +256,12 @@
 
 
 	<!-- Included JS Files -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<!--	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../javascripts/jquery.min.js">\x3C/script>')</script>
 	<script src="../javascripts/foundation.js"></script>
 	<script src="../javascripts/app.js"></script>
         <script src="../javascripts/thorn.js"></script>
-        <script src="../javascripts/social.js"></script>
+        <script src="../javascripts/social.js"></script>-->
+        <?php include_once '../includes/scripts.php'; ?>
 </body>
 </html>

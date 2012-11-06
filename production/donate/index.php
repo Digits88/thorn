@@ -65,8 +65,8 @@
                                 <dl class="tabs">
                                     <dd><a href="../aboutus/?sans-animation">ABOUT US</a></dd>
                                     <dd><a href="../whatwedo">WHAT WE DO</a></dd>
-                                    <dd><a class="current" href="../theissue">THE ISSUE</a></dd>
-                                    <dd><a href="../getinvolved">GET INVOLVED</a></dd>
+                                    <dd><a href="../theissue">THE ISSUE</a></dd>
+                                    <dd><a class="current" href="../getinvolved">GET INVOLVED</a></dd>
                                 </dl>
                             </div>
                         </div>
@@ -78,10 +78,10 @@
 
             <div class="row">
                 
-                <div class="twelve columns">
+<!--                <div class="twelve columns">
                 
                     <div class="four columns">
-                        <!-- logo container -->
+                         logo container 
                         <div class="row" id="logoContainer">
                             <div class="twelve columns">
                                 <h2 id="header_logo"><a href="../aboutus/"><img src="../images/thorn_logo.png" /></a></h2>
@@ -90,20 +90,22 @@
                     </div>
                     
                     <div class="six columns">
-                        <!-- nav menu container -->
+                         nav menu container 
                         <div class="row" id="navContainer">
                             <div class="twelve columns">
                                 <dl class="tabs">
                                     <dd><a href="../aboutus">ABOUT US</a></dd>
                                     <dd><a href="../whatwedo">WHAT WE DO</a></dd>
-                                    <dd><a class="current" href="../theissue">THE ISSUE</a></dd>
-                                    <dd><a href="../donate">DONATE</a></dd>
+                                    <dd><a href="../theissue">THE ISSUE</a></dd>
+                                    <dd><a class="current" href="../donate">DONATE</a></dd>
                                 </dl>
                             </div>
                         </div>
                     </div>
                     
-                </div>
+                </div>-->
+
+                <?php include_once '../includes/header.php'; ?>
                 
             </div><!-- / header -->
      
@@ -113,73 +115,67 @@
                 
                 <div class="twelve columns">
                     
-                    <!-- left -->
-                    <div id="leftContainer" class="ten columns">
+                    <!-- divider for left half -->
+                    <div id="leftContainer" class="five columns">
                         
-                        <div class="row" id="techAndExploitation">
-                            
-                            <div class="twelve columns">    
-                                <hr class="goldhr" />
-                                <h2>TECHNOLOGY AND EXPLOITATION</h2>
-                            </div><!-- / twelve column container-->
-                            
-                            <div class="twelve columns">    
-                                
-                                <div class="panelBlack">
-                                    <hr class="blackhr" />
-                                    <h3 class="numberofchildren">NUMBER OF CHILD PORNOGRAPHY IMAGES REPORTED ANNUALLY</h3>
-                                    
-                                    <p>Social technology has made it easier for predators to create and share child pornography online; it’s as simple as it is to update a profile picture. The increased availability of exploitative content has the effect of “normalizing” behaviors that are both dangerous and illegal.</p>
-                                    <p class="citation">Source: National Center for Missing & Exploited Children (NCMEC)</p>
+                        <!-- defenders container -->
+                        <div class="row" id="comingSoonContainer">
+                            <div class="twelve columns">
+                                <div class="panelGold">
+                                    <hr class="goldhr" />
+                                    <h2>DONATE</h2>
+                                    <img src="../images/donate.png" alt="Coming Soon..." />
                                 </div>
-                                
-                            </div><!-- / twelve column container-->
-                            
-                            <div class="twelve columns">
-                                <img class="chart" src="../images/theissue/chart.png" />
                             </div>
-                            
+                        </div>
+                        
+                    </div><!-- / #leftContainer -->
+                    
+                    <!-- divider for the right half -->
+                    <div id="rightContainer" class="five columns">
+                        
+                        <!-- description container -->
+                        <div class="row" id="ctaContainer">
                             <div class="twelve columns">
                                 <div class="panelBlack">
-                                    <hr class="blackhr" />
-                                    <h3 class="threeoutoffour">3 OUT OF 4 VICTIMS ARE TRAFFICKED ONLINE</h3>
-                                    
-                                    <p>Over three-quarters of underage sex trafficking victims we spoke with said their bodies had been advertised or sold online. The Internet simplifies illegal transactions for johns, and helps create new opportunities for pimps who profit from the sexual victimization of children.</p>
-                                    <p class="citation">Source: Thorn Survivor Survey</p>
-                                </div>                                    
+                                    <hr class="redhr" />
+                                    <p class="light">
+                                        100% of your donation goes toward programs to help fight child sexual exploitation. All overhead fot the organization is covered by our founders.
+                                    </p>
+                                </div>
                             </div>
-                            
-                            <div class="twelve columns">
-                                <img class="children" src="../images/theissue/children.png" />
-                            </div>
-                            
-                        </div><!-- / row -->
+                        </div>
                         
-                    </div><!-- / left -->
+                        <!-- task force members container -->
+                        <div class="row" id="newsletterContainer">
+                            <div class="nine columns">
+                                <div class="panelDarkgrey">
+                                    <hr class="darkGreyhr" />
+                                    <h6 class="light">MANY THANKS TO OUR PRO BONO PARTNERS</h6>
+                                    <ul>
+                                        <li>Goodby Silverstein & Partners</li>
+                                        <li>Wilson Sonsini</li>
+                                        <li>Altman, Greenfield & Selvaggi</li>
+                                        <li>Conversion Voodoo</li>
+                                        <li>Google</li>
+                                        <li>Microsoft</li>
+                                        <li>Blekko</li>
+                                        <li>Dr. Michael Seto</li>
+                                    </ul>
+                                        <!--<iframe id="newsletterForm" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="../wufoo/index.html"><a href="https://goodbysilverstein.wufoo.com/forms/m7x3q1/">Fill out my Wufoo form!</a></iframe>-->
+
+                                </div>
+                            </div>
+                            <div class="three columns">
+                                <div class="panelRed">
+                                    <h6 id="donateButton" class="light">DONATE</h6>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div><!-- / #rightContainer -->
                     
-                    
-                    <!-- footer -->
 <!--                    <div id="footerContainer" class="two columns">
-
-                        <div class="twelve colums">
-	                        <hr class="goldhr" />
-                        <p><span></span>
-                        <img src="../images/social_icons/facebook.png" id="facebook_share" />
-
-                        <img src="../images/social_icons/twitter.png" id="twitter_share" /> 
-
-                        <a href="https://plus.google.com/share?url={http://www.wearethorn.org}" onclick="javascript:window.open(this.href,
-'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="../images/social_icons/google_plus.png" alt="Share on Google+" id="google_share" /></a> 
-
-                            <a href="mailto:
-        ?subject=THORN – We are digital defenders of children 
-        &body=Thorn exists to continue the work started by the Demi and Ashton (DNA) Foundation in 2009.  We invest in and deploy the latest technology in order to make the web a hostile environment for child predators.  Our efforts aim to disrupt and deflate the predatory behaviors of those who use technology to abuse or traffic children, to solicit sex with children, or to create and share child pornography." target="_blank" alt="email"><img src="../images/social_icons/social_email.png" id="email_share" /></a> 
-
-
-                                        </p>
-                        </div>        
-                    </div> / footer -->
-                    <div id="footerContainer" class="two columns">
                         <div class="twelve colums">
                             <hr class="goldhr" />
                             <p>
@@ -207,18 +203,22 @@
                                    <a class="twitter popup" href="http://twitter.com/share?text=This%20be%20good%20site!">Share</a> | <a href="https://twitter.com/dnafoundation">Follow</a>
                                 </div>
                                 <div id="email" class="socialPopUp">
+                                    <iframe height="260" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://goodbysilverstein.wufoo.com/embed/m7x3q1/"><a href="https://goodbysilverstein.wufoo.com/forms/m7x3q1/">Fill out my Wufoo form!</a></iframe>
                                     <iframe id="sidebarNewsletterForm" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%; border:none"  src="../wufoo/sidebar.html"><a href="https://goodbysilverstein.wufoo.com/forms/m7x3q1/">Fill out my Wufoo form!</a></iframe>
                                 </div>
                             </div>
-                        </div><!-- / twelve column -->       
-                    </div>
+                        </div> / twelve column        
+                    </div>-->
+
+                    <?php include_once '../includes/footer.php'; ?>
                     
                 </div><!-- / twelve columns container -->
                 
             </div> <!-- / row -->
             <!-- / main content -->
             
-
+            <?php include_once '../includes/policy.php'; ?>
+            
 	</div><!-- / container -->
 	
 
@@ -226,11 +226,13 @@
 
 
 	<!-- Included JS Files -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<!--	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../javascripts/jquery.min.js">\x3C/script>')</script>
 	<script src="../javascripts/foundation.js"></script>
 	<script src="../javascripts/app.js"></script>
+        <script src="../javascripts/jquery.hoverintent.min.js"></script>
         <script src="../javascripts/thorn.js"></script>
-        <script src="../javascripts/social.js"></script>
+        <script src="../javascripts/social.js"></script>-->
+        <?php include_once '../includes/scripts.php'; ?>
 </body>
 </html>

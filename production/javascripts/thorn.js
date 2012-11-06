@@ -50,6 +50,51 @@
             
         });
         
+        var showPrivacy = function(evt) {
+            console.log('over');
+//            console.dir(evt);
+            
+            var target = $(evt.currentTarget);
+            
+            if(target.hasClass('showing')) {
+                $(evt.currentTarget).removeClass('showing');
+//                $('#privacyPolicy p').fadeOut('fase');
+                $('#privacyContainer').animate({
+                    opacity: 0
+                }, 500, function() {
+                    // complete
+                });
+            } else {
+                $(evt.currentTarget).addClass('showing')
+//                $('#privacyPolicy p').show('slow');
+//                $('#privacyPolicy p').fadeIn('slow');
+                $('#privacyContainer').animate({
+                    opacity: 1
+                }, 500, function() {
+                    // complete
+                });
+            }
+            
+        };
+        
+        var config = {    
+            over: showPrivacy, // function = onMouseOver callback (REQUIRED)    
+            timeout: 500
+        };
+        
+//        $('#privacyPolicy a').hoverIntent(config);
+        $('#privacyPolicy a').click(function(evt) {
+            evt.preventDefault();
+//            showPrivacy(evt);
+            showPrivacy(evt);
+        });
+
+//        $('#privacyPolicy a').hover(function(evt) {
+//            showPrivacy(evt);
+//        }, function(evt) {
+//            
+//        });
+        
         if(typeof $.ui != "undefined") {
             $('#accordion').accordion({
                 event: 'click hoverintent',
@@ -80,6 +125,14 @@
 //            var demi = new directorInteraction('.demi', 275);
 //            var ray = new directorInteraction('.ray', 217);
             
+        };
+        
+        
+        
+        var hidePrivacy = function(evt) {
+            console.log('out');
+//            console.dir(evt);
+            $('#privacyPolicy p').hide('fast');
         };
 
         var checkWidthForMobileNavbar = function() {
@@ -316,6 +369,12 @@
 //            
 //            this.init();
 //        }; // end directorInteraction
+
+/* -----------------------------------------------------------------------------
+ *                              Privacy Policy
+ * ---------------------------------------------------------------------------*/
+
+
         
 /* -----------------------------------------------------------------------------
  *                              Initialize

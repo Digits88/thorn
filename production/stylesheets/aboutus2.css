@@ -766,3 +766,27 @@ only screen and (min-device-pixel-ratio : 1.5) {
         height: 118px;
     }
 }
+
+/*	--------------------------------------------------
+	Privacy Policy
+	-------------------------------------------------- */
+
+#privacyPolicy div a {
+    color: #000;
+    font-weight:bold;
+    line-height:15px; 
+}
+
+#privacyContainer {
+    opacity: 0;
+}
+
+#privacyPolicy p {
+    /*opacity: 0;*/
+    font-size: 0.8rem;
+    margin-bottom: 9px;
+}
+
+#privacyPolicy div p:nth-of-type(1) {
+    margin-top: 11px;
+}
