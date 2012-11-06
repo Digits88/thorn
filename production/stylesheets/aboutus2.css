@@ -771,14 +771,21 @@ only screen and (min-device-pixel-ratio : 1.5) {
 	Privacy Policy
 	-------------------------------------------------- */
 
+#privacyPolicy .goldhr {
+    width: 95.5%;
+    margin-left: 21px;
+}
+
 #privacyPolicy div a {
     color: #000;
     font-weight:bold;
     line-height:15px; 
+    margin-left:21px;
 }
 
 #privacyContainer {
     opacity: 0;
+    margin-left: 21px;
 }
 
 #privacyPolicy p {
