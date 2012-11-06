@@ -86,6 +86,13 @@ min-height: 100%; }
 
 }
 
+.privacyhr {
+    color: #434344;
+    background-color: #434344;
+    border-color: #434344;
+    border-width: 1px;
+}
+
 /*
 #directorsContainer .six:last-child {
     float: right;
@@ -771,16 +778,21 @@ only screen and (min-device-pixel-ratio : 1.5) {
 	Privacy Policy
 	-------------------------------------------------- */
 
-#privacyPolicy .goldhr {
+#privacyPolicy {
+    margin-top: 25px;
+}
+
+#privacyPolicy .privacyhr {
     width: 95.5%;
     margin-left: 21px;
 }
 
 #privacyPolicy div a {
-    color: #000;
+    color: #383839;
     font-weight:bold;
     line-height:15px; 
     margin-left:21px;
+    font-size: 10px;
 }
 
 #privacyContainer {
