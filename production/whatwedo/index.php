@@ -123,13 +123,13 @@
 		                <div class="twelve columns">
 			                <div id="research" class="three columns">
 		                		<hr class="goldhr" />
-		                		<h5>RESEARCH AND<br />INTELLIGENCE</h5>
+		                		<h5>RESEARCH AND<br />DEVELOPMENT</h5>
 			                </div>
 			                
 			                <div class="eight columns">
 			                	<div class="panelBlack">
 			                		<hr class="blackhr" />
-				                	<p>We partner with nonprofits and academic institutions to gather new insights into the role technology plays in the recruitment and sale of child victims, the distribution of images and information that promote further child sexual abuse, and the normalization of abusive online behaviors.</p>
+				                	<p>We partner with nonprofits and academic institutions to gather new insights into the role technology plays in child sex trafficking, the creation and proliferation of child pornography, and the normalization of child sexual exploitation.</p>
 			                	</div>	
 			                </div>
 		                </div>
@@ -139,13 +139,13 @@
 		                <div class="twelve columns">
 			                <div id="deterrance" class="three columns">
 		                		<hr class="goldhr" />
-		                		<h5>DETERRANCE<br />PROGRAMS</h5>
+		                		<h5>DETERRENCE</h5>
 			                </div>
 			                
 			                <div class="eight columns">
 			                	<div class="panelRed">
 			                		<hr class="redhr" />
-				                	<p>We launch and support tech initiatives that disrupt predatory behavior and work to make the internet a more hostile environment for those who seek to exploit children.</p>
+				                	<p>We create and support tech initiatives that disrupt predatory behavior and work to make the internet a more hostile environment for those who seek to exploit children.</p>
 			                	</div>	
 			                </div>
 		                </div>
@@ -155,13 +155,13 @@
 		                <div class="twelve columns">
 			                <div id="technological" class="three columns">
 		                		<hr class="goldhr" />
-                                                <h5><span id="nitPickyT">TECHNOLOGICAL</span><br />INNOVATION</h5>
+                                                <h5><!--<span id="nitPickyT">TECHNOLOGICAL</span><br />-->INNOVATION</h5>
 			                </div>
 			                
 			                <div class="eight columns">
 			                	<div class="panelDarkgrey">
 			                		<hr class="darkGreyhr" />
-				                	<p>We recruit the brightest minds to solve specific tech problems in our fight against the sexual exploitation of children. </p>
+				                	<p>We recruit the brightest minds in technology to solve specific problems in our fight against the sexual exploitation of children.</p>
 			                	</div>	
 			                </div>
 		                </div>
@@ -178,7 +178,7 @@
 			                <div class="eight columns">
 			                	<div class="panelGold">
 			                		<hr class="goldhr" />
-				                	<p>We facilitate the sharing of information across platforms and cooperation on anti-child-abuse initiatives between industry leaders like Facebook, Google, Twitter, Cisco, and Microsoft.</p>
+				                	<p>We facilitate the sharing of information across platforms and encourage cooperation on initiatives between industry leaders.</p>
 			                	</div>	
 			                </div>
 			            </div>

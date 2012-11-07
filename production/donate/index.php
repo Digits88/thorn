@@ -140,7 +140,7 @@
                                 <div class="panelBlack">
                                     <hr class="redhr" />
                                     <p class="light">
-                                        100% of your donation goes toward programs to help fight child sexual exploitation. All overhead fot the organization is covered by our founders.
+                                        100% of your donation goes toward programs to help fight child sexual exploitation. All overhead for the organization is covered by our founders.
                                     </p>
                                 </div>
                             </div>
@@ -159,6 +159,7 @@
                                         <li>Conversion Voodoo</li>
                                         <li>Google</li>
                                         <li>Microsoft</li>
+                                        <li>Facebook</li>
                                         <li>Blekko</li>
                                         <li>Dr. Michael Seto</li>
                                     </ul>

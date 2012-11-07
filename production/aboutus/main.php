@@ -119,6 +119,10 @@
                                         <div>
                                             <p>United Nations Secretary-General’s Millennium Development Goals (MDG) Advocate and Special Envoy for Malaria. Chambers is a philanthropist and humanitarian who directs most of his efforts toward helping children. He is the founding chairman of the Points of Light Foundation and cofounder, with Colin Powell, of America’s Promise—The Alliance for Youth. He also cofounded the National Mentoring Partnership, the Millennium Promise Alliance and Malaria No More.</p>
                                         </div>
+                                        <h4>JIM PITKOW</h4>
+                                        <div>
+                                            <p>Chair of the Thorn Technology Task Force. Pitkow is a Silicon Valley entrepreneur, investor, and advisor.  He received a Doctorate in Computer Science from the Georgia Institute of Technology.  Jim is a member of the National Ski Patrol and an avid student of the contemplative arts.</p>
+                                        </div>
                                     </div>
                                         
                                     
@@ -154,8 +158,8 @@
                                     <hr class="redhr" />
                                     <p>
                                         Thorn exists to continue the work started by the Demi and Ashton (DNA) Foundation in 2009.<br><br>
-                                        We invest in and deploy the latest technology in order to make the web a hostile environment for child predators.<br><br>
-                                        Our efforts aim to disrupt and deflate the predatory behaviors of those who use technology to abuse or traffic children, to solicit sex with children, or to create and share child pornography.</p>
+                                        We aim to disrupt and deflate the predatory behavior of those who abuse and traffic children, solicit sex with children or create and share child pornography.<br><br>
+                                        As these crimes are increasingly facilitated by technology, we invest in and deploy the latest technology as part of our ongoing fight to end child sexual exploitation.</p>
                                 </div>
                             </div>
                         </div>

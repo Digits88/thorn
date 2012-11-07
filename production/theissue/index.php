@@ -129,9 +129,9 @@
                                 
                                 <div class="panelBlack">
                                     <hr class="blackhr" />
-                                    <h3 class="numberofchildren">NUMBER OF CHILD PORNOGRAPHY IMAGES REPORTED ANNUALLY</h3>
+                                    <h3 class="numberofchildren">NUMBER OF CHILD PORNOGRAPHY FILES REPORTED ANNUALLY</h3>
                                     
-                                    <p>Social technology has made it easier for predators to create and share child pornography online; it’s as simple as it is to update a profile picture. The increased availability of exploitative content has the effect of “normalizing” behaviors that are both dangerous and illegal.</p>
+                                    <p>The number of images/videos submitted to NCMEC by law enforcement and reviewed by the Child Victim Identification Program has increased from 450,000 in 2004 to more than 17 million in 2011.  Technology has made it easier for predatorsto create and share child pornography and connect with like-minded individuals. The increased availability of exploitative content has the effect of “normalizing” behaviors that are both dangerous and illegal.</p>
                                     <p class="citation">Source: National Center for Missing & Exploited Children (NCMEC)</p>
                                 </div>
                                 
@@ -146,7 +146,7 @@
                                     <hr class="blackhr" />
                                     <h3 class="threeoutoffour">3 OUT OF 4 VICTIMS ARE TRAFFICKED ONLINE</h3>
                                     
-                                    <p>Over three-quarters of underage sex trafficking victims we spoke with said their bodies had been advertised or sold online. The Internet simplifies illegal transactions for johns, and helps create new opportunities for pimps who profit from the sexual victimization of children.</p>
+                                    <p>Over three-quarters of underage sex trafficking victims we spoke with said they had been advertised or sold online. The Internet simplifies illegal transactions for johns, and helps create new opportunities for pimps who profit from the sexual victimization of children.</p>
                                     <p class="citation">Source: Thorn Survivor Survey</p>
                                 </div>                                    
                             </div>
