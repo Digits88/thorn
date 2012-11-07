@@ -117,7 +117,7 @@
                 
             </div><!-- / header -->
             
-            <div class="row">
+            <div class="row" id="whatWeDo">
             	<div class="ten columns">
 	            	<div class="row" id="researchContainer">
 		                <div class="twelve columns">

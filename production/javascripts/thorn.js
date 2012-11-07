@@ -83,10 +83,14 @@
         };
         
 //        $('#privacyPolicy a').hoverIntent(config);
-        $('#privacyPolicy a').click(function(evt) {
+        $('#privacyPolicy a').hover(function(evt) {
             evt.preventDefault();
 //            showPrivacy(evt);
             showPrivacy(evt);
+        });
+        
+        $('#privacyPolicy a').click(function(evt) {
+            evt.preventDefault();
         });
 
 //        $('#privacyPolicy a').hover(function(evt) {
@@ -98,6 +102,7 @@
         if(typeof $.ui != "undefined") {
             $('#accordion').accordion({
                 event: 'click hoverintent',
+//                event: 'mouseover',
                 header: 'h4',
                 collapsible: true,
                 active: false,

@@ -89,7 +89,7 @@
                         <div class="row" id="defendersContainer">
                             <div class="twelve columns">
                                 <div class="panelDarkgrey">
-                                    <hr class="darkGreyhr" />
+                                    <hr class="blackhr" />
                                     <h2>WE ARE DIGITAL<br /> DEFENDERS<br /> OF CHILDREN.</h2>
                                     <img src="../images/weAreDigitalDefendersOfChildren-360x109.png" alt="We are digital defenders of children" />
                                 </div>
@@ -102,20 +102,20 @@
                             <div id ="internalDirectorsContainer" class="six columns">
                                 <div class="panelLightgrey">
                                     <hr class="lightGreyhr" />
-                                    <h3>BOARD OF DIRECTORS</h3>
+                                    <h6>BOARD OF DIRECTORS<span>+</span></h6>
                                     
                                     <div id="accordion">
-                                        <h4>ASHTON KUTCHER +</h4>
+                                        <h4>ASHTON KUTCHER</h4>
                                         <div>
                                             <p>Cofounder of Thorn. Kutcher is an actor, producer, tech and social media investor, and philanthropist focused on using technology to effect positive changes in the world. In 2010 Time Magazine named him among their Top 100 Most Influential People; the following year, Vanity Fair honored him in their 2011 New Establishment List, which identifies the top 50 of an innovative new breed of buccaneering visionaries, engineering prodigies and entrepreneurs.</p>
                                         </div>
 
-                                        <h4>DEMI MOORE +</h4>
+                                        <h4>DEMI MOORE</h4>
                                         <div>
                                             <p>Cofounder of Thorn. Moore is an actress and a long-standing advocate for women’s issues. She received a Golden Globe nomination for her role in If These Walls Could Talk and a Director’s Guild nomination for Five, an anthology of short films that explore the impact of breast cancer. She partnered with CNN Freedom Project for the documentary Nepal’s Stolen Children to highlight the work of antitrafficking advocate Anuradha Koirala. In 2011 she became executive producer of “The Conversation,” an interview series hosted by Amanda de Cadenet that features intimate and frank interviews with prominent women.</p>
                                         </div>
 
-                                        <h4>RAY CHAMBERS +</h4>
+                                        <h4>RAY CHAMBERS</h4>
                                         <div>
                                             <p>United Nations Secretary-General’s Millennium Development Goals (MDG) Advocate and Special Envoy for Malaria. Chambers is a philanthropist and humanitarian who directs most of his efforts toward helping children. He is the founding chairman of the Points of Light Foundation and cofounder, with Colin Powell, of America’s Promise—The Alliance for Youth. He also cofounded the National Mentoring Partnership, the Millennium Promise Alliance and Malaria No More.</p>
                                         </div>

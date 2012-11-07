@@ -87,9 +87,13 @@ min-height: 100%; }
 }
 
 .privacyhr {
-    color: #434344;
+/*    color: #434344;
     background-color: #434344;
-    border-color: #434344;
+    border-color: #434344;*/
+    color: #6d6f71;
+    background-color: #6d6f71;
+    border-color: #6d6f71;
+    margin-bottom: 13px;
     border-width: 1px;
 }
 
@@ -132,7 +136,8 @@ min-height: 100%; }
 
 }*/
 
-#taskForceContainer h6 {
+#taskForceContainer h6,
+#directorsContainer h6{
     margin-bottom: 4px;
     font-size: 10px; 
 }
@@ -151,8 +156,11 @@ min-height: 100%; }
 }*/
 
 #footerContainer {
-	padding-top: 8px;
-	margin-left: 20px;
+    padding-top: 8px;
+    margin-left: 20px;
+}
+#whatWeDo #footerContainer {
+    margin-left: -20px;
 }
 
 #footerContainer span {
@@ -225,7 +233,7 @@ min-height: 100%; }
 	-------------------------------------------------- */
 
 dl.tabs dd a {
-    padding: 0 13px;
+    padding: 0 18px;
     line-height: 29px;
 
 }
@@ -386,7 +394,7 @@ dl.tabs dd a.current {
     font-family: 'Varela', "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 9px;
     line-height: 13px;
-    letter-spacing: 1px;
+    /*letter-spacing: 1px;*/
 }
 
 #directorsContainer span.ui-state-active, #directorsContainer .ui-state-active .ui-icon, #directorsContainer .ui-state-default .ui-icon {
@@ -395,7 +403,7 @@ dl.tabs dd a.current {
 }
 
 #directorsContainer p {
-    font-size: 9px;
+    font-size: 11px;
     font-weight: normal;
     line-height: 13px;
     margin-bottom: 14px;
@@ -783,12 +791,13 @@ only screen and (min-device-pixel-ratio : 1.5) {
 }
 
 #privacyPolicy .privacyhr {
-    width: 95.5%;
+    width: 92%;
     margin-left: 21px;
 }
 
 #privacyPolicy div a {
-    color: #383839;
+    /*color: #383839;*/
+    color: #6d6f71;
     font-weight:bold;
     line-height:15px; 
     margin-left:21px;
@@ -798,11 +807,14 @@ only screen and (min-device-pixel-ratio : 1.5) {
 #privacyContainer {
     opacity: 0;
     margin-left: 21px;
+    width: 92%;
+    padding-bottom: 20px;
 }
 
 #privacyPolicy p {
     /*opacity: 0;*/
-    font-size: 0.8rem;
+    /*font-size: 0.8rem;*/
+    font-size: 11px;
     margin-bottom: 9px;
 }
 

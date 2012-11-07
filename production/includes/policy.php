@@ -4,7 +4,7 @@
  */
 ?>
             <div id="privacyPolicy" class="row">
-                <div class="twelve columns">
+                <div class="ten columns">
                     <hr class="privacyhr" />
                     <a href="#">PRIVACY POLICY +</a>
                     <div id="privacyContainer">
