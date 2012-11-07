@@ -102,7 +102,7 @@
                             <div id ="internalDirectorsContainer" class="six columns">
                                 <div class="panelLightgrey">
                                     <hr class="lightGreyhr" />
-                                    <h6>BOARD OF DIRECTORS<span>+</span></h6>
+                                    <h6 id="boardHover">BOARD OF DIRECTORS<span>+</span></h6>
                                     
                                     <div id="accordion">
                                         <h4>ASHTON KUTCHER</h4>

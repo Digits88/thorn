@@ -89,6 +89,26 @@
             showPrivacy(evt);
         });
         
+//        $('#boardHover').hover(function(evt) {
+//            expandBoard(evt);
+//        }, function(evt) {
+//           retractBoard(evt); 
+//        });
+
+        var expandBoard = function(evt) {
+            $('#accordion').show('slow');
+        };
+        
+        var retractBoard = function(evt) {
+            $('#accordion').hide('slow');
+        };
+
+        $('#internalDirectorsContainer .panelLightgrey').hoverIntent({
+            over: expandBoard,
+            timeout: 500,
+            out: retractBoard
+        });
+        
         $('#privacyPolicy a').click(function(evt) {
             evt.preventDefault();
         });
@@ -99,16 +119,16 @@
 //            
 //        });
         
-        if(typeof $.ui != "undefined") {
-            $('#accordion').accordion({
-                event: 'click hoverintent',
-//                event: 'mouseover',
-                header: 'h4',
-                collapsible: true,
-                active: false,
-                heightStyle: "auto"
-            });
-        }
+//        if(typeof $.ui != "undefined") {
+//            $('#accordion').accordion({
+//                event: 'click hoverintent',
+////                event: 'mouseover',
+//                header: 'h4',
+//                collapsible: true,
+//                active: false,
+//                heightStyle: "auto"
+//            });
+//        }
         
 /* -----------------------------------------------------------------------------
  *                              Helpers

@@ -416,6 +416,10 @@ dl.tabs dd a.current {
     padding: 0;
 }
 
+#accordion {
+    display: none;
+}
+
 /* sets the height of the accordion divs used in conjunction with jquery ui */
 #accordion div p {
     min-height: 176px;
