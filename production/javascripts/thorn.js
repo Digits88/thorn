@@ -92,11 +92,19 @@
 
 
         var expandBoard = function(evt) {
-            $('#accordion').show('slow');
+            $('#accordion').animate({
+                height: '841px'
+            }, 500, function() {
+                // complete
+            });
         };
         
         var retractBoard = function(evt) {
-            $('#accordion').hide('slow');
+            $('#accordion').animate({
+                height: '12px'
+            }, 500, function() {
+                // complete
+            });
         };
         
         $('#internalDirectorsContainer .panelLightgrey').hover(function(evt) {

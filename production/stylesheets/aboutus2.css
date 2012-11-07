@@ -314,8 +314,8 @@ dl.tabs dd a.current {
 
 #newsletterContainer h6#donateButton {
     display: inline-block;
-    padding: 5px 10px;
-    color: black;
+    padding: 5px 10px 5px 13px;
+    color: white;
     margin: 0px 0 0 -5px;
 }
 
@@ -416,13 +416,28 @@ dl.tabs dd a.current {
     padding: 0;
 }
 
-#accordion {
+/*#accordion {
     display: none;
-}
+}*/
 
 /* sets the height of the accordion divs used in conjunction with jquery ui */
+
+#accordion {
+    height: 12px;
+    overflow: hidden;
+}
+
+#accordion h4:first-child {
+    margin-top: 20px;
+}
+
+#accordion h4 {
+    margin-top: 8px;
+    margin-bottom: 7px;
+}
+
 #accordion div p {
-    min-height: 176px;
+    /*min-height: 176px;*/
 }
 
 /*	--------------------------------------------------
@@ -579,6 +594,11 @@ dl.tabs dd a.current {
     padding-top: 8px
 }
 
+#techAndExploitation .goldhr {
+    margin-left: 18px;
+    width: 92.5%;
+}
+
 
 
 #techAndExploitation h2 {
@@ -605,6 +625,10 @@ dl.tabs dd a.current {
     background: url(../images/theissue/3outof4.png) scroll no-repeat;
 }
 
+#techAndExploitation .panelBlack {
+    width: 92.5%;
+}
+
 #techAndExploitation .panelBlack img {
     margin-top: -100px;
 }
@@ -613,7 +637,7 @@ dl.tabs dd a.current {
 #techAndExploitation .children {
     position: relative;
     left: 50%;
-    margin: 30px 0 30px -387px;
+    margin: 50px 0 50px -399px;
     width: 774px;
 }
 
@@ -824,4 +848,10 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 #privacyPolicy div p:nth-of-type(1) {
     margin-top: 11px;
+}
+
+#theIssue #privacyPolicy {
+    position: relative;
+    top: -73px;
+    margin-top: -25px;
 }

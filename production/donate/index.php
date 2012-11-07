@@ -151,7 +151,7 @@
                             <div class="nine columns">
                                 <div class="panelDarkgrey">
                                     <hr class="darkGreyhr" />
-                                    <h6 class="light">MANY THANKS TO OUR PRO BONO PARTNERS</h6>
+                                    <h6 class="light">THANKS TO OUR PRO BONO PARTNERS</h6>
                                     <ul>
                                         <li>Goodby Silverstein & Partners</li>
                                         <li>Wilson Sonsini</li>
