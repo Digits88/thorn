@@ -138,7 +138,7 @@
                         <div class="row" id="ctaContainer">
                             <div class="twelve columns">
                                 <div class="panelBlack">
-                                    <hr class="redhr" />
+                                    <hr class="blackhr" />
                                     <p class="light">
                                         100% of your donation goes toward programs to help fight child sexual exploitation. All overhead for the organization is covered by our founders.
                                     </p>

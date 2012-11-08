@@ -93,7 +93,7 @@
 
         var expandBoard = function(evt) {
             $('#accordion').animate({
-                height: '841px'
+                height: '741px'
             }, 500, function() {
                 // complete
             });
@@ -101,23 +101,23 @@
         
         var retractBoard = function(evt) {
             $('#accordion').animate({
-                height: '12px'
+                height: '3px'
             }, 500, function() {
                 // complete
             });
         };
         
-        $('#internalDirectorsContainer .panelLightgrey').hover(function(evt) {
-            expandBoard(evt);
-        }, function(evt) {
-           retractBoard(evt); 
-        });
-
-//        $('#internalDirectorsContainer .panelLightgrey').hoverIntent({
-//            over: expandBoard,
-//            timeout: 500,
-//            out: retractBoard
+//        $('#internalDirectorsContainer .panelLightgrey').hover(function(evt) {
+//            expandBoard(evt);
+//        }, function(evt) {
+//           retractBoard(evt); 
 //        });
+
+        $('#internalDirectorsContainer .panelLightgrey').hoverIntent({
+            over: expandBoard,
+            timeout: 500,
+            out: retractBoard
+        });
         
         $('#privacyPolicy a').click(function(evt) {
             evt.preventDefault();

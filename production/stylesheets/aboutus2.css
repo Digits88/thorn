@@ -97,6 +97,14 @@ min-height: 100%; }
     border-width: 1px;
 }
 
+.digitalhr {
+    color: #aaacaf;
+    background-color: #aaacaf;
+    border-color: #aaacaf;
+    margin-bottom: 13px;
+    border-width: 1px;
+}
+
 /*
 #directorsContainer .six:last-child {
     float: right;
@@ -428,18 +436,26 @@ dl.tabs dd a.current {
 /* sets the height of the accordion divs used in conjunction with jquery ui */
 
 #accordion {
-    height: 12px;
+    height: 3px;
+    /*height: 741px;*/
     overflow: hidden;
 }
 
-#accordion h4:first-child {
+#accordion h7:first-child {
     margin-top: 20px;
+/*    position: relative;
+    top: 10px;*/
 }
 
-#accordion h4 {
+#accordion h7 {
     margin-top: 8px;
     margin-bottom: 7px;
+    font-size: 1rem;
+    color: #231F20;
+    font-weight: bold;
 }
+
+
 
 #accordion div p {
     /*min-height: 176px;*/
@@ -611,7 +627,7 @@ dl.tabs dd a.current {
     display: inline-block;
     width: 100%;
     min-height: 56px;
-    background: url(../images/theissue/techandexploit.png) scroll 34px 8px no-repeat;
+    background: url(../images/theissue/techandexploit.png) scroll 19px 8px no-repeat;
 }
 
 #techAndExploitation h3 {
@@ -631,7 +647,8 @@ dl.tabs dd a.current {
 }
 
 #techAndExploitation .panelBlack {
-    width: 92.5%;
+    /*width: 92.5%;*/
+    width: 89.7%;
 }
 
 #techAndExploitation .panelBlack img {
