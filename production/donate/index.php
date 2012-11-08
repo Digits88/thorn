@@ -187,10 +187,11 @@
                                             font-weight: bold !important;
                                             line-height: 1.25 !important;
                                             font-family: 'Varela', "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+                                            letter-spacing: 1px !important;
                                             
                                         }
                                     </style>
-                                    <a class="wepay-widget-button wepay-green wepay-custom-button" id="wepay_widget_anchor_509c0ade99c45" href="https://www.wepay.com/donations/1810764396">Donate</a><script type="text/javascript">var WePay = WePay || {};WePay.load_widgets = WePay.load_widgets || function() { };WePay.widgets = WePay.widgets || [];WePay.widgets.push( {object_id: 1810764396,widget_type: "donation_campaign",anchor_id: "wepay_widget_anchor_509c0ade99c45",widget_options: {list_suggested_donations: true,allow_cover_fee: true,enable_recurring: true,allow_anonymous: true,button_text: "Donate"}});if (!WePay.script) {WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);} else if (WePay.load_widgets) {WePay.load_widgets();}</script>
+                                    <a class="wepay-widget-button wepay-green wepay-custom-button" id="wepay_widget_anchor_509c0ade99c45" href="https://www.wepay.com/donations/1810764396">DONATE</a><script type="text/javascript">var WePay = WePay || {};WePay.load_widgets = WePay.load_widgets || function() { };WePay.widgets = WePay.widgets || [];WePay.widgets.push( {object_id: 1810764396,widget_type: "donation_campaign",anchor_id: "wepay_widget_anchor_509c0ade99c45",widget_options: {list_suggested_donations: true,allow_cover_fee: true,enable_recurring: true,allow_anonymous: true,button_text: "Donate"}});if (!WePay.script) {WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);} else if (WePay.load_widgets) {WePay.load_widgets();}</script>
                                 </div>
                             </div>
                         </div>

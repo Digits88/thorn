@@ -290,6 +290,19 @@
                     _socialOn = true;
 
                     _popup.show();
+                    
+                    _popup.find('a').animate({
+                        'font-size': '10px'
+                    }, 200, function() {
+                        // complete
+                        console.dir(this);
+                        $(this).animate({
+                            'font-size': '9px'
+                        }, 200, function() {
+                            // complete
+                        });
+                    });
+                    
                     socialCheckOthersHidden();
                 });
                 
