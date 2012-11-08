@@ -291,17 +291,27 @@
 
                     _popup.show();
                     
+                    _popup.find('a').css({
+                        opacity: 0
+                    });
+                    
                     _popup.find('a').animate({
-                        'font-size': '10px'
+                        opacity: 1
                     }, 200, function() {
                         // complete
-                        console.dir(this);
-                        $(this).animate({
-                            'font-size': '9px'
-                        }, 200, function() {
-                            // complete
-                        });
                     });
+                    
+//                    _popup.find('a').animate({
+//                        'font-size': '10px'
+//                    }, 200, function() {
+//                        // complete
+//                        console.dir(this);
+//                        $(this).animate({
+//                            'font-size': '9px'
+//                        }, 200, function() {
+//                            // complete
+//                        });
+//                    });
                     
                     socialCheckOthersHidden();
                 });
