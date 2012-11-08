@@ -131,7 +131,7 @@
                                     <hr class="blackhr" />
                                     <h3 class="numberofchildren">NUMBER OF CHILD PORNOGRAPHY FILES REPORTED ANNUALLY</h3>
                                     
-                                    <p>The number of images/videos submitted to NCMEC by law enforcement and reviewed by the Child Victim Identification Program has increased from 450,000 in 2004 to more than 17 million in 2011.  Technology has made it easier for predatorsto create and share child pornography and connect with like-minded individuals. The increased availability of exploitative content has the effect of “normalizing” behaviors that are both dangerous and illegal.</p>
+                                    <p>The number of images/videos submitted to NCMEC by law enforcement and reviewed by the Child Victim Identification Program has increased from 450,000 in 2004 to more than 17 million in 2011.  Technology has made it easier for predators to create and share child pornography and connect with like-minded individuals. The increased availability of exploitative content has the effect of “normalizing” behaviors that are both dangerous and illegal.</p>
                                     <p class="citation">Source: National Center for Missing & Exploited Children (NCMEC)</p>
                                 </div>
                                 
