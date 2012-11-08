@@ -644,6 +644,7 @@ dl.tabs dd a.current {
 #techAndExploitation .threeoutoffour {
     width: 100%;
     background: url(../images/theissue/3outof4.png) scroll no-repeat;
+    margin-bottom: -1px;
 }
 
 #techAndExploitation .panelBlack {
