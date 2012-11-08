@@ -93,7 +93,7 @@
 
         var expandBoard = function(evt) {
             $('#accordion').animate({
-                height: '741px'
+                height: '779px'
             }, 500, function() {
                 // complete
             });

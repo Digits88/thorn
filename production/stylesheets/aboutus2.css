@@ -303,7 +303,7 @@ dl.tabs dd a.current {
 	-------------------------------------------------- */
 
 #ctaContainer .light {
-    color: #aaa;
+    /*color: #aaa;*/
 }
 
 /*	--------------------------------------------------
@@ -437,7 +437,7 @@ dl.tabs dd a.current {
 
 #accordion {
     height: 3px;
-    /*height: 741px;*/
+    /*height: 779px;*/
     overflow: hidden;
 }
 
@@ -459,6 +459,7 @@ dl.tabs dd a.current {
 
 #accordion div p {
     /*min-height: 176px;*/
+    margin: 5px 0;
 }
 
 /*	--------------------------------------------------
