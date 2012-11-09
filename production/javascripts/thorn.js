@@ -323,6 +323,10 @@
 
                 });
                 
+                _button.on('click', function(evt) {
+                    evt.preventDefault();
+                });
+                
                 _popup.on('mouseover touchstart touchend', function(evt) {
                     evt.preventDefault();
 
