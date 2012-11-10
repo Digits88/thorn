@@ -216,7 +216,10 @@
         };
 
         var updateWindowWidth = function() {
-            windowWidth = $(window).width();
+            
+            var w = ($(window).width() > 0) ? $(window).width() : document.body.clientWidth;
+            
+            windowWidth = w;
         };
         
         var centerLogo = function() {

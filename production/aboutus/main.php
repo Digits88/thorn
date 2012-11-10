@@ -28,14 +28,14 @@
         <link rel="stylesheet" type="text/css" href="../stylesheets/animations.css" />
         <link rel="stylesheet" type="text/css" href="../stylesheets/jquery-ui.custom.css" />
 
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" href="stylesheets/ie.css">
+	<!--[if IE]>
+		<link rel="stylesheet" href="../stylesheets/ie.css">
 	<![endif]-->
 	
 	<script src="../javascripts/modernizr.foundation.js"></script>
         
 	<!-- IE Fix for HTML5 Tags -->
-	<!--[if lt IE 9]>
+	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
@@ -43,7 +43,7 @@
 <body>
 
 	<!-- container -->
-	<div class="container">
+	<div class="container" id="aboutus">
             
             <!-- header -->
             <div class="row">
