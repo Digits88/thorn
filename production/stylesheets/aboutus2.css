@@ -879,3 +879,26 @@ only screen and (min-device-pixel-ratio : 1.5) {
     top: -73px;
     margin-top: -25px;
 }
+
+
+/*	--------------------------------------------------
+	WePay Button
+	-------------------------------------------------- */
+/*.wepay-custom-button {
+    background: transparent !important;
+    border: none !important;
+
+    -moz-box-shadow:        none !important;
+    -webkit-box-shadow:     none !important;
+    box-shadow:             none !important;
+
+    width: 102px !important;
+    height: 32px !important;
+    margin-left: -20px !important;
+
+    font-size: 10px !important;
+    font-weight: bold !important;
+    line-height: 1.25 !important;
+    font-family: 'Varela', "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+    letter-spacing: 1px !important;
+}*/

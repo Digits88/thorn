@@ -67,7 +67,8 @@ dl.tabs {
 
 #newsletterContainer .three {
     position: static;
-    /*margin-left: 0;*/
+    float: right;
+    margin-left: 0;
 }
 
 #newsletterContainer .nine {

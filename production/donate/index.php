@@ -170,19 +170,20 @@
                             <div class="three columns">
                                 <div class="panelRed">
                                     <!--<h6 id="donateButton" class="light">DONATE</h6>-->
-                                    <style>
-                                        .wepay-custom-button {
+                                    
+                                    <style type="text/css">
+                                        #newsletterContainer .three .panelRed .wepay-custom-button {
                                             background: transparent !important;
                                             border: none !important;
-                                            
+
                                             -moz-box-shadow:        none !important;
                                             -webkit-box-shadow:     none !important;
                                             box-shadow:             none !important;
-                                            
+
                                             width: 102px !important;
                                             height: 32px !important;
                                             margin-left: -20px !important;
-                                            
+
                                             font-size: 10px !important;
                                             font-weight: bold !important;
                                             line-height: 1.25 !important;
@@ -190,6 +191,36 @@
                                             letter-spacing: 1px !important;
                                         }
                                     </style>
+                                    <!--[if IE]>
+                                        <style type="text/css">
+                                            #newsletterContainer .panelRed {
+                                                margin-left: 0;
+                                                float: right;
+                                            }
+                                    
+                                            #newsletterContainer .three .panelRed .wepay-custom-button {
+                                                background: transparent !important;
+                                                filter: none;
+                                                border: none !important;
+
+                                                -moz-box-shadow:        none !important;
+                                                -webkit-box-shadow:     none !important;
+                                                box-shadow:             none !important;
+
+                                                width: 102px !important;
+                                                height: 32px !important;
+                                                margin-left: -20px !important;
+                                                padding-right: 0;
+
+                                                font-size: 10px !important;
+                                                font-weight: bold !important;
+                                                line-height: 1.25 !important;
+                                                font-family: 'Varela', "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+                                                letter-spacing: 1px !important;
+                                            }
+                                        </style>
+                                    <![endif]-->
+                                        
                                     <a class="wepay-widget-button wepay-green wepay-custom-button" id="wepay_widget_anchor_509c0ade99c45" href="https://www.wepay.com/donations/1810764396">DONATE</a><script type="text/javascript">var WePay = WePay || {};WePay.load_widgets = WePay.load_widgets || function() { };WePay.widgets = WePay.widgets || [];WePay.widgets.push( {object_id: 1810764396,widget_type: "donation_campaign",anchor_id: "wepay_widget_anchor_509c0ade99c45",widget_options: {list_suggested_donations: true,allow_cover_fee: true,enable_recurring: true,allow_anonymous: true,button_text: "Donate"}});if (!WePay.script) {WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);} else if (WePay.load_widgets) {WePay.load_widgets();}</script>
                                 </div>
                             </div>
