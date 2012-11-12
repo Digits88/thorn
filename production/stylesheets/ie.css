@@ -38,13 +38,15 @@ div.panel { border: 1px solid #ccc; }
 #aboutus .panelDarkgrey { width: 100%; }
 #aboutus .panelRed { width: 100%; }
 
-#whatwedo .panelBlack { width: 104.5%; }
-#whatwedo .panelRed { width: 104.5%; }
-#whatwedo .panelDarkgrey { width: 104.5%; }
-#whatwedo .panelGold { width: 104.5%; }
+#whatwedo .panelBlack { width: 105%; }
+#whatwedo .panelRed { width: 105%; }
+#whatwedo .panelDarkgrey { width: 105%; }
+#whatwedo .panelGold { width: 105%; }
+#whatwedo #footerContainer { margin-left: -25px; }
 
 #techAndExploitation .panelBlack { width: 95.5%; }
 #techAndExploitation .children { position: static; left: 0; margin: -19% 0 5% 9%; }
+#techAndExploitation #footerContainer { margin-left: -25px; }
 
 #donate .panelGold { width: 100%; }
 #donate .panelBlack { width: 100%; }
@@ -61,4 +63,17 @@ dl.tabs {
 
 .twelve dl.tabs dd {
     width: 24%;
+}
+
+#newsletterContainer .three {
+    position: static;
+    /*margin-left: 0;*/
+}
+
+#newsletterContainer .nine {
+    width: 72.9%;
+}
+
+#taskForceContainer .minimized {
+    height: 84px;
 }
