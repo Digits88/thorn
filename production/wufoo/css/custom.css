@@ -1,10 +1,10 @@
 /* - - - - - - - - - - - - - - - - - - - - -
 
  Title : Thorn Wufoo Form CSS   
- Author : Michael Newell
+ Author : 
  URL : http://goodbysilverstein.com
 
- Last Updated :
+ Last Updated : 11.12.12
 
 - - - - - - - - - - - - - - - - - - - - - */
 
@@ -79,3 +79,69 @@
 #saveForm:active {
     background-color: #999;
 }
+
+.confirm .wufoo h2 {
+    color: transparent;
+}
+
+#form2 {
+    display: none;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - -
+
+ Title : Thorn Wufoo Form CSS   
+ Author : Michael Newell
+ URL : http://goodbysilverstein.com
+
+ Last Updated : Pre 11.12.12
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Varela);
+
+.thornEmail {
+    
+    width:400px;
+    
+}
+
+#Field1 {
+    background-color: #a7aaac;
+    border: none;
+    color: #87898b;
+    height: 19px;
+    width: 183px;
+    font-size: 11px;
+    font-family: 'Varela', "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    padding: 2px 5px;
+    
+    box-shadow: inset 1px 1px 2px 2px #414243;
+    -moz-box-shadow: inset 1px 1px 2px 2px #414243;
+    -webkit-box-shadow: inset 1px 1px 2px 2px #414243;
+    -o-box-shadow: inset 1px 1px 2px 2px #414243;
+}
+
+#saveForm {
+    width: 95px;
+    height: 22px;
+    background-color: #797a7b;
+    color: white;
+    opacity: 0.7;
+    font-size: 8px;
+    font-family: 'Varela', "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    text-transform: uppercase;
+    border: none;
+    
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -o-border-radius: 0;
+    
+    box-shadow:  1px 1px 2px 1px #414243;
+    -moz-box-shadow:  1px 1px 2px 1px #414243;
+    -webkit-box-shadow:  1px 1px 2px 1px #414243;
+    -o-box-shadow:  1px 1px 2px 1px #414243;
+}
+
+- - - - - - - - - - - - - - - - - - - - - */

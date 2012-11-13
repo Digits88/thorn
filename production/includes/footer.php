@@ -34,5 +34,6 @@
                                     <iframe id="sidebarNewsletterForm" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%; border:none"  src="../wufoo/sidebar.html"><a href="https://goodbysilverstein.wufoo.com/forms/m7x3q1/">Fill out my Wufoo form!</a></iframe>
                                 </div>
                             </div>
+                           
                         </div><!-- / twelve column -->       
                     </div>

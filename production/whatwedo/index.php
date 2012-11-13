@@ -178,7 +178,7 @@
 			                <div class="eight columns">
 			                	<div class="panelGold">
 			                		<hr class="goldhr" />
-				                	<p>We facilitate the sharing of information across platforms and encourage cooperation on initiatives between industry leaders.</p>
+				                	<p>Through our technology task force, we facilitate the sharing of information across platforms and encourage cooperation on initiatives between industry leaders.</p>
 			                	</div>	
 			                </div>
 			            </div>

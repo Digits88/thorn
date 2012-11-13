@@ -17,7 +17,7 @@
                 width: 100%;
                 height: 100%;
                 border: none;
-                overflow: hidden;
+                overflow: scroll;
                 margin: 0;
                 padding: 0;
                 position: absolute;

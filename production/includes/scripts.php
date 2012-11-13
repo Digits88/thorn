@@ -26,6 +26,15 @@
 //                            console.log('outputting document')
 //                            console.dir(document)
 //                        }, 1000);
+
+//                        $('#sidebarNewsletterForm').contents().find('#saveFormSidebar').on('click', function(evt) {
+//                            setTimeout(function() {
+//                                var frame = $('#sidebarNewsletterForm')[0];
+//                                console.dir(frame.contents());
+////                                $('#sidebarNewsletterForm').hide();
+//                            }, 2000);
+//                        });
                     });
                 })(jQuery);
             </script>
+         
