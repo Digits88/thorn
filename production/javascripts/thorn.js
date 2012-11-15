@@ -244,19 +244,36 @@
 
 
         var expandBoard = function(evt) {
+            // second hover retracts the expanded state
+//            if($('#accordion').hasClass('expanded')) {
+//                
+//                $('#accordion').animate({
+//                    height: '3px'
+//                }, 500, function() {
+//                    // complete
+//                    $(this).removeClass('expanded');
+//                });
+//                
+//                
+//            } else {
+//                $('#accordion').animate({
+//                    height: '779px'
+//                }, 500, function() {
+//                    // complete
+//                    $(this).addClass('expanded');
+//                });
+//            }
+
             $('#accordion').animate({
                 height: '779px'
             }, 500, function() {
                 // complete
             });
+                
         };
         
         var retractBoard = function(evt) {
-            $('#accordion').animate({
-                height: '3px'
-            }, 500, function() {
-                // complete
-            });
+            
         };
         
 //        $('#internalDirectorsContainer .panelLightgrey').hover(function(evt) {
@@ -267,8 +284,8 @@
 
         $('#internalDirectorsContainer .panelLightgrey').hoverIntent({
             over: expandBoard,
-            timeout: 500,
-            out: retractBoard
+            timeout: 500
+//            out: retractBoard
         });
         
         $('#privacyPolicy a').click(function(evt) {

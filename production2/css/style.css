@@ -1,0 +1,756 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header, nav, section, article, footer, address, cite {
+    display: block;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+                            PAGE STRUCTURE
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+body {
+    min-height: 100%;
+
+    background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png); 
+
+    background: #e5e5e6;
+
+    background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -webkit-gradient(linear, left top, right bottom, from(#fff), to(#bdbfc1)); /* Saf4+, Chrome */
+    background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -webkit-linear-gradient(-45deg, #fff, #bdbfc1); /* Chrome 10+, Saf5.1+ */
+    background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -moz-linear-gradient(-45deg, #fff, #bdbfc1); /* FF3.6+ */
+    background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -ms-linear-gradient(-45deg, #fff, ##bdbfc1); /* IE10 */
+    background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), -o-linear-gradient(-45deg, #fff, #bdbfc1); /* Opera 11.10+ */
+    background-image: url(http://www.work.goodbysilverstein.com/dna/production/thorn_site/images/bg_tile5.png), linear-gradient(-45deg, #fff, ##bdbfc1); /* W3C */
+
+    /*font-family: 'Varela', sans-serif;*/
+
+    font-family: 'Varela', "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 13px; font-size: 10px; line-height: 12px; color: #555; position: relative; -webkit-font-smoothing: antialiased;
+
+}
+
+#wrap {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#contentContainer {
+    position: relative;
+    width: 870px;
+    float: left;
+}
+
+#sidebarContainer {
+    position: relative;
+    width: 153px;
+    float: right;
+    padding-top: 116px;
+}
+
+section {
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+
+footer {
+    clear: both;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+                            HEADER
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+header {
+    width: 100%;
+    height: 124px;
+    position: relative;
+}
+
+header h1 {
+    width: 200px;
+    height: 100px;
+    text-indent: -9999px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 14px;
+    
+    background: url(../images/thorn_logo.png) scroll no-repeat;
+}
+
+header nav {
+    width: 400px;
+    height: 30px;
+    background: #333132;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header nav a {
+    display: block;
+    padding: 0 18px;
+    width: auto;
+    color: #6d6f71;
+    font-weight: bold;
+    font-size: 9.5px;
+    margin-top: 8px;
+    
+    float: left;
+}
+
+header nav a.active,
+header nav a:hover{
+    color: #D7BC77;
+}
+
+header hr {
+    position: absolute;
+    bottom: 0;
+    left: 19px;
+    width: 849px;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+                            FOOTER
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+footer {
+    width: 100%;
+    overflow: hidden;
+    height: 54px;
+    padding-left: 15px;
+}
+
+footer a {
+    color: #6d6f71;
+}
+
+footer hr.privacyhr {
+    
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+                            SIDEBAR
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+#footerContainer {
+    padding-top: 8px;
+    margin-left: 20px;
+}
+
+#footerContainer span {
+    font-size: 9.5px;
+    color: #000;
+    padding-top: 0px;
+    font-weight: bold; 
+}
+
+#footerContainer_whatwedo {
+	padding-top: 8px;
+	margin-left: 20px;
+	position: relative;
+	left: -43px;
+}
+
+#footerContainer_whatwedo span{
+    font-size: 9.5px;
+    color: #000;
+    padding-top: 0px;
+    font-weight: bold;
+}
+
+#facebook_logo {
+	float: right;
+	margin: 1px 0px 0px 0px;  
+	width: 16px;
+}
+
+#twitter_logo {
+	float: right;
+	width: 16px;
+	margin: 1px 7px 0px 0px;  
+}
+
+
+#facebook_share {
+	float: left;
+	width: 16px;
+	margin: 1px 10px 0px 0px;
+}
+
+#twitter_share {
+	float: left;
+	width: 16px;
+	margin: 1px 10px 0px 0px;  
+}
+
+#google_share {
+	float: left;
+	width: 16px;
+	margin: 1px 10px 0px 0px;
+}
+
+#email_share {
+	float: left;
+	width: 16px;
+	margin: 1px 10px 0px 0px;  
+}
+
+#socialPopUpContainer {
+    clear: both;
+}
+
+#facebook,
+#twitter {
+    padding-top: 10px;
+}
+
+#facebook,
+#twitter,
+#email{
+    display: none;
+}
+
+#facebook a,
+#twitter a,
+#email a {
+    color: black;
+    font-size: 9px;
+}
+
+#facebook a:hover,
+#twitter a:hover,
+#email a:hover {
+    text-decoration: underline;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+                            ABOUT US
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+
+#aboutus {
+    min-height: 374px;
+}
+
+
+#digitalDefenders {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 388px;
+    height: 159px;
+    float: left;
+}
+
+#digitalDefenders h2 {
+    width: 391px;
+    height: 109px;
+    text-indent: -9999px;
+    display: block;
+    margin: 21px 10px 0 2px;
+    
+    background: url(../images/aboutus/weAreDigital.png) scroll no-repeat;
+}
+
+#blurb {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 400px;
+    float: right;
+}
+
+#blurb p {
+    color: #E7E7E8;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#board {
+    position: relative;
+    top: 0px;
+    left: 133px;
+    width: 255px;
+    height: 48px;
+    float: left;
+    
+    overflow: hidden;
+}
+
+#board a {
+    color: #231F20;
+    font-weight: bold;
+}
+
+#board a span {
+    float: right;
+}
+
+#board #boardExpanded {
+    margin-top: 20px;
+}
+
+#boardExpanded h3 {
+    color: #231F20;
+    font-weight: bold;
+}
+
+#boardExpanded p {
+    color: #231F20;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+#taskForce {
+    position: relative;
+    top: 0px;
+    right: 100px;
+    width: 300px;
+    height: 60px;
+    float: right;
+    
+    overflow: hidden;
+}
+
+#taskForce a {
+    color: #d7bc77;
+    font-weight: bold;
+}
+
+#taskForce a span {
+    float: right;
+}
+
+#taskForce #taskForceExpanded {
+    margin-top: 24px;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+                            WHAT WE DO
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+#titlesContainer {
+    float: left;
+    width: 252px;
+}
+
+#titlesContainer h2 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    margin-left: 18px;
+    color: #181818;
+}
+
+#titlesContainer hr {
+    margin-bottom: 12px;
+}
+
+#research {
+    margin-top: 21px;
+}
+
+#deterrence {
+    margin-top: 45px;
+}
+
+#innovation {
+    margin-top: 52px;
+}
+
+#industry {
+    margin-top: 52px;
+}
+
+#explanationsContainer {
+    float: right;
+    width: 578px;
+}
+
+#explanationsContainer article {
+    width: 538px;
+}
+
+#explanationsContainer p {
+    font-size: 13px;
+    line-height: 15px;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+                            THE ISSUE
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+#issueSeparator {
+    margin-left: 19px;
+}
+
+#theissue {
+    text-align: right;
+}
+
+#theissue article {
+    width: 830px;
+}
+
+#theissue img {
+    margin: 50px 0;
+}
+
+
+
+#numberOfChildren,
+#threeOutOfFour,
+#techAndExploitation,
+#theissue article p,
+#theissue article cite {
+    text-align: left;
+}
+
+cite {
+    float: left;
+    color: #aaa;
+    margin-bottom: 11px;
+}
+
+#numberOfChildren,
+#threeOutOfFour,
+#techAndExploitation {
+    font-size: 25px;
+    line-height: 28px;
+    font-weight: bold;
+    text-indent: -9999px;
+    display: inline-block;
+    width: 100%;
+    
+}
+
+#techAndExploitation {
+    height: 56px;
+    background: url(../images/theissue/techandexploit.png) scroll no-repeat;
+    margin: 20px 0 5px 19px;
+}
+
+#numberOfChildren {
+    height: 51px;
+    background: url(../images/theissue/numberofchildren.png) scroll no-repeat;
+    margin-bottom: 10px;
+}
+
+#threeOutOfFour {
+    height: 30px;
+    background: url(../images/theissue/3outof4.png) scroll no-repeat;
+    
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+                            DONATE
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+#donateText {
+    width: 393px;
+    position: relative;
+    top: 0;
+    left: 5px;
+    float: left;
+}
+
+#donateText h2 {
+    font-size: 25px;
+    line-height: 28px;
+    font-weight: bold;
+    text-indent: -9999px;
+    display: inline-block;
+    width: 100%;
+    
+    height: 28px;
+    background: url(../images/donate/donate.png) scroll no-repeat;
+    margin-bottom: 10px;
+}
+
+#donateExplanation {
+    width: 388px;
+    position: relative;
+    top: 0;
+    right: 0;
+    float: right;
+    
+    font-size: 13px;
+    line-height: 15px;
+}
+
+
+
+#donateModule {
+    width: 102px;
+    position: relative;
+    top: 0;
+    right: 0;
+    float: right;
+    
+}
+
+#partners {
+    width: 243px;
+    position: relative;
+    top: 0;
+    right: 3px;
+    float: right;
+}
+
+#partners h3 {
+    font-size: 10px;
+    font-weight: bold;
+    color: #CACBCD;
+    margin-bottom: 10px;
+}
+
+#partners ul li {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 5px 0;
+    color: #aaa;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+                            ALL PAGES
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/*	--------------------------------------------------
+	Panels
+	-------------------------------------------------- */
+	.panel {
+		padding: 8px 20px 8px 20px;
+		background: #efefef;
+		background: -moz-linear-gradient(top, #FFFFFF 0%, #F4F4F4 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F4F4F4));
+		background: -o-linear-gradient(top, #ffffff 0%,#f4f4f4 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 );
+		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+		margin: 0 0 2px 0;
+	}
+	
+/*	--------------------------------------------------
+	Panels DARK GREY
+	-------------------------------------------------- */
+	.panelDarkgrey {
+		padding: 8px 20px 8px 20px;
+		background: #5e5f62;
+		background: url(../images/bg/bg_darkGrey.png) scroll repeat, -moz-linear-gradient(top, #5e5f62 100%, #444444 0%);
+		background: url(../images/bg/bg_darkGrey.png) scroll repeat, -webkit-gradient(linear, left top, right bottom, color-stop(0%,#5e5f62), color-stop(100%,#444444));
+		background: url(../images/bg/bg_darkGrey.png) scroll repeat, -o-linear-gradient(top, 5e5f62 100%, #5e5f62 0%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e5f62', endColorstr='#444444',GradientType=0 );
+		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+		margin: 0 0 2px 0;
+                color: #CACBCD;
+		}
+		
+/*	--------------------------------------------------
+	Panels LIGHT GREY
+	-------------------------------------------------- */
+	.panelLightgrey {
+		padding: 8px 20px 8px 20px;
+		background: #a8aaad;
+		background: url(../images/bg/bg_lightGreyPanel.png) scroll repeat, -moz-linear-gradient(top, #a8aaad 100%, #848484 0%);
+		background: url(../images/bg/bg_lightGreyPanel.png) scroll repeat, -webkit-gradient(linear, left top, right bottom, color-stop(0%,#a8aaad), color-stop(100%,#848484));
+		background: url(../images/bg/bg_lightGreyPanel.png) scroll repeat, -o-linear-gradient(top, #a8aaad 100%, #848484 0%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8aaad', endColorstr='#848484',GradientType=0 );
+		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+		margin: 0 0 2px 0;
+		}
+		
+		
+/*	--------------------------------------------------
+	Panels Black
+	-------------------------------------------------- */
+	.panelBlack {
+		padding: 8px 20px 8px 20px;
+		background: #3f3e40;
+		background: url(../images/bg/bg_black.png) scroll repeat, -moz-linear-gradient(top, #3f3e40 100%, #231f20 0%);
+		background: url(../images/bg/bg_black.png) scroll repeat, -webkit-gradient(linear, left top, right bottom, color-stop(0%,#3f3e40), color-stop(100%,#231f20));
+		background: url(../images/bg/bg_black.png) scroll repeat, -o-linear-gradient(top, #3f3e40 100%, #231f20 0%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3e40', endColorstr='#231f20',GradientType=0 );
+		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+		margin: 0 0 2px 0;
+                color: #AF9968;
+		}	
+				
+	
+
+/*	--------------------------------------------------
+	Panels RED
+	-------------------------------------------------- */
+	.panelRed {
+		padding: 8px 20px 8px 20px;
+		background: #9c1217;
+		background: url(../images/bg/bg_red.png) scroll repeat, -moz-linear-gradient(top, #9c1217 100%, #c3161e 0%);
+		background: url(../images/bg/bg_red.png) scroll repeat, -webkit-gradient(linear, left top, right bottom, color-stop(0%,#c3161e), color-stop(100%,#9c1217));
+		background: url(../images/bg/bg_red.png) scroll repeat, -o-linear-gradient(top, #9c1217 100%, #c3161e 0%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c1217', endColorstr='#c3161e',GradientType=0 );
+		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+		margin: 0 0 2px 0; 
+                color: #E7E7E8;
+		}
+                
+/*	--------------------------------------------------
+	Panels GOLD
+	-------------------------------------------------- */
+	.panelGold {
+		padding: 8px 20px 8px 20px;
+		background: #c3161e;
+		background: url(../images/bg/bg_gold.png) scroll repeat, -moz-linear-gradient(top, #a08b60 100%, #c8AF70 0%);
+		background: url(../images/bg/bg_gold.png) scroll repeat, -webkit-gradient(linear, left top, right bottom, color-stop(0%,#a08b60), color-stop(100%,#c8AF70));
+		background: url(../images/bg/bg_gold.png) scroll repeat, -o-linear-gradient(top, #a08b60 100%, #c8AF70 0%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a08b60', endColorstr='#c8AF70',GradientType=0 );
+		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+		margin: 0 0 2px 0; 
+                color: #231F20;
+		}
+                
+                
+.lightGreyhr {
+    color: #CACBCD;
+    background-color: #CACBCD;
+    border-color: #CACBCD;
+    border-width: 1px;
+    margin: 12px 0px 17px 0px;
+}
+
+.blackhr {
+    color: #231F20;
+    background-color: #231F20;
+    border-color: #231F20;
+    border-width: 1px;
+       margin: 12px 0px 17px 0px;
+}
+
+.darkGreyhr {
+	color: #CACBCD;
+	background-color: #CACBCD;
+    border-color: #CACBCD;
+	border-width: 1px;
+    margin: 12px 0px 17px 0px;
+}
+
+.goldhr {
+    color: #AF9968;
+    background-color: #AF9968;
+    border-color: #AF9968;
+    border-width: 1px;
+    margin: 12px 0px 17px 0px;
+}
+
+.whitehr {
+    color: #E7E7E8;
+    background-color: #E7E7E8;
+    border-color: #E7E7E8;
+    border-width: 1px;
+    margin: 12px 0px 17px 0px;
+
+}
+
+.privacyhr {
+/*    color: #434344;
+    background-color: #434344;
+    border-color: #434344;*/
+    color: #6d6f71;
+    background-color: #6d6f71;
+    border-color: #6d6f71;
+    margin-bottom: 13px;
+    border-width: 1px;
+    margin: 12px 0px 17px 0px;
+}
+
+.digitalhr {
+    color: #aaacaf;
+    background-color: #aaacaf;
+    border-color: #aaacaf;
+    border-width: 1px;
+    margin: 12px 0px 17px 0px;
+}
+
+.clear {
+    clear: both;
+}
