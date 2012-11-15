@@ -9,3 +9,21 @@
 root { 
     display: block;
 }
+
+#digitalDefenders {
+    width: 467px !important;
+}
+
+#board {
+    left: 240px !important;
+    height: 88px !important;
+    width: 227px !important;
+}
+
+#taskForce {
+    height: 91px !important;
+}
+
+#donateText {
+    width: 475px !important;
+}
