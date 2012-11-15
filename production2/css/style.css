@@ -175,7 +175,7 @@ header hr {
 footer {
     width: 100%;
     overflow: hidden;
-    height: 54px;
+    height: 88px;
     padding-left: 15px;
     margin-top: 10px;
 }
@@ -310,7 +310,7 @@ footer hr.privacyhr {
 
 #intro img {
     position: relative;
-    top: 50%;
+    top: 40%;
     margin-top: -118px;
 }
 
@@ -363,9 +363,9 @@ footer hr.privacyhr {
     top: 0px;
     left: 145px;
     width: 255px;
-    height: 55px;
+    height: 43px;
     float: left;
-    
+    padding-bottom: 20px;
     overflow: hidden;
 }
 
@@ -425,7 +425,7 @@ footer hr.privacyhr {
 
 #titlesContainer {
     float: left;
-    width: 252px;
+    width: 215px;
 }
 
 #titlesContainer h2 {
@@ -439,6 +439,7 @@ footer hr.privacyhr {
 #titlesContainer hr {
     margin-bottom: 12px;
     margin-left: 18px;
+    width: 189px;
 }
 
 #research {
@@ -459,11 +460,11 @@ footer hr.privacyhr {
 
 #explanationsContainer {
     float: right;
-    width: 578px;
+    width: 640px;
 }
 
 #explanationsContainer article {
-    width: 538px;
+    width: 600px;
 }
 
 #explanationsContainer p {
@@ -484,14 +485,17 @@ footer hr.privacyhr {
 #theissue {
     text-align: right;
     z-index: 1;
+    margin-top: -20px;
 }
 
 #theissue article {
-    width: 830px;
+    width: 809px;
+    margin-left: 21px;
 }
 
 #theissue img {
     margin: 50px 0;
+    width: 849px;
 }
 
 
@@ -531,19 +535,20 @@ cite {
 #numberOfChildren {
     height: 51px;
     background: url(../images/theissue/numberofchildren.png) scroll no-repeat;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 #threeOutOfFour {
     height: 30px;
     background: url(../images/theissue/3outof4.png) scroll no-repeat;
-    
+    margin-bottom: -5px;
 }
 
 #theIssueFooter {
     margin-top: -89px;
     z-index: 10;
 }
+
 
 
 
@@ -600,6 +605,7 @@ cite {
     top: 0;
     right: 2px;
     float: right;
+    padding-bottom: 13px;
 }
 
 #partners h3 {
@@ -779,18 +785,18 @@ p {
 /*    color: #434344;
     background-color: #434344;
     border-color: #434344;*/
-    color: #6d6f71;
-    background-color: #6d6f71;
-    border-color: #6d6f71;
+    /*color: #6d6f71;*/
+    /*background-color: #6d6f71;*/
+    border-color: #ccc;
     margin-bottom: 13px;
     border-width: 1px;
-    margin: 12px 0px 17px 0px;
+    margin: 47px 14px 17px 0px;
 }
 
 .digitalhr {
-    color: #aaacaf;
-    background-color: #aaacaf;
-    border-color: #aaacaf;
+    /*color: #aaacaf;*/
+    /*background-color: #aaacaf;*/
+    border-color: #ccc;
     border-width: 1px;
     margin: 12px 0px 17px 0px;
 }

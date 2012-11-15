@@ -76,7 +76,7 @@ var twitterUI = {
     url: 'http://wearethorn.org'
 };
 
-$('#twitter a').attr({
+$('a.twitter').attr({
     'href' : 'https://twitter.com/share?url=' + encodeURIComponent(twitterUI.url) + '&text=' + encodeURIComponent(twitterUI.text)
 });
 

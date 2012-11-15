@@ -17,7 +17,7 @@
                         <cite>Source: Thorn Survivor Survey</cite>
                         <div class="clear"></div>
                     </article>
-                    <img src="../images/theissue/children.png" alt="Image of 3 out of 4 children trafficked online" />
+                    <img style="margin-top: -10px;" src="../images/theissue/kids.png" alt="Image of 3 out of 4 children trafficked online" />
                 </section>
                 
                 <?php include_once '../includes/footer.php'; ?>
