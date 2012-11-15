@@ -11,13 +11,13 @@ root {
 }
 
 #digitalDefenders {
-    width: 467px !important;
+    width: 480px !important;
 }
 
 #board {
     left: 240px !important;
     height: 88px;
-    width: 227px !important;
+    width: 240px !important;
 }
 
 #taskForce {
@@ -25,5 +25,5 @@ root {
 }
 
 #donateText {
-    width: 475px !important;
+    width: 478px !important;
 }
