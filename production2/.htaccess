@@ -1,0 +1,5 @@
+ErrorDocument	400	/whatwedo/index.php
+ErrorDocument	401	/whatwedo/index.php
+ErrorDocument	403	/whatwedo/index.php
+ErrorDocument	404	/whatwedo/index.php
+ErrorDocument	500	/whatwedo/index.php

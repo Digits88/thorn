@@ -23,5 +23,4 @@
                 <?php include_once '../includes/footer.php'; ?>
             </div>
             <?php include_once '../includes/sidebar.php'; ?>
-                
 <?php include_once '../includes/end.php'; ?>

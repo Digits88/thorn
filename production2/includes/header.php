@@ -1,5 +1,10 @@
 <?php
 $url = $_SERVER['REQUEST_URI'];
+
+session_start();
+if(!isset($_SESSION['thorn'])) {
+    $_SESSION['thorn'] = true;
+}
 ?>
 <!-- 
     Author: Mike Newell © 2012
@@ -19,7 +24,6 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="../css/ie.css" />
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <!--<script type="text/css" src="../js/html5shiv.js"></script>-->
     </head>
     <body>
         <div id="wrap">

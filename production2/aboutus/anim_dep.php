@@ -1,5 +1,5 @@
 <?php include_once '../includes/header.php'; ?>
-                <section id="aboutus">
+                <section id="intro">
                     
                     <img src="../images/thorn_logo_main.png" alt="Thorn: Digital Defenders of Children" />
 

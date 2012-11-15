@@ -16,12 +16,12 @@ root {
 
 #board {
     left: 240px !important;
-    height: 88px !important;
+    height: 88px;
     width: 227px !important;
 }
 
 #taskForce {
-    height: 91px !important;
+    height: 91px;
 }
 
 #donateText {

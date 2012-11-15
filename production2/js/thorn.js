@@ -8,27 +8,62 @@
     $(window).load(function() {
         // helpers
         var boardExpand = function() {
+            console.log('hovered');
             $('#board').animate({
-                height: '734px'
+                'height': '734px'
             }, 500, function() {
                 // complete
+                console.log('complete');
             });
         };
         
         var taskForceExpand = function() {
+            console.log('hovered');
             $('#taskForce').animate({
-                height: '578px'
+                'height': '578px'
             }, 500, function() {
                 // complete
+                console.log('complete');
             });
         };
         
         var privacyExpand = function() {
+            console.log('hovered');
             $('footer').animate({
-                height: '225px'
+                'height': '225px'
             }, 500, function() {
                 // complete
+                console.log('complete');
             });
+        };
+        
+        var expandOut = function() {
+            // nothing
+        };
+        
+        var playIntro = function() {
+            setTimeout(function() {
+                $('#intro img').animate({
+                    opacity: 1
+                }, 800, function() {
+                    setTimeout(function() {
+                        $('#intro img').animate({
+                            opacity: 0
+                        }, 800, function() {
+                            // img faded
+                            $('#intro').animate({
+                               opacity: 0 
+                            }, 1000, function() {
+                                $('#intro').remove();
+                            });
+                        });
+                        
+                        
+                    }, 1300);   
+                });
+            }, 500);
+                
+                
         };
         
         
@@ -126,17 +161,20 @@
         // events
         $('#board').hoverIntent({
             over: boardExpand,
-            timeout: 500
+            timeout: 500,
+            out: expandOut
         });
         
         $('#taskForce').hoverIntent({
             over: taskForceExpand,
-            timeout: 500
+            timeout: 500,
+            out: expandOut
         });
         
         $('#privacy').hoverIntent({
             over: privacyExpand,
-            timeout: 500
+            timeout: 500,
+            out: expandOut
         });
         
         // initialization
@@ -148,5 +186,9 @@
 
         var emailButton = new socialButton();
         emailButton.init('.email', '#email');
+        
+        if($('#intro').length) {
+            playIntro();
+        }
     });
 })(jQuery);

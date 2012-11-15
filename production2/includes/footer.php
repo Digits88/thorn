@@ -1,4 +1,4 @@
-                <footer>
+                <footer <?php echo (strpos($url, 'theissue') !==  false) ? 'id="theIssueFooter"' : ''; ?> >
                     <hr class="privacyhr" />
                     <a id="privacy" href="#">PRIVACY POLICY <span>+</span></a>
                     <div id="privacyExpand">
