@@ -112,10 +112,10 @@
     -webkit-transform: translateZ( 0 );
     -o-transform: translateZ( 0 );
 
-    animation: goldAnimation 0.3s linear 0.7s forwards;
-    -moz-animation: goldAnimation 0.3s linear 0.7s forwards; /* Firefox */
-    -webkit-animation: goldAnimation 0.3s linear 0.7s forwards; /* Safari and Chrome */
-    -o-animation: goldAnimation 0.3s linear 0.7s forwards; /* Opera */
+    animation: goldAnimation 0.3s linear 0.9s forwards;
+    -moz-animation: goldAnimation 0.3s linear 0.9s forwards; /* Firefox */
+    -webkit-animation: goldAnimation 0.3s linear 0.9s forwards; /* Safari and Chrome */
+    -o-animation: goldAnimation 0.3s linear 0.9s forwards; /* Opera */
 }
 
     @keyframes goldAnimation {
