@@ -1,0 +1,175 @@
+.panelDarkgrey {
+    opacity: 0;
+
+    transform: translateZ( 0 );
+    -moz-transform: translateZ( 0 );
+    -webkit-transform: translateZ( 0 );
+    -o-transform: translateZ( 0 );
+
+    animation: darkGreyAnimation 0.7s linear 0.2s forwards;
+    -moz-animation: darkGreyAnimation 0.7s linear 0.2s forwards; /* Firefox */
+    -webkit-animation: darkGreyAnimation 0.7s linear 0.2s forwards; /* Safari and Chrome */
+    -o-animation: darkGreyAnimation 0.7s linear 0.2s forwards; /* Opera */
+}
+
+    @keyframes darkGreyAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @-moz-keyframes darkGreyAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @-webkit-keyframes darkGreyAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @-o-keyframes darkGreyAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+
+    }
+
+
+.panelLightgrey {
+    opacity: 0;
+
+    transform: translateZ( 0 );
+    -moz-transform: translateZ( 0 );
+    -webkit-transform: translateZ( 0 );
+    -o-transform: translateZ( 0 );
+
+    animation: lightGreyAnimation 0.5s linear 0.3s forwards;
+    -moz-animation: lightGreyAnimation 0.5s linear 0.3s forwards; /* Firefox */
+    -webkit-animation: lightGreyAnimation 0.5s linear 0.3s forwards; /* Safari and Chrome */
+    -o-animation: lightGreyAnimation 0.5s linear 0.3s forwards; /* Opera */
+}
+
+    @keyframes lightGreyAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @-moz-keyframes lightGreyAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @-webkit-keyframes lightGreyAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @-o-keyframes lightGreyAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+
+    }
+
+.panelRed {
+    opacity: 0;
+
+    transform: translateZ( 0 );
+    -moz-transform: translateZ( 0 );
+    -webkit-transform: translateZ( 0 );
+    -o-transform: translateZ( 0 );
+
+    animation: redAnimation 0.8s linear 0.4s forwards;
+    -moz-animation: redAnimation 0.8s linear 0.4s forwards; /* Firefox */
+    -webkit-animation: redAnimation 0.8s linear 0.4s forwards; /* Safari and Chrome */
+    -o-animation: redAnimation 0.8s linear 0.4s forwards; /* Opera */
+}
+
+    @keyframes redAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @-moz-keyframes redAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @-webkit-keyframes redAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @-o-keyframes redAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+
+    }
+
+.panelGold {
+    opacity: 0;
+
+    transform: translateZ( 0 );
+    -moz-transform: translateZ( 0 );
+    -webkit-transform: translateZ( 0 );
+    -o-transform: translateZ( 0 );
+
+    animation: goldAnimation 0.3s linear 0.7s forwards;
+    -moz-animation: goldAnimation 0.3s linear 0.7s forwards; /* Firefox */
+    -webkit-animation: goldAnimation 0.3s linear 0.7s forwards; /* Safari and Chrome */
+    -o-animation: goldAnimation 0.3s linear 0.7s forwards; /* Opera */
+}
+
+    @keyframes goldAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @-moz-keyframes goldAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @-webkit-keyframes goldAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @-o-keyframes goldAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+
+    }
+    
+.panelBlack {
+    opacity: 0;
+
+    transform: translateZ( 0 );
+    -moz-transform: translateZ( 0 );
+    -webkit-transform: translateZ( 0 );
+    -o-transform: translateZ( 0 );
+
+    animation: blackAnimation 0.3s linear 0.7s forwards;
+    -moz-animation: blackAnimation 0.3s linear 0.7s forwards; /* Firefox */
+    -webkit-animation: blackAnimation 0.3s linear 0.7s forwards; /* Safari and Chrome */
+    -o-animation: blackAnimation 0.3s linear 0.7s forwards; /* Opera */
+}
+
+    @keyframes blackAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @-moz-keyframes blackAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @-webkit-keyframes blackAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @-o-keyframes blackAnimation {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+
+    }

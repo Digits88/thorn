@@ -20,6 +20,7 @@ and open the template in the editor.
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/animation.css" />
         <!--[if IE]>
         <link rel="stylesheet" type="text/css" href="../css/ie.css" />
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
