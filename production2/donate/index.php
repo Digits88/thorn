@@ -98,6 +98,8 @@
                             </ul>
                         </div>
                     </article>
+                    
+                    <div class="clear"></div>
 
                 </section>
                 

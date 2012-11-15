@@ -41,7 +41,9 @@
                             <p>Through our technology task force, we facilitate the sharing of information across platforms and encourage cooperation on initiatives between industry leaders.</p>
                         </article>
                     </div>
-
+                    
+                    <div class="clear"></div>
+                    
                 </section>
                 
                 <?php include_once '../includes/footer.php'; ?>
