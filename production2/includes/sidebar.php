@@ -25,7 +25,7 @@
                                         <a id="share" href="#">Share</a> | <a href="https://www.facebook.com/wearethorn" target="_blank">Follow</a>
                                     </div>
                                     <div id="twitter"  class="socialPopUp">
-                                       <a class="twitter popup" href="http://twitter.com/share?text=This%20be%20good%20site!">Share</a> | <a href="https://twitter.com/dnafoundation"  target="_blank">Follow</a>
+                                       <a class="twitter popup" href="http://twitter.com/share?text=This%20be%20good%20site!">Share</a> | <a href="https://twitter.com/thorn"  target="_blank">Follow</a>
                                     </div>
                                     <div id="email" class="socialPopUp">
                                         <iframe id="sidebarNewsletterForm" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%; border:none"  src="../wufoo/sidebar.html"><a href="https://goodbysilverstein.wufoo.com/forms/m7x3q1/">Fill out my Wufoo form!</a></iframe>
